@@ -10,15 +10,18 @@ import {
 
 const Footer = () => {
   return (
-    <div className="text-3xl grid grid-cols-7">
-      <FaReact />
-      <FaNode />
-      <FaHtml5 />
-      <FaCss3 />
-      <FaJs />
-      <FaGithub />
-      <FaGit />
-    </div>
+    <>
+      <div className="md:text-3xl">Web Developer 2020 - present date </div>
+      <div className="text-2xl grid grid-cols-7 md:text-5xl">
+        <FaReact />
+        <FaNode />
+        <FaHtml5 />
+        <FaCss3 />
+        <FaJs />
+        <FaGithub />
+        <FaGit />
+      </div>
+    </>
   );
 };
 
