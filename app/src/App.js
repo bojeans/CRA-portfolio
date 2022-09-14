@@ -1,5 +1,8 @@
+import React from "react";
+import Header from "./components/Header";
+
 const App = () => {
-  return <div className="text-3xl font-bold underline">Title</div>;
+  return <Header />;
 };
 
 export default App;
