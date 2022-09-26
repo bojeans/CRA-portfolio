@@ -8,7 +8,7 @@ const NavBar = () => {
   return (
     <div className="flex items-center justify-between border-b border-gray-400 py-8">
       <nav>
-        <section className="MOBILE-MENU flex lg:hidden">
+        <section className="MOBILE-MENU lg:hidden">
           <div
             className="HAMBURGER-ICON space-y-2"
             onClick={() => setIsNavOpen((prev) => !prev)} // toggle isNavOpen state on click
@@ -19,8 +19,6 @@ const NavBar = () => {
           </div>
 
           <div className={isNavOpen ? "showMenuNav" : "hideMenuNav"}>
-            {" "}
-            // toggle class based on isNavOpen state
             <div
               className="CROSS-ICON absolute top-0 right-0 px-8 py-8"
               onClick={() => setIsNavOpen(false)} // change isNavOpen state to false to close the menu
@@ -53,6 +51,9 @@ const NavBar = () => {
         </section>
 
         <ul className="DESKTOP-MENU hidden space-x-8 lg:flex">
+          <li>
+            <a href="/home">Home</a>
+          </li>
           <li>
             <a href="/about">About</a>
           </li>
