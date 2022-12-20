@@ -5,12 +5,8 @@ import Footer from "./components/Footer";
 
 const App = () => {
   return (
-
     <div className="grid m-8 place-content-center">
-
-    <>
       <NavBar />
-
       <Header />
       <Footer />
     </div>
