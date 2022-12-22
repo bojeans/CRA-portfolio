@@ -2,11 +2,11 @@ import cv from "../assets/CV-chris.docx.pdf";
 
 const About = () => {
   return (
-    <>
+    <div className="md:text-4xl">
       <h1 className="text-3xl font-bold text-center mt-4 mb-4">About Me</h1>
       <p>Click on the below links</p>
       <ul className="text-1.5xl text-blue-800 font-bold  ">
-        <li>
+        <li className="md:mt-5">
           <a href={cv} target="_blank" rel="noreferrer">
             CV
           </a>
@@ -17,11 +17,11 @@ const About = () => {
             target="_blank"
             rel="noreferrer"
           >
-            DI role
+            DI About me
           </a>
         </li>
       </ul>
-    </>
+    </div>
   );
 };
 
