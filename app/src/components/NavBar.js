@@ -36,9 +36,9 @@ const NavBar = () => {
                 <line x1="6" y1="6" x2="18" y2="18" />
               </svg>
             </div>
-            <ul className="MENU-LINK-MOBILE-OPEN flex flex-col items-center justify-between min-h-[250px] text-4xl">
+            <ul className="MENU-LINK-MOBILE-OPEN flex flex-col items-center justify-between min-h-[250px]">
               <li className="border-b border-gray-400 my-8 uppercase">
-                <a href="/">Home</a>
+                <a href="/home">Home</a>
               </li>
               <li className="border-b border-gray-400 my-8 uppercase">
                 <a href="/about">About</a>
