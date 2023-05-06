@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-// import axios from "axios";
 
 const Contact = () => {
+  const [formState, setFormState] = [];
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [location, setLocation] = useState("");
@@ -12,12 +12,12 @@ const Contact = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch(process.env.FORMSPREE_ENDPOINT, {
+      const response = await fetch("/submit-form", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(),
+        body: JSON.stringify(formState),
       });
       if (response.ok) {
         setFormSubmitted(true);
