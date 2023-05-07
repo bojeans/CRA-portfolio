@@ -11,11 +11,11 @@ import {
 const Footer = () => {
   return (
     <>
-      <div className="md:text-3xl text-1.5xl mt-10 mb-2">
+      <div className="ml-3 md:text-2xl text-1.5xl mt-10 mb-2">
         <p>Chris Anderson</p>
         <p>Web Developer 2020 - present date </p>
       </div>
-      <div className="text-2xl grid grid-cols-7 space-y-0 md:text-5xl">
+      <div className="text-2xl text-center ml-3 grid grid-cols-7 space-y-0 md:text-3xl">
         <FaReact />
         <FaNode />
         <FaHtml5 />

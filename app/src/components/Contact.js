@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const Contact = () => {
-  const [formState, setFormState] = useState({});
+  const [formState] = useState({});
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [location, setLocation] = useState("");

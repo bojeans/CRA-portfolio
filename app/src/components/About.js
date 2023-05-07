@@ -1,5 +1,6 @@
 import cv from "../assets/cv.pdf";
 import NavBar from "./NavBar";
+import Footer from "./Footer";
 
 const About = () => {
   return (
@@ -14,6 +15,7 @@ const About = () => {
           1 Page CV/Resume
         </a>
       </div>
+      <Footer />
     </div>
   );
 };
