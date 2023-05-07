@@ -12,7 +12,7 @@ const Contact = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch("/submit-form", {
+      const response = await fetch(process.env.FORMSPREE_ENDPOINT, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

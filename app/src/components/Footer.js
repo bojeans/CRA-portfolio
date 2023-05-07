@@ -12,7 +12,8 @@ const Footer = () => {
   return (
     <>
       <div className="md:text-3xl text-1.5xl mt-10 mb-2">
-        Web Developer 2020 - present date{" "}
+        <p>Chris Anderson</p>
+        <p>Web Developer 2020 - present date </p>
       </div>
       <div className="text-2xl grid grid-cols-7 space-y-0 md:text-5xl">
         <FaReact />

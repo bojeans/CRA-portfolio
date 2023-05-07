@@ -1,8 +1,10 @@
-import cv from "../assets/CV-chris.docx.pdf";
+import cv from "../assets/cv.pdf";
+import NavBar from "./NavBar";
 
 const About = () => {
   return (
     <div className="md:text-4xl">
+      <NavBar />
       <h1 className="text-3xl font-bold text-center mt-4 mb-4">About Me</h1>
       <p>Click on the below links</p>
       <ul className="text-1.5xl text-blue-800 font-bold  ">
