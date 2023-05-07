@@ -28,6 +28,26 @@ app.post("/submit-form", async (req, res) => {
   }
 });
 
+// home page route
+app.get("/", (req, res) => {
+  res.send("This is the home page!");
+});
+
+// about page route
+app.get("/about", (req, res) => {
+  res.send("This is the about page!");
+});
+
+// projects page route
+app.get("/projects", (req, res) => {
+  res.send("This is the projects page!");
+});
+
+// contact page route
+app.get("/contact", (req, res) => {
+  res.send("This is the contact page!");
+});
+
 app.listen(process.env.PORT || 3001, () => {
   console.log(`Server listening on port ${process.env.PORT || 3001}`);
 });
