@@ -17,7 +17,7 @@ const Contact = () => {
   };
 
   const url = "https://formspree.io/f/xnqwbjwd";
-  console.log(url);
+
   const handleSubmit = async (e) => {
     e.preventDefault();
 
