@@ -12,7 +12,7 @@ const NavBar = () => {
           spy={"true"}
           smooth={"true"}
           duration={500}
-          className="text-teal-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+          className="text-gray-50 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
           onClick={onClick}
         >
           {label}
@@ -32,7 +32,7 @@ const NavBar = () => {
           <div className="flex items-center">
             <Link
               to="/"
-              className="text-teal-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+              className="text-gray-50 text-2xl hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md font-medium"
             >
               My Portfolio
             </Link>
@@ -45,19 +45,19 @@ const NavBar = () => {
                 <NavItem
                   to="/about"
                   label="about"
-                  className="text-teal-300 mx-4 hover:text-charcoal transition duration-300"
+                  className="mx-4 hover:text-charcoal transition duration-300"
                 />
 
                 <NavItem
                   to="/projects"
                   label="projects"
-                  className="text-teal-300 mx-4 hover:text-charcoal transition duration-300"
+                  className="mx-4 hover:text-charcoal transition duration-300"
                 />
 
                 <NavItem
                   to="/contact"
                   label="contact"
-                  className="text-teal-300 mx-4 hover:text-charcoal transition duration-300"
+                  className="mx-4 hover:text-charcoal transition duration-300"
                 />
               </ul>
             </div>
@@ -107,31 +107,31 @@ const NavBar = () => {
         className={`${isNavOpen ? "block" : "hidden"} md:hidden`}
         id="mobile-menu"
       >
-        <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+        <div className="text-gray-50 px-2 pt-2 pb-3 space-y-1 sm:px-3 ">
           <a
             href="/"
-            className="hover:bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium"
+            className="hover:bg-gray-100 hover:text-black items-center justify-center flex px-3 py-2 rounded-md text-base font-medium"
           >
             Home
           </a>
 
           <a
             href="/about"
-            className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+            className="hover:bg-gray-100 hover:text-black items-center justify-center flex px-3 py-2 rounded-md text-base font-medium"
           >
             About
           </a>
 
           <a
             href="/projects"
-            className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+            className="hover:bg-gray-100 hover:text-black items-center justify-center flex px-3 py-2 rounded-md text-base font-medium"
           >
             Projects
           </a>
 
           <a
             href="/contact"
-            className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+            className="hover:bg-gray-100 hover:text-black items-center justify-center flex px-3 py-2 rounded-md text-base font-medium"
           >
             Contact
           </a>
