@@ -8,12 +8,11 @@ const NavBar = () => {
     return (
       <li className="mr-6 my-2 lg:my-0">
         <Link
-          activeClass="text-teal-500"
           to={to}
           spy={"true"}
           smooth={"true"}
           duration={500}
-          className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4 cursor-pointer "
+          className="text-teal-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
           onClick={onClick}
         >
           {label}
@@ -41,30 +40,25 @@ const NavBar = () => {
           <div className="hidden md:block">
             <div className="text-sm lg:flex-grow">
               <ul className="hidden md:flex">
-                <Link
-                  to="/"
-                  className="text-teal-300 mx-4 hover:text-charcoal transition duration-300"
-                >
-                  Home
-                </Link>
-                <Link
+                <NavItem to="/" label="home" />
+
+                <NavItem
                   to="/about"
+                  label="about"
                   className="text-teal-300 mx-4 hover:text-charcoal transition duration-300"
-                >
-                  About
-                </Link>
-                <Link
+                />
+
+                <NavItem
                   to="/projects"
+                  label="projects"
                   className="text-teal-300 mx-4 hover:text-charcoal transition duration-300"
-                >
-                  Projects
-                </Link>
-                <Link
+                />
+
+                <NavItem
                   to="/contact"
+                  label="contact"
                   className="text-teal-300 mx-4 hover:text-charcoal transition duration-300"
-                >
-                  Contact
-                </Link>
+                />
               </ul>
             </div>
           </div>
