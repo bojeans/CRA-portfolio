@@ -6,7 +6,11 @@ const LandingPage = () => {
   return (
     <>
       <NavBar />
-      <img src={pic} alt="headshot of author"></img>
+      <img
+        src={pic}
+        alt="headshot of author"
+        className="w-full md:w-auto md:max-w-md lg:max-w-lg"
+      ></img>
       <Footer />
     </>
   );
