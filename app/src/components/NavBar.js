@@ -108,33 +108,30 @@ const NavBar = () => {
         id="mobile-menu"
       >
         <div className="text-gray-50 px-2 pt-2 pb-3 space-y-1 sm:px-3 ">
-          <a
-            href="/"
-            className="hover:bg-gray-100 hover:text-black items-center justify-center flex px-3 py-2 rounded-md text-base font-medium"
+          <Link
+            to="/"
+            className="text-gray-50 hover:bg-gray-100 hover:text-black items-center justify-center flex px-3 py-2 rounded-md text-base font-medium"
           >
             Home
-          </a>
-
-          <a
-            href="/about"
-            className="hover:bg-gray-100 hover:text-black items-center justify-center flex px-3 py-2 rounded-md text-base font-medium"
+          </Link>
+          <Link
+            to="/about"
+            className="text-gray-50 hover:bg-gray-100 hover:text-black items-center justify-center flex px-3 py-2 rounded-md text-base font-medium"
           >
             About
-          </a>
-
-          <a
-            href="/projects"
-            className="hover:bg-gray-100 hover:text-black items-center justify-center flex px-3 py-2 rounded-md text-base font-medium"
+          </Link>
+          <Link
+            to="/projects"
+            className="text-gray-50 hover:bg-gray-100 hover:text-black items-center justify-center flex px-3 py-2 rounded-md text-base font-medium"
           >
             Projects
-          </a>
-
-          <a
-            href="/contact"
-            className="hover:bg-gray-100 hover:text-black items-center justify-center flex px-3 py-2 rounded-md text-base font-medium"
+          </Link>
+          <Link
+            to="/contact"
+            className="text-gray-50 hover:bg-gray-100 hover:text-black items-center justify-center flex px-3 py-2 rounded-md text-base font-medium"
           >
             Contact
-          </a>
+          </Link>
         </div>
       </div>
     </nav>
