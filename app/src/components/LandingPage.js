@@ -9,7 +9,7 @@ const LandingPage = () => {
       <img
         src={pic}
         alt="headshot of author"
-        className="w-full md:w-auto md:max-w-md lg:max-w-lg"
+        className="w-full max-w-3xl mx-auto"
       ></img>
       <Footer />
     </>
