@@ -3,6 +3,24 @@ import { Link } from "react-router-dom";
 
 const NavBar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
+  const NavItem = (props) => {
+    const { label, to, onClick } = props;
+    return (
+      <li className="mr-6 my-2 lg:my-0">
+        <Link
+          activeClass="text-teal-500"
+          to={to}
+          spy={"true"}
+          smooth={"true"}
+          duration={500}
+          className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4 cursor-pointer "
+          onClick={onClick}
+        >
+          {label}
+        </Link>
+      </li>
+    );
+  };
 
   const toggleMenu = () => {
     setIsNavOpen(!isNavOpen);
@@ -15,31 +33,39 @@ const NavBar = () => {
           <div className="flex items-center">
             <Link
               to="/"
-              className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+              className="text-teal-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
             >
               My Portfolio
             </Link>
           </div>
           <div className="hidden md:block">
-            <div className="ml-4 flex items-center">
-              <Link
-                to="/about"
-                className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-              >
-                About
-              </Link>
-              <Link
-                to="/projects"
-                className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-              >
-                Projects
-              </Link>
-              <Link
-                to="/contact"
-                className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-              >
-                Contact
-              </Link>
+            <div className="text-sm lg:flex-grow">
+              <ul className="hidden md:flex">
+                <Link
+                  to="/"
+                  className="text-teal-300 mx-4 hover:text-charcoal transition duration-300"
+                >
+                  Home
+                </Link>
+                <Link
+                  to="/about"
+                  className="text-teal-300 mx-4 hover:text-charcoal transition duration-300"
+                >
+                  About
+                </Link>
+                <Link
+                  to="/projects"
+                  className="text-teal-300 mx-4 hover:text-charcoal transition duration-300"
+                >
+                  Projects
+                </Link>
+                <Link
+                  to="/contact"
+                  className="text-teal-300 mx-4 hover:text-charcoal transition duration-300"
+                >
+                  Contact
+                </Link>
+              </ul>
             </div>
           </div>
           <div className="-mr-2 flex md:hidden">
