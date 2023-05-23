@@ -1,8 +1,9 @@
-import { Link } from "react-router-dom";
 import cv from "../assets/cv.pdf";
 import NavBar from "./NavBar";
 import Footer from "./Footer";
 import { FaGithub, FaFacebookF, FaLinkedin, FaRegUser } from "react-icons/fa";
+
+const github = "https://github.com/bojeans";
 
 const About = () => {
   return (
@@ -15,36 +16,32 @@ const About = () => {
       <div className="flex text-3xl items-center justify-center font-bold ml-3 md:text-2xl">
         <ul>
           <li className="mb-3">
-            <Link to={cv} target="_blank" rel="noreferrer">
+            <a href={cv} target="_blank" rel="noreferrer">
               <FaRegUser />
-            </Link>
+            </a>
           </li>
           <li className="mb-3 text-blue-800">
-            <Link
-              to="https://www.linkedin.com/in/chris-anderson-4b289b189/"
+            <a
+              href="https://www.linkedin.com/in/chris-anderson-4b289b189/"
               target="_blank"
               rel="noreferrer"
             >
               <FaLinkedin />
-            </Link>
+            </a>
           </li>
           <li className="mb-3">
-            <Link
-              to={"https://github.com/bojeans"}
-              target="_blank"
-              rel="noreferrer"
-            >
+            <a href={github} target="_blank" rel="noreferrer">
               <FaGithub />
-            </Link>
+            </a>
           </li>
           <li className="mb-3 text-blue-800">
-            <Link
-              to={"https://www.facebook.com/chris.anderson.58152/"}
+            <a
+              href="https://www.facebook.com/chris.anderson.58152/"
               target="_blank"
               rel="noreferrer"
             >
               <FaFacebookF />
-            </Link>
+            </a>
           </li>
         </ul>
       </div>
