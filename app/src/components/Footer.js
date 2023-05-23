@@ -1,12 +1,9 @@
-import {
-  FaReact,
-  FaNode,
-  FaHtml5,
-  FaCss3,
-  FaJs,
-  FaGithub,
-  FaGit,
-} from "react-icons/fa";
+import { FaGithub, FaFacebookF, FaLinkedin, FaRegUser } from "react-icons/fa";
+import cv from "../assets/cv.pdf";
+
+const github = "https://github.com/bojeans";
+const facebook = "https://www.facebook.com/chris.anderson.58152/";
+const linkedin = "https://www.linkedin.com/in/chris-anderson-4b289b189/";
 
 const Footer = () => {
   return (
@@ -15,14 +12,29 @@ const Footer = () => {
         <p>Chris Anderson</p>
         <p>Web Developer 2020 - present date </p>
       </div>
-      <div className="text-2xl text-center ml-3 grid grid-cols-7 space-y-0 md:text-3xl">
-        <FaReact />
-        <FaNode />
-        <FaHtml5 />
-        <FaCss3 />
-        <FaJs />
-        <FaGithub />
-        <FaGit />
+      <div className="flex items-center justify-center font-bold ml-3">
+        <ul>
+          <li className="mb-3">
+            <a href={cv} target="_blank" rel="noreferrer">
+              <FaRegUser />
+            </a>
+          </li>
+          <li className="mb-3 text-blue-800">
+            <a href={linkedin} target="_blank" rel="noreferrer">
+              <FaLinkedin />
+            </a>
+          </li>
+          <li className="mb-3">
+            <a href={github} target="_blank" rel="noreferrer">
+              <FaGithub />
+            </a>
+          </li>
+          <li className="mb-3 text-blue-800">
+            <a href={facebook} target="_blank" rel="noreferrer">
+              <FaFacebookF />
+            </a>
+          </li>
+        </ul>
       </div>
     </>
   );
