@@ -8,9 +8,9 @@ const linkedin = process.env.REACT_APP_LINKEDIN_ENDPOINT;
 
 const Footer = () => {
   return (
-    <footer>
+    <footer className="flex flex-col items-center justify-end py-4">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="ml-3 md:text-2xl text-1.5xl mt-10 mb-2">
+        <div className="ml-3 md:text-2xl text-1.5xl mt-10 mb-2 hidden md:block">
           <p>Chris Anderson</p>
           <p>Web Developer 2020 - present date </p>
         </div>
