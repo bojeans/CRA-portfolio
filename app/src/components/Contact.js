@@ -16,7 +16,7 @@ const Contact = () => {
     setFormData({ ...formData, [name]: value });
   };
 
-  const url = "https://formspree.io/f/xnqwbjwd";
+  const url = process.env.REACT_APP_FORMSPREE_ENDPOINT;
 
   const handleSubmit = async (e) => {
     e.preventDefault();
