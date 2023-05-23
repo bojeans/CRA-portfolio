@@ -2,8 +2,8 @@ import { FaGithub, FaFacebookF, FaLinkedin, FaRegUser } from "react-icons/fa";
 import cv from "../assets/cv.pdf";
 
 // social link global variables
-const github = process.env.REACT_APP_FACEBOOK_ENDPOINT;
-const facebook = process.env.REACT_APP_GITHUB_ENDPOINT;
+const github = process.env.REACT_APP_GITHUB_ENDPOINT;
+const facebook = process.env.REACT_APP_FACEBOOK_ENDPOINT;
 const linkedin = process.env.REACT_APP_LINKEDIN_ENDPOINT;
 
 const Footer = () => {
