@@ -10,8 +10,8 @@ const Projects = () => {
       </h1>
 
       <div className="flex flex-wrap justify-center">
-        <div className="w-full md:w-1/3 px-4">
-          <div className="bg-gray-100 rounded-lg shadow-md p-4 mb-4">
+        <div className="w-full md:w-1/3 px-4 ">
+          <div className="bg-gray-100 rounded-lg shadow-md p-4 mb-4 h-full flex flex-col">
             <h2 className="text-lg font-bold mb-2">
               <span className="border-b border-gray-500">
                 Planning pipeline
@@ -21,14 +21,16 @@ const Projects = () => {
           </div>
         </div>
         <div className="w-full md:w-1/3 px-4">
-          <div className="bg-gray-100 rounded-lg shadow-md p-4 mb-4">
+          <div className="bg-gray-100 rounded-lg shadow-md p-4 mb-4 h-full flex flex-col">
             <h2 className="text-lg font-bold mb-2">
               <span className="border-b border-gray-500">In Progress</span>
             </h2>
             <p>
               <a
-                href="https://chrisanderson-portfolio.netlify.app/"
+                href="https://github.com/bojeans/CRA-portfolio"
                 className="text-blue-800"
+                target="_blank"
+                rel="noreferrer"
               >
                 <strong>This website</strong>
               </a>
@@ -48,7 +50,7 @@ const Projects = () => {
           </div>
         </div>
         <div className="w-full md:w-1/3 px-4">
-          <div className="bg-gray-100 rounded-lg shadow-md p-4 mb-4">
+          <div className="bg-gray-100 rounded-lg shadow-md p-4 mb-4 h-full flex flex-col">
             <h2 className="text-lg font-bold mb-2">
               <span className="border-b border-gray-500">Done</span>
             </h2>
