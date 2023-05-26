@@ -11,11 +11,11 @@ const About = () => {
 
       <div className="flex flex-wrap justify-center">
         <div className="w-full md:w-1/3 px-4">
-          <div className="bg-gray-100 rounded-lg shadow-md p-4 mb-4">
+          <div className="bg-gray-100 rounded-lg shadow-md p-4 mb-4 h-full flex flex-col">
             <h2 className="text-2xl font-bold mb-2">
               <span className="border-b border-gray-500">Technical</span>
             </h2>
-            <ul className="list-none">
+            <ul className="list-none ">
               <li className="mb-4">
                 <span className="rounded-md inline-block bg-white px-2 py-1">
                   <strong>Studying 2020-2021</strong>
@@ -43,19 +43,42 @@ const About = () => {
                   </em>
                 </span>
               </li>
+              <li className="mb-4">
+                <span className="rounded-md inline-block bg-white px-2 py-1">
+                  <strong>Education</strong>
+                </span>
+                <span className="rounded-md inline-block bg-white px-2 py-1">
+                  <em>
+                    Bachelor of Management Studies - University of Waikato.
+                    Majoring in Information Systems & Strategic Management.
+                  </em>
+                </span>
+                <span className="rounded-md inline-block bg-white px-2 py-1">
+                  <em>
+                    NZ Diploma in Web Development and Design –{" "}
+                    <a
+                      href="https://www.developers.ac.nz/"
+                      className="text-blue-800"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Developers Institute NZ
+                    </a>
+                  </em>
+                </span>
+              </li>
             </ul>
           </div>
         </div>
         <div className="w-full md:w-1/3 px-4">
-          <div className="bg-gray-100 rounded-lg shadow-md p-4 mb-4">
+          <div className="bg-gray-100 rounded-lg shadow-md p-4 mb-4 h-full flex flex-col">
             <h2 className="text-2xl font-bold mb-2">
-              <span className="border-b border-gray-500">Non Technical</span>
+              <span className="border-b border-gray-500">
+                Hobbies/Interests
+              </span>
             </h2>
             <ul className="list-none">
               <li className="mb-4">
-                <span className="rounded-md inline-block bg-white px-2 py-1">
-                  <strong>Hobbies</strong>
-                </span>
                 <span className="rounded-md inline-block bg-white px-2 py-1">
                   <strong>Sports</strong> -
                   <em> Swimming, football, union, league, cricket, tennis. </em>
@@ -92,17 +115,6 @@ const About = () => {
           </div>
         </div>
       </div>
-
-      {/* <div className="text-2xl text-center ml-3 grid grid-cols-7 space-y-0 md:text-3xl">
-        <FaReact />
-        <FaNode />
-        <FaHtml5 />
-        <FaCss3 />
-        <FaJs />
-        <FaGithub />
-        <FaGit />
-      </div> */}
-
       <Footer />
     </div>
   );
