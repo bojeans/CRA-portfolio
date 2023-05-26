@@ -38,8 +38,8 @@ const About = () => {
                     workplace experience. Especially from the aspect of working
                     as an agile team, getting more familiar with things like
                     Jira and reading/creating internal documentation, debugging
-                    code. Plus also some new things such as: react testing
-                    library, auth0, Okta & terraform
+                    code. Plus also some new things such as: auth0, AWS, Okta &
+                    terraform.
                   </em>
                 </span>
               </li>
