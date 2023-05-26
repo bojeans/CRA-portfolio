@@ -17,22 +17,42 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row items-center justify-between h-16">
           <ul className="flex flex-col md:flex-row md:space-x-4">
             <li className="mb-3 hover:bg-gray-400 px-2 py-1 rounded-md">
-              <a href={cv} target="_blank" rel="noreferrer">
+              <a
+                href={cv}
+                aria-label="Read more about me in my Resume, also know as CV"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FaRegUser />
               </a>
             </li>
             <li className="mb-3 hover:bg-gray-400 px-2 py-1 rounded-md text-blue-800">
-              <a href={linkedin} target="_blank" rel="noreferrer">
+              <a
+                href={linkedin}
+                aria-label="Read more about me on my linkedin profile page"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FaLinkedin />
               </a>
             </li>
             <li className="mb-3 hover:bg-gray-400 px-2 py-1 rounded-md">
-              <a href={github} target="_blank" rel="noreferrer">
+              <a
+                href={github}
+                aria-label="Learn more about me on my github page"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FaGithub />
               </a>
             </li>
             <li className="mb-3 hover:bg-gray-400 px-2 py-1 rounded-md text-blue-800">
-              <a href={facebook} target="_blank" rel="noreferrer">
+              <a
+                href={facebook}
+                aria-label="Learn more about me on my facebook page"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FaFacebookF />
               </a>
             </li>
