@@ -17,9 +17,7 @@ const Projects = () => {
                 Planning pipeline
               </span>
             </h2>
-            <p>
-              <strong>Budgetting App</strong>
-            </p>
+            <p>Budgetting App</p>
           </div>
         </div>
         <div className="w-full md:w-1/3 px-4">
