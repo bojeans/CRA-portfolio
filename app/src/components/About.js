@@ -48,12 +48,47 @@ const About = () => {
         </div>
         <div className="w-full md:w-1/3 px-4">
           <div className="bg-gray-100 rounded-lg shadow-md p-4 mb-4">
-            <h2 className="text-lg font-bold mb-2">
+            <h2 className="text-2xl font-bold mb-2">
               <span className="border-b border-gray-500">Non Technical</span>
             </h2>
-            <p>
-              <strong>#</strong>
-            </p>
+            <ul className="list-none">
+              <li className="mb-4">
+                <span className="rounded-md inline-block bg-white px-2 py-1">
+                  <strong>Hobbies</strong>
+                </span>
+                <span className="rounded-md inline-block bg-white px-2 py-1">
+                  <strong>Sports</strong> -
+                  <em> Swimming, football, union, league, cricket, tennis. </em>
+                  Mostly just a spectator these days. As a teenager I swam
+                  competitively and made it to nationals, before retiring to
+                  focus on University.
+                </span>
+              </li>
+              <li className="mb-4">
+                <span className="rounded-md inline-block bg-white px-2 py-1">
+                  <strong>Travel</strong> -
+                  <em>
+                    {" "}
+                    Probably my biggest passion nowadays, 30+ countries.
+                    Definitely an addiction once you get started. Apparently I
+                    have an Adventurer personality type so probably explains it
+                    a little.
+                  </em>
+                </span>
+              </li>
+              <li className="mb-4">
+                <span className="rounded-md inline-block bg-white px-2 py-1">
+                  <strong>Computers</strong> -
+                  <em>
+                    {" "}
+                    I have always had an interest in computers, starting from
+                    gaming in the 90s on good old dos. Never really thought
+                    about computer science much as a career until later in life
+                    though.
+                  </em>
+                </span>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
