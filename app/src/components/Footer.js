@@ -14,8 +14,8 @@ const Footer = () => {
           <p>Chris Anderson</p>
           <p>Web Developer 2020 - present date </p>
         </div>
-        <div className="flex flex-col md:flex-row items-center justify-between h-16">
-          <ul className="flex flex-col md:flex-row md:space-x-4">
+        <div className="flex flex-row items-center justify-between h-16">
+          <ul className="flex flex-row md:space-x-4">
             <li className="mb-3 hover:bg-gray-400 px-2 py-1 rounded-md">
               <a
                 href={cv}
