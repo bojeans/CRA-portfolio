@@ -17,7 +17,7 @@ const Projects = () => {
                   Planning pipeline
                 </span>
               </h2>
-              <p>Budgetting App.</p>
+              <p>Budgetting App - no repo yet.</p>
               <p>
                 <a
                   href="https://github.com/bojeans/PERN-travel-blog"
@@ -29,7 +29,7 @@ const Projects = () => {
                 </a>
                 - React with Vite, supabase
               </p>
-              <p>
+              <p className="mt-3">
                 Planning to get across some more using chatGPT tutorials. Would
                 also like to checkout Python a bit more and developments on the
                 AI/machine learning space - if anyone has any
