@@ -74,6 +74,17 @@ const Projects = () => {
                 </a>
                 - CRA with tailwindCSS
               </p>
+              <p>
+                <a
+                  href="https://relaxed-choux-9389d7.netlify.app/"
+                  className="text-blue-800"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <strong>Ecommerce Shop</strong>
+                </a>
+                - ReactJS with Typescript. Pagination. CSS grid.
+              </p>
             </div>
           </div>
         </div>
