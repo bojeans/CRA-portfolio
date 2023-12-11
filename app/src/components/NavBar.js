@@ -8,63 +8,75 @@ const github = process.env.REACT_APP_GITHUB_ENDPOINT;
 const facebook = process.env.REACT_APP_FACEBOOK_ENDPOINT;
 const linkedin = process.env.REACT_APP_LINKEDIN_ENDPOINT;
 
-console.log(github);
-
-const Socials = () => {
+const SocialIcon = ({ icon, href }) => {
   return (
-    <div className="flex flex-row items-center justify-between h-16">
-      <ul className="flex flex-row md:space-x-4 text-white">
-        <li className="mb-3 hover:bg-gray-400 px-2 py-1 rounded-md">
-          <a
-            href={cv}
-            aria-label="Read more about me in my Resume, also know as CV"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FaRegUser />
-          </a>
-        </li>
-        <li className="mb-3 hover:bg-gray-400 px-2 py-1 rounded-md ">
-          <a
-            href={linkedin}
-            aria-label="Read more about me on my linkedin profile page"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FaLinkedin />
-          </a>
-        </li>
-        <li className="mb-3 hover:bg-gray-400 px-2 py-1 rounded-md">
-          <a
-            href={github}
-            aria-label="Learn more about me on my github page"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FaGithub />
-          </a>
-        </li>
-        <li className="mb-3 hover:bg-gray-400 px-2 py-1 rounded-md">
-          <a
-            href={facebook}
-            aria-label="Learn more about me on my facebook page"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FaFacebookF />
-          </a>
-        </li>
-      </ul>
-    </div>
+    <li className="mr-2 hover:bg-gray-700">
+      <a
+        href={href}
+        target="_blank"
+        rel="noreferrer"
+        className="hover:text-white"
+      >
+        {icon}
+      </a>
+    </li>
   );
 };
 
+// const Socials = (props) => {
+//   return (
+//     <div className="flex flex-row items-center justify-between h-16">
+//       <ul className="flex flex-row md:space-x-4 text-white">
+//         <li className="mb-3 hover:bg-gray-400 px-2 py-1 rounded-md">
+//           <a
+//             href={cv}
+//             aria-label="Read more about me in my Resume, also know as CV"
+//             target="_blank"
+//             rel="noreferrer"
+//           >
+//             <FaRegUser />
+//           </a>
+//         </li>
+//         <li className="mb-3 hover:bg-gray-400 px-2 py-1 rounded-md ">
+//           <a
+//             href={linkedin}
+//             aria-label="Read more about me on my linkedin profile page"
+//             target="_blank"
+//             rel="noreferrer"
+//           >
+//             <FaLinkedin />
+//           </a>
+//         </li>
+//         <li className="mb-3 hover:bg-gray-400 px-2 py-1 rounded-md">
+//           <a
+//             href={github}
+//             aria-label="Learn more about me on my github page"
+//             target="_blank"
+//             rel="noreferrer"
+//           >
+//             <FaGithub props={props} />
+//           </a>
+//         </li>
+//         <li className="mb-3 hover:bg-gray-400 px-2 py-1 rounded-md">
+//           <a
+//             href={facebook}
+//             aria-label="Learn more about me on my facebook page"
+//             target="_blank"
+//             rel="noreferrer"
+//           >
+//             <FaFacebookF />
+//           </a>
+//         </li>
+//       </ul>
+//     </div>
+//   );
+// };
+
 const NavBar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
-  const NavItem = (props) => {
-    const { label, to, onClick } = props;
+  const NavItem = ({ label, to, onClick }) => {
     return (
-      <li className="mr-6 my-2 lg:my-0">
+      <li className="mr-6 my-2 lg:my-0 justify-right">
         <Link
           to={to}
           spy={"true"}
@@ -87,40 +99,29 @@ const NavBar = () => {
     <nav className="bg-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <div className="flex items-center">
-            <Link
-              to="/"
-              className="text-gray-50 text-2xl hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md font-medium"
-            >
-              My Portfolio
-            </Link>
+          <Link
+            to="/"
+            className="text-gray-50 text-2xl hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md font-medium"
+          >
+            My Portfolio
+          </Link>
+
+          <div className="hidden md:flex items-center justify-evenly flex-grow">
+            <ul className="flex ">
+              <NavItem to="/" label="home" />
+              <NavItem to="/about" label="about" />
+              <NavItem to="/projects" label="projects" />
+              <NavItem to="/contact" label="contact" />
+            </ul>
+
+            <ul className="flex text-white">
+              <SocialIcon icon={<FaRegUser />} href={cv} />
+              <SocialIcon icon={<FaLinkedin />} href={linkedin} />
+              <SocialIcon icon={<FaGithub />} href={github} />
+              <SocialIcon icon={<FaFacebookF />} href={facebook} />
+            </ul>
           </div>
-          <div className="hidden md:block">
-            <div className="text-sm lg:flex-grow">
-              <ul className="hidden md:flex">
-                <NavItem to="/" label="home" />
 
-                <NavItem
-                  to="/about"
-                  label="about"
-                  className="mx-4 hover:text-charcoal transition duration-300"
-                />
-
-                <NavItem
-                  to="/projects"
-                  label="projects"
-                  className="mx-4 hover:text-charcoal transition duration-300"
-                />
-
-                <NavItem
-                  to="/contact"
-                  label="contact"
-                  className="mx-4 hover:text-charcoal transition duration-300"
-                />
-              </ul>
-            </div>
-          </div>
-          <Socials />
           <div className="-mr-2 flex md:hidden">
             <button
               type="button"
