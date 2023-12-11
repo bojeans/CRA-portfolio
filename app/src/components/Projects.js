@@ -29,17 +29,6 @@ const Projects = () => {
                 </a>
                 - React with Vite, supabase
               </p>
-              <p>
-                <a
-                  href="https://github.com/bojeans/rps"
-                  className="text-blue-800"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <strong>Rock, Paper, Scissors</strong>
-                </a>
-                - javascript DOM refresher, basic CSS3 styling.
-              </p>
             </div>
           </div>
           <div className="w-full md:w-1/3 px-4">
@@ -49,6 +38,17 @@ const Projects = () => {
               </h2>
               <p>
                 <a
+                  href="https://github.com/bojeans/chatbot"
+                  className="text-blue-800"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <strong>Basic Chatbot</strong>
+                </a>
+                - ReactJS
+              </p>
+              <p>
+                <a
                   href="https://github.com/bojeans/budgetting-app"
                   className="text-blue-800"
                   target="_blank"
@@ -56,7 +56,7 @@ const Projects = () => {
                 >
                   <strong>Budgetting App</strong>{" "}
                 </a>
-                - Fullstack Application
+                - Fullstack Application MERN stack
               </p>
             </div>
           </div>
