@@ -1,5 +1,63 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { FaGithub, FaFacebookF, FaLinkedin, FaRegUser } from "react-icons/fa";
+import cv from "../assets/cv.pdf";
+
+// social link global variables
+const github = process.env.REACT_APP_GITHUB_ENDPOINT;
+const facebook = process.env.REACT_APP_FACEBOOK_ENDPOINT;
+const linkedin = process.env.REACT_APP_LINKEDIN_ENDPOINT;
+
+console.log(github);
+
+const Socials = () => {
+  return (
+    <div className="flex flex-row items-center justify-between h-16">
+      <ul className="flex flex-row md:space-x-4 text-white">
+        <li className="mb-3 hover:bg-gray-400 px-2 py-1 rounded-md">
+          <a
+            href={cv}
+            aria-label="Read more about me in my Resume, also know as CV"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FaRegUser />
+          </a>
+        </li>
+        <li className="mb-3 hover:bg-gray-400 px-2 py-1 rounded-md ">
+          <a
+            href={linkedin}
+            aria-label="Read more about me on my linkedin profile page"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FaLinkedin />
+          </a>
+        </li>
+        <li className="mb-3 hover:bg-gray-400 px-2 py-1 rounded-md">
+          <a
+            href={github}
+            aria-label="Learn more about me on my github page"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FaGithub />
+          </a>
+        </li>
+        <li className="mb-3 hover:bg-gray-400 px-2 py-1 rounded-md">
+          <a
+            href={facebook}
+            aria-label="Learn more about me on my facebook page"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FaFacebookF />
+          </a>
+        </li>
+      </ul>
+    </div>
+  );
+};
 
 const NavBar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -62,6 +120,7 @@ const NavBar = () => {
               </ul>
             </div>
           </div>
+          <Socials />
           <div className="-mr-2 flex md:hidden">
             <button
               type="button"
