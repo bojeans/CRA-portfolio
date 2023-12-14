@@ -23,55 +23,6 @@ const SocialIcon = ({ icon, href }) => {
   );
 };
 
-// const Socials = (props) => {
-//   return (
-//     <div className="flex flex-row items-center justify-between h-16">
-//       <ul className="flex flex-row md:space-x-4 text-white">
-//         <li className="mb-3 hover:bg-gray-400 px-2 py-1 rounded-md">
-//           <a
-//             href={cv}
-//             aria-label="Read more about me in my Resume, also know as CV"
-//             target="_blank"
-//             rel="noreferrer"
-//           >
-//             <FaRegUser />
-//           </a>
-//         </li>
-//         <li className="mb-3 hover:bg-gray-400 px-2 py-1 rounded-md ">
-//           <a
-//             href={linkedin}
-//             aria-label="Read more about me on my linkedin profile page"
-//             target="_blank"
-//             rel="noreferrer"
-//           >
-//             <FaLinkedin />
-//           </a>
-//         </li>
-//         <li className="mb-3 hover:bg-gray-400 px-2 py-1 rounded-md">
-//           <a
-//             href={github}
-//             aria-label="Learn more about me on my github page"
-//             target="_blank"
-//             rel="noreferrer"
-//           >
-//             <FaGithub props={props} />
-//           </a>
-//         </li>
-//         <li className="mb-3 hover:bg-gray-400 px-2 py-1 rounded-md">
-//           <a
-//             href={facebook}
-//             aria-label="Learn more about me on my facebook page"
-//             target="_blank"
-//             rel="noreferrer"
-//           >
-//             <FaFacebookF />
-//           </a>
-//         </li>
-//       </ul>
-//     </div>
-//   );
-// };
-
 const NavBar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
   const NavItem = ({ label, to, onClick }) => {
@@ -111,7 +62,6 @@ const NavBar = () => {
               <NavItem to="/" label="home" />
               <NavItem to="/about" label="about" />
               <NavItem to="/projects" label="projects" />
-              <NavItem to="/contact" label="contact" />
             </ul>
 
             <ul className="flex text-white">
@@ -185,12 +135,6 @@ const NavBar = () => {
             className="text-gray-50 hover:bg-gray-100 hover:text-black items-center justify-center flex px-3 py-2 rounded-md text-base font-medium"
           >
             Projects
-          </Link>
-          <Link
-            to="/contact"
-            className="text-gray-50 hover:bg-gray-100 hover:text-black items-center justify-center flex px-3 py-2 rounded-md text-base font-medium"
-          >
-            Contact
           </Link>
         </div>
       </div>
