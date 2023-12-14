@@ -46,7 +46,7 @@ const Contact = () => {
       <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-md w-full space-y-8">
           <div>
-            <h2 className="mt-6 text-center text-2xl font-bold text-gray-900">
+            <h2 className="text-center text-2xl font-bold text-gray-900">
               If you want to get in touch regarding potential contract work
               and/or collaborating on a coding project, feel free to drop me an
               email using the contact form below.
