@@ -22,9 +22,9 @@ const About = () => {
                   </span>
                   <span className="rounded-md inline-block bg-white px-2 py-1">
                     <em>
-                      HTML, CSS flexbox & grid, Javascript, React, Node,
-                      Git/Github, Jest testing, mongoDB, postgres, REST API,
-                      JWT, openAPI, docker, Agile DevOps
+                      HTML5, CSS3, Javascript, React, Node, Git/Github, Jest
+                      testing, mongoDB, postgres, REST API, JWT, openAPI,
+                      docker, Agile DevOps
                     </em>
                   </span>
                 </li>

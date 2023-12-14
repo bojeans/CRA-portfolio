@@ -29,6 +29,9 @@ const Projects = () => {
                 </a>
                 - React with Vite, supabase
               </p>
+              <p>
+                <strong>Fullstack SQL App</strong> - PostgresSQL
+              </p>
             </div>
           </div>
           <div className="w-full md:w-1/3 px-4">
