@@ -1,3 +1,4 @@
+import SocialLinks from "./SocialLinks";
 const Footer = () => {
   return (
     <footer className="flex flex-col items-center justify-end py-4">
@@ -7,6 +8,7 @@ const Footer = () => {
           <p>React Node.js FullStack Developer 2020 - present date </p>
         </div>
       </div>
+      <SocialLinks />
     </footer>
   );
 };

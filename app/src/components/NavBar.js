@@ -23,6 +23,19 @@ const SocialIcon = ({ icon, href }) => {
   );
 };
 
+const MobileLink = ({ to, label }) => {
+  return (
+    <div className="w-full flex justify-center">
+      <Link
+        to={to}
+        className="hover:w-1/3 text-gray-50 hover:bg-gray-100 hover:text-black hover:text-2xl hover:font-bold text-center px-3 py-2 rounded-md text-base font-medium"
+      >
+        {label}
+      </Link>
+    </div>
+  );
+};
+
 const NavBar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
   const NavItem = ({ label, to, onClick }) => {
@@ -117,30 +130,9 @@ const NavBar = () => {
         className={`${isNavOpen ? "block" : "hidden"} md:hidden`}
         id="mobile-menu"
       >
-        <div className="w-full flex justify-center">
-          <Link
-            to="/"
-            className="hover:w-1/3 text-gray-50 hover:bg-gray-100 hover:text-black hover:text-2xl hover:font-bold text-center px-3 py-2 rounded-md text-base font-medium"
-          >
-            Home
-          </Link>
-        </div>
-        <div className="w-full flex justify-center">
-          <Link
-            to="/about"
-            className="hover:w-1/3 text-gray-50 hover:bg-gray-100 hover:text-black hover:text-2xl hover:font-bold text-center px-3 py-2 rounded-md text-base font-medium"
-          >
-            About
-          </Link>
-        </div>
-        <div className="w-full flex justify-center">
-          <Link
-            to="/projects"
-            className="hover:w-1/3 text-gray-50 hover:bg-gray-100 hover:text-black hover:text-2xl hover:font-bold text-center px-3 py-2 rounded-md text-base font-medium"
-          >
-            Projects
-          </Link>
-        </div>
+        <MobileLink to="/" label="Home" />
+        <MobileLink to="/about" label="About" />
+        <MobileLink to="/projects" label="Projects" />
       </div>
     </nav>
   );
