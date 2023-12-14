@@ -10,12 +10,12 @@ const linkedin = process.env.REACT_APP_LINKEDIN_ENDPOINT;
 
 const SocialIcon = ({ icon, href }) => {
   return (
-    <li className="mr-2 hover:bg-gray-700">
+    <li className="mr-2 hover:bg-gray-100 hover:text-2xl">
       <a
         href={href}
         target="_blank"
         rel="noreferrer"
-        className="hover:text-white"
+        className="hover:text-blue-800"
       >
         {icon}
       </a>
@@ -33,7 +33,7 @@ const NavBar = () => {
           spy={"true"}
           smooth={"true"}
           duration={500}
-          className="text-gray-50 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium md:text-lg"
+          className="text-gray-50 hover:bg-gray-100 hover:text-black hover:font-bold hover:text-2xl px-3 py-2 rounded-md text-sm font-medium md:text-lg"
           onClick={onClick}
         >
           {label}
@@ -52,16 +52,16 @@ const NavBar = () => {
         <div className="flex items-center justify-between h-16">
           <Link
             to="/"
-            className="text-gray-50 text-2xl hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md font-medium"
+            className="inline-block max-w-max text-gray-50 text-2xl hover:bg-gray-100 hover:text-black hover:font-bold hover:text-2xl px-3 py-2 rounded-md font-medium"
           >
             My Portfolio
           </Link>
 
           <div className="hidden md:flex items-center justify-evenly flex-grow">
             <ul className="flex ">
-              <NavItem to="/" label="home" />
-              <NavItem to="/about" label="about" />
-              <NavItem to="/projects" label="projects" />
+              <NavItem to="/" label="Home" />
+              <NavItem to="/about" label="About" />
+              <NavItem to="/projects" label="Projects" />
             </ul>
 
             <ul className="flex text-white">
@@ -75,7 +75,7 @@ const NavBar = () => {
           <div className="-mr-2 flex md:hidden">
             <button
               type="button"
-              className="bg-gray-800 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+              className="bg-gray-800 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-800 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
               aria-controls="mobile-menu"
               aria-expanded="false"
               onClick={toggleMenu}
@@ -117,22 +117,26 @@ const NavBar = () => {
         className={`${isNavOpen ? "block" : "hidden"} md:hidden`}
         id="mobile-menu"
       >
-        <div className="text-gray-50 px-2 pt-2 pb-3 space-y-1 sm:px-3 ">
+        <div className="w-full flex justify-center">
           <Link
             to="/"
-            className="text-gray-50 hover:bg-gray-100 hover:text-black items-center justify-center flex px-3 py-2 rounded-md text-base font-medium"
+            className="hover:w-1/3 text-gray-50 hover:bg-gray-100 hover:text-black hover:text-2xl hover:font-bold text-center px-3 py-2 rounded-md text-base font-medium"
           >
             Home
           </Link>
+        </div>
+        <div className="w-full flex justify-center">
           <Link
             to="/about"
-            className="text-gray-50 hover:bg-gray-100 hover:text-black items-center justify-center flex px-3 py-2 rounded-md text-base font-medium"
+            className="hover:w-1/3 text-gray-50 hover:bg-gray-100 hover:text-black hover:text-2xl hover:font-bold text-center px-3 py-2 rounded-md text-base font-medium"
           >
             About
           </Link>
+        </div>
+        <div className="w-full flex justify-center">
           <Link
             to="/projects"
-            className="text-gray-50 hover:bg-gray-100 hover:text-black items-center justify-center flex px-3 py-2 rounded-md text-base font-medium"
+            className="hover:w-1/3 text-gray-50 hover:bg-gray-100 hover:text-black hover:text-2xl hover:font-bold text-center px-3 py-2 rounded-md text-base font-medium"
           >
             Projects
           </Link>

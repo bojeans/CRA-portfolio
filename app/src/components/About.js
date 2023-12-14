@@ -55,15 +55,8 @@ const About = () => {
                   </span>
                   <span className="rounded-md inline-block bg-white px-2 py-1">
                     <em>
-                      NZ Diploma in Web Development and Design –{" "}
-                      <a
-                        href="https://www.developers.ac.nz/"
-                        className="text-blue-800"
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        Developers Institute NZ
-                      </a>
+                      NZ Diploma in Web Development and Design – Developers
+                      Institute NZ
                     </em>
                   </span>
                 </li>
