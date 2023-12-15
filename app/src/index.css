@@ -6,3 +6,34 @@
  background: #000;
     color: #fff;
 }
+
+.dark-mode .about-page {
+   
+    color: blue;
+    background: #191919;
+  }
+
+  .dark-mode .about-page ul {
+  
+    color: rgb(0, 225, 255);
+    background: black;
+  }
+
+  
+  .dark-mode .projects-page {
+   
+    color: rgb(0, 225, 255);
+    background: black;
+}
+
+.dark-mode .projects-page h2 {
+    color: white;
+}
+
+.dark-mode .projects-page .hyperlinks {
+   
+    color: yellow;
+    
+}
+
+
