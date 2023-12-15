@@ -1,3 +1,43 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.dark-mode {
+ background: #000;
+    color: #fff;
+}
+
+.dark-mode .about-page {
+   
+    color: blue;
+    background: black;
+  }
+
+  .dark-mode .about-page ul {
+  
+    color: rgb(0, 225, 255);
+    background: black;
+  }
+
+  
+  .dark-mode .projects-page {
+   
+    color: rgb(0, 225, 255);
+    background: black;
+}
+
+.dark-mode .projects-page h2 {
+    color: white;
+}
+
+.dark-mode .projects-page .hyperlinks {
+   
+    color: yellow;
+    
+}
+
+.dark-mode .socials {
+    color: blue;
+}
+
+

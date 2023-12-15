@@ -5,22 +5,23 @@ const About = () => {
   return (
     <>
       <NavBar />
+
       <h1 className="text-4xl font-bold text-center mt-6 mb-4 md:text-6xl">
         About Me
       </h1>
-      <div className="container mx-auto">
+      <div className="container mx-auto about-page">
         <div className="flex flex-wrap justify-center">
-          <div className="w-full md:w-1/3 px-4">
+          <div className="w-full md:w-1/3 px-4 ">
             <div className="bg-gray-100 rounded-lg shadow-md p-4 mb-4 h-full flex flex-col">
               <h2 className="text-2xl font-bold mb-2">
                 <span className="border-b border-gray-500">Technical</span>
               </h2>
               <ul className="list-none ">
                 <li className="mb-4">
-                  <span className="rounded-md inline-block bg-white px-2 py-1">
+                  <span className="rounded-md inline-block px-2 py-1">
                     <strong>Studying 2020-2021</strong>
                   </span>
-                  <span className="rounded-md inline-block bg-white px-2 py-1">
+                  <span className="rounded-md inline-block px-2 py-1">
                     <em>
                       HTML5, CSS3, Javascript, React, Node, Git/Github, Jest
                       testing, mongoDB, postgres, REST API, JWT, openAPI,
@@ -29,10 +30,10 @@ const About = () => {
                   </span>
                 </li>
                 <li className="mb-2">
-                  <span className="rounded-md bg-white inline-block px-2 py-1">
+                  <span className="rounded-md inline-block px-2 py-1">
                     <strong>Work Experience 2021-2023</strong>
                   </span>
-                  <span className="rounded-md inline-block bg-white px-2 py-1">
+                  <span className="rounded-md inline-block px-2 py-1">
                     <em>
                       Essentially putting the above into practice and getting
                       some workplace experience. Especially from the aspect of
@@ -44,16 +45,16 @@ const About = () => {
                   </span>
                 </li>
                 <li className="mb-4">
-                  <span className="rounded-md inline-block bg-white px-2 py-1">
+                  <span className="rounded-md inline-block px-2 py-1">
                     <strong>Education</strong>
                   </span>
-                  <span className="rounded-md inline-block bg-white px-2 py-1">
+                  <span className="rounded-md inline-block  px-2 py-1">
                     <em>
                       Bachelor of Management Studies - University of Waikato.
                       Majoring in Information Systems & Strategic Management.
                     </em>
                   </span>
-                  <span className="rounded-md inline-block bg-white px-2 py-1">
+                  <span className="rounded-md inline-block px-2 py-1">
                     <em>
                       NZ Diploma in Web Development and Design – Developers
                       Institute NZ
@@ -72,7 +73,7 @@ const About = () => {
               </h2>
               <ul className="list-none">
                 <li className="mb-4">
-                  <span className="rounded-md inline-block bg-white px-2 py-1">
+                  <span className="rounded-md inline-block px-2 py-1">
                     <strong>Sports</strong> -
                     <em>
                       {" "}
@@ -84,7 +85,7 @@ const About = () => {
                   </span>
                 </li>
                 <li className="mb-4">
-                  <span className="rounded-md inline-block bg-white px-2 py-1">
+                  <span className="rounded-md inline-block px-2 py-1">
                     <strong>Travel</strong> -
                     <em>
                       {" "}
@@ -96,7 +97,7 @@ const About = () => {
                   </span>
                 </li>
                 <li className="mb-4">
-                  <span className="rounded-md inline-block bg-white px-2 py-1">
+                  <span className="rounded-md inline-block px-2 py-1">
                     <strong>Computers</strong> -
                     <em>
                       {" "}
