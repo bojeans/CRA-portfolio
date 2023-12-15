@@ -27,7 +27,7 @@ const SocialIcon = ({ icon, href }) => {
 
 const SocialLinks = () => {
   return (
-    <ul className="flex text-white">
+    <ul className="flex text-black">
       {socialLinks.map((link, index) => (
         <SocialIcon key={index} icon={link.icon} href={link.href} />
       ))}

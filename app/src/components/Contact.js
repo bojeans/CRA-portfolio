@@ -47,9 +47,9 @@ const Contact = () => {
         <div className="max-w-md w-full space-y-8">
           <div>
             <h2 className="text-center text-2xl font-bold text-gray-900">
-              If you want to get in touch regarding potential contract work
-              and/or collaborating on a coding project, feel free to drop me an
-              email using the contact form below.
+              I'm potentially open contract work and/or collaborating on a
+              coding project, feel free to drop me an email using the contact
+              form below.
             </h2>
           </div>
           <form

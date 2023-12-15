@@ -1,27 +1,5 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { FaGithub, FaFacebookF, FaLinkedin, FaRegUser } from "react-icons/fa";
-import cv from "../assets/cv.pdf";
-
-// social link global variables
-const github = process.env.REACT_APP_GITHUB_ENDPOINT;
-const facebook = process.env.REACT_APP_FACEBOOK_ENDPOINT;
-const linkedin = process.env.REACT_APP_LINKEDIN_ENDPOINT;
-
-const SocialIcon = ({ icon, href }) => {
-  return (
-    <li className="mr-2 hover:bg-gray-100 hover:text-2xl">
-      <a
-        href={href}
-        target="_blank"
-        rel="noreferrer"
-        className="hover:text-blue-800"
-      >
-        {icon}
-      </a>
-    </li>
-  );
-};
 
 const MobileLink = ({ to, label }) => {
   return (
@@ -75,13 +53,6 @@ const NavBar = () => {
               <NavItem to="/" label="Home" />
               <NavItem to="/about" label="About" />
               <NavItem to="/projects" label="Projects" />
-            </ul>
-
-            <ul className="flex text-white">
-              <SocialIcon icon={<FaRegUser />} href={cv} />
-              <SocialIcon icon={<FaLinkedin />} href={linkedin} />
-              <SocialIcon icon={<FaGithub />} href={github} />
-              <SocialIcon icon={<FaFacebookF />} href={facebook} />
             </ul>
           </div>
 

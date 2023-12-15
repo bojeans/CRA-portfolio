@@ -10,8 +10,8 @@ const LandingPage = () => {
       <div className="flex flex-col items-center space-y-12">
         <Image />
         <Contact />
+        <Footer />
       </div>
-      <Footer />
     </>
   );
 };
