@@ -12,7 +12,7 @@ const socialLinks = [
 
 const SocialIcon = ({ icon, href }) => {
   return (
-    <li className="mr-2 hover:bg-gray-100 hover:text-2xl">
+    <li className="socials mr-2 hover:bg-gray-100 hover:text-2xl">
       <a
         href={href}
         target="_blank"

@@ -31,7 +31,8 @@ const Projects = () => {
                 - React with Vite, supabase
               </p>
               <p>
-                <strong>Fullstack SQL App</strong> - PostgresSQL
+                <strong className="hyperlinks">Fullstack SQL App</strong> -
+                PostgresSQL (no repo yet)
               </p>
             </div>
           </div>

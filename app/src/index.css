@@ -10,7 +10,7 @@
 .dark-mode .about-page {
    
     color: blue;
-    background: #191919;
+    background: black;
   }
 
   .dark-mode .about-page ul {
@@ -34,6 +34,10 @@
    
     color: yellow;
     
+}
+
+.dark-mode .socials {
+    color: blue;
 }
 
 
