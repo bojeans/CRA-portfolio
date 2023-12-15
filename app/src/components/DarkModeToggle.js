@@ -9,12 +9,8 @@ const DarkModeToggle = () => {
   useEffect(() => {
     if (darkMode) {
       document.body.classList.add("dark-mode");
-      // document.body.classList.add("dark-mode-about");
-      // document.body.classList.add("dark-mode-projects");
     } else {
       document.body.classList.remove("dark-mode");
-      // document.body.classList.add("dark-mode-about");
-      // document.body.classList.add("dark-mode-projects");
     }
   }, [darkMode]);
 
@@ -27,7 +23,7 @@ const DarkModeToggle = () => {
         {darkMode ? (
           <IoSunnyOutline className="text-4xl dark:text-yellow-300" />
         ) : (
-          <MdOutlineDarkMode className="text-4xl" />
+          <MdOutlineDarkMode className="text-4xl text-gray-300" />
         )}
       </button>
     </div>

@@ -27,9 +27,9 @@ const Contact = () => {
     <div className="flex flex-col items-center justify-center bg-gray-100 py-12 px-4 sm:px-6 lg:px-8">
       <span className="max-w-md w-full space-y-8">
         <h2 className="text-center text-2xl font-bold text-gray-900">
-          If you want to get in touch regarding potential contract work and/or
-          collaborating on a coding project, feel free to drop me an email using
-          the contact form below.
+          I am open to contractor dev work and/or collaborating on a coding
+          project, Either drop me a message below or get in touch via my social
+          media links below.
         </h2>
       </span>
       <form ref={formRef} onSubmit={handleSubmit} className="w-full max-w-lg">
@@ -48,7 +48,7 @@ const Contact = () => {
         <div className="flex flex-wrap -mx-3 mb-6">
           <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
             <label
-              className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+              className="block uppercase tracking-wide text-gray-700 text-xs font-bold mt-4 mb-2"
               htmlFor="email"
             >
               Email Address
