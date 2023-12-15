@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import DarkModeToggle from "./DarkModeToggle";
 
 const MobileLink = ({ to, label }) => {
   return (
@@ -47,6 +48,7 @@ const NavBar = () => {
           >
             My Portfolio
           </Link>
+          <DarkModeToggle />
 
           <div className="hidden md:flex items-center justify-evenly flex-grow">
             <ul className="flex ">

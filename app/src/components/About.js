@@ -1,15 +1,11 @@
 import NavBar from "./NavBar";
 import Footer from "./Footer";
-import DarkModeToggle from "./DarkModeToggle";
-import { DarkModeProvider } from "./DarkModeContext";
 
 const About = () => {
   return (
-    <DarkModeProvider>
+    <>
       <NavBar />
-      <div className="flex-none mb-3">
-        <DarkModeToggle />
-      </div>
+
       <h1 className="text-4xl font-bold text-center mt-6 mb-4 md:text-6xl">
         About Me
       </h1>
@@ -118,7 +114,7 @@ const About = () => {
         </div>
         <Footer />
       </div>
-    </DarkModeProvider>
+    </>
   );
 };
 
