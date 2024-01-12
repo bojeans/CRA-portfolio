@@ -102,7 +102,7 @@ const WorkExperience = () => {
           <WorkExperienceCard
             company="BerryBest Ltd"
             position="Production Manager (and briefly, Interim Manager)"
-            date="June 2018 - December 2019"
+            date="Late 2013 - Early 2016"
             description="This position involved me coordinating and setting up multiple mobile shop locations to sell fruit and vegetables to customers on the side of the road. I had to organise distribution channels and constantly network to deem which wholesale suppliers/local growers best tended to the strategic needs of Berry Best Ltd. I also had to run advertising campaigns, manage employees, analyse profit/loss patterns and other varying trends affecting overall turnover levels. For example; weather patterns, days of the week, etc. I was also tasked with overseeing the smooth running of the packhouse. This involved effectively liaising and getting along with my staff to meet time and cost constraints that had major implications on the business on a daily basis. Alongside a sales manager, I coordinated product outsourcing by depicting which distribution channels were more viable in a highly volatile environment on a day by day basis."
           />
         </div>
