@@ -3,6 +3,7 @@ import LandingPage from "./components/LandingPage";
 import About from "./components/About";
 import Projects from "./components/Projects";
 import WorkExperience from "./components/WorkExperience";
+import Contact from "./components/Contact";
 import { DarkModeProvider } from "./components/DarkModeContext";
 
 const App = () => {
@@ -14,6 +15,7 @@ const App = () => {
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/work-experience" element={<WorkExperience />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </Router>
     </DarkModeProvider>

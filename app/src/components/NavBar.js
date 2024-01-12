@@ -56,6 +56,7 @@ const NavBar = () => {
               <NavItem to="/about" label="About" />
               <NavItem to="/projects" label="Projects" />
               <NavItem to="/work-experience" label="Work Experience" />
+              <NavItem to="/contact" label="Contact" />
             </ul>
           </div>
 
@@ -108,6 +109,7 @@ const NavBar = () => {
         <MobileLink to="/about" label="About" />
         <MobileLink to="/projects" label="Projects" />
         <MobileLink to="/work-experience" label="Work Experience" />
+        <MobileLink to="/contact" label="Contact" />
       </div>
     </nav>
   );

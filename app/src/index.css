@@ -13,30 +13,24 @@
 
 /* ABOUT PAGE */
 .dark-mode .about-page {
-   
-    color: blue;
     background: black;
   }
 
-  .dark-mode .about-page ul {
-  
+.dark-mode .about-page ul {
     color: white;
     background: black;
   }
 
-  .dark-mode .about-page h2 {
-  
-    color: white;
-    
+.dark-mode .about-page h2 {
+    color: white;   
   }
 
-  .dark-mode .about-page .span-title {
+.dark-mode .about-page .span-title {
     color: blue;
   }
 
 /* PROJECT PAGE */
-  .dark-mode .projects-page {
-   
+.dark-mode .projects-page { 
     color: white;
     background: black;
 }
@@ -46,9 +40,7 @@
 }
 
 .dark-mode .projects-page .hyperlinks {
-   
     color: blue;
-    
 }
 
 .dark-mode .socials {
