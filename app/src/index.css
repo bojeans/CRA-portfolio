@@ -20,8 +20,18 @@
 
   .dark-mode .about-page ul {
   
-    color: rgb(0, 225, 255);
+    color: white;
     background: black;
+  }
+
+  .dark-mode .about-page h2 {
+  
+    color: white;
+    
+  }
+
+  .dark-mode .about-page .span-title {
+    color: blue;
   }
 
 /* PROJECT PAGE */
