@@ -47,4 +47,27 @@
     color: blue;
 }
 
+/* CONTACT PAGE */
 
+.dark-mode .contact-page { 
+    color: white;
+    background: black;
+}
+
+.dark-mode .contact-page h2 { 
+    color: white;
+}
+
+.dark-mode .contact-page label { 
+    color: blue;
+}
+
+.dark-mode .contact-page button { 
+    color: black;
+    background: white;
+}
+
+.dark-mode .contact-page button:hover {
+    background:blue;
+    color: white;
+}
