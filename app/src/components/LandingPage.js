@@ -1,7 +1,7 @@
 import Image from "./Image";
 import Footer from "./Footer";
 import NavBar from "./NavBar";
-import Contact from "./Contact";
+// import Contact from "./Contact";
 
 const LandingPage = () => {
   return (
@@ -10,7 +10,7 @@ const LandingPage = () => {
 
       <div className="flex flex-col items-center space-y-12">
         <Image />
-        <Contact />
+        {/* <Contact /> */}
         <Footer />
       </div>
     </>

@@ -7,22 +7,31 @@
     color: #fff;
 }
 
-.dark-mode .about-page {
-   
+.dark-mode h1 {
     color: blue;
+}
+
+/* ABOUT PAGE */
+.dark-mode .about-page {
     background: black;
   }
 
-  .dark-mode .about-page ul {
-  
-    color: rgb(0, 225, 255);
+.dark-mode .about-page ul {
+    color: white;
     background: black;
   }
 
-  
-  .dark-mode .projects-page {
-   
-    color: rgb(0, 225, 255);
+.dark-mode .about-page h2 {
+    color: white;   
+  }
+
+.dark-mode .about-page .span-title {
+    color: blue;
+  }
+
+/* PROJECT PAGE */
+.dark-mode .projects-page { 
+    color: white;
     background: black;
 }
 
@@ -31,13 +40,44 @@
 }
 
 .dark-mode .projects-page .hyperlinks {
-   
-    color: yellow;
-    
+    color: blue;
 }
 
 .dark-mode .socials {
     color: blue;
 }
 
+/* CONTACT PAGE */
 
+.dark-mode .contact-page { 
+    color: white;
+    background: black;
+}
+
+.dark-mode .contact-page h2 { 
+    color: white;
+}
+
+.dark-mode .contact-page label { 
+    color: blue;
+}
+
+.dark-mode .contact-page button { 
+    color: black;
+    background: white;
+}
+
+.dark-mode .contact-page button:hover {
+    background:blue;
+    color: white;
+}
+
+/* WORK EXPERIENCE PAGE */
+.dark-mode .workexperience-page { 
+    color: blue;
+    background: black;
+}
+
+.dark-mode .work_experience_details {
+    color: white;
+}

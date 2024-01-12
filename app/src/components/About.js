@@ -12,13 +12,13 @@ const About = () => {
       <div className="container mx-auto about-page">
         <div className="flex flex-wrap justify-center">
           <div className="w-full md:w-1/3 px-4 ">
-            <div className="bg-gray-100 rounded-lg shadow-md p-4 mb-4 h-full flex flex-col">
+            <div className="rounded-lg shadow-md p-4 mb-4 h-full flex flex-col">
               <h2 className="text-2xl font-bold mb-2">
                 <span className="border-b border-gray-500">Technical</span>
               </h2>
               <ul className="list-none ">
                 <li className="mb-4">
-                  <span className="rounded-md inline-block px-2 py-1">
+                  <span className="rounded-md inline-block px-2 py-1 span-title">
                     <strong>Studying 2020-2021</strong>
                   </span>
                   <span className="rounded-md inline-block px-2 py-1">
@@ -30,7 +30,7 @@ const About = () => {
                   </span>
                 </li>
                 <li className="mb-2">
-                  <span className="rounded-md inline-block px-2 py-1">
+                  <span className="rounded-md inline-block px-2 py-1 span-title">
                     <strong>Work Experience 2021-2023</strong>
                   </span>
                   <span className="rounded-md inline-block px-2 py-1">
@@ -45,7 +45,7 @@ const About = () => {
                   </span>
                 </li>
                 <li className="mb-4">
-                  <span className="rounded-md inline-block px-2 py-1">
+                  <span className="rounded-md inline-block px-2 py-1 span-title">
                     <strong>Education</strong>
                   </span>
                   <span className="rounded-md inline-block  px-2 py-1">
@@ -65,7 +65,7 @@ const About = () => {
             </div>
           </div>
           <div className="w-full md:w-1/3 px-4">
-            <div className="bg-gray-100 rounded-lg shadow-md p-4 mb-4 h-full flex flex-col">
+            <div className="rounded-lg shadow-md p-4 mb-4 h-full flex flex-col">
               <h2 className="text-2xl font-bold mb-2">
                 <span className="border-b border-gray-500">
                   Hobbies/Interests
@@ -74,7 +74,7 @@ const About = () => {
               <ul className="list-none">
                 <li className="mb-4">
                   <span className="rounded-md inline-block px-2 py-1">
-                    <strong>Sports</strong> -
+                    <strong className="span-title">Sports</strong> -
                     <em>
                       {" "}
                       Swimming, football, union, league, cricket, tennis.{" "}
@@ -86,7 +86,7 @@ const About = () => {
                 </li>
                 <li className="mb-4">
                   <span className="rounded-md inline-block px-2 py-1">
-                    <strong>Travel</strong> -
+                    <strong className="span-title">Travel</strong> -
                     <em>
                       {" "}
                       Probably my biggest passion nowadays, 30+ countries.
@@ -98,7 +98,7 @@ const About = () => {
                 </li>
                 <li className="mb-4">
                   <span className="rounded-md inline-block px-2 py-1">
-                    <strong>Computers</strong> -
+                    <strong className="span-title">Computers</strong> -
                     <em>
                       {" "}
                       I have always had an interest in computers, starting from

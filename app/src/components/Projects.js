@@ -11,7 +11,7 @@ const Projects = () => {
       </h1>
       <div className="container mx-auto projects-page">
         <div className="flex flex-wrap justify-center">
-          <div className="w-full md:w-1/3 px-4 ">
+          <div className="w-full md:w-1/4 px-4 ">
             <div className="rounded-lg shadow-md p-4 mb-4 h-full flex flex-col">
               <h2 className="text-lg font-bold mb-2">
                 <span className="border-b border-gray-500">
@@ -19,6 +19,19 @@ const Projects = () => {
                 </span>
               </h2>
 
+              <p>
+                <strong className="hyperlinks">
+                  Fitness Tracker App (no repo yet){" "}
+                </strong>{" "}
+                - NextJS, PostgresSQL, Vercel
+              </p>
+            </div>
+          </div>
+          <div className="w-full md:w-1/4 px-4">
+            <div className=" rounded-lg shadow-md p-4 mb-4 h-full flex flex-col">
+              <h2 className="text-lg font-bold mb-2">
+                <span className="border-b border-gray-500">Started</span>
+              </h2>
               <p>
                 <a
                   href="https://github.com/bojeans/PERN-travel-blog"
@@ -29,28 +42,6 @@ const Projects = () => {
                   <strong>Travel Blog</strong>{" "}
                 </a>
                 - React with Vite, supabase
-              </p>
-              <p>
-                <strong className="hyperlinks">Fullstack SQL App</strong> -
-                PostgresSQL (no repo yet)
-              </p>
-            </div>
-          </div>
-          <div className="w-full md:w-1/3 px-4">
-            <div className=" rounded-lg shadow-md p-4 mb-4 h-full flex flex-col">
-              <h2 className="text-lg font-bold mb-2">
-                <span className="border-b border-gray-500">In Progress</span>
-              </h2>
-              <p>
-                <a
-                  href="https://github.com/bojeans/chatbot"
-                  className="text-blue-800 hyperlinks"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <strong>Basic Chatbot</strong>
-                </a>
-                - ReactJS
               </p>
               <p>
                 <a
@@ -65,7 +56,15 @@ const Projects = () => {
               </p>
             </div>
           </div>
-          <div className="w-full md:w-1/3 px-4">
+          <div className="w-full md:w-1/4 px-4">
+            <div className=" rounded-lg shadow-md p-4 mb-4 h-full flex flex-col">
+              <h2 className="text-lg font-bold mb-2">
+                <span className="border-b border-gray-500">In Progress</span>
+              </h2>
+              <p>Short pause while I priortise my next work-related role</p>
+            </div>
+          </div>
+          <div className="w-full md:w-1/4 px-4">
             <div className="rounded-lg shadow-md p-4 mb-4 h-full flex flex-col">
               <h2 className="text-lg font-bold mb-2">
                 <span className="border-b border-gray-500">Done</span>
@@ -90,7 +89,8 @@ const Projects = () => {
                 >
                   <strong>Ecommerce Shop</strong>
                 </a>
-                - ReactJS with Typescript. Pagination. CSS grid.
+                - ReactJS with Typescript. Pagination. Very basic design with
+                CSS grid.
               </p>
             </div>
           </div>
