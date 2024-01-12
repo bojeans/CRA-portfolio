@@ -71,3 +71,13 @@
     background:blue;
     color: white;
 }
+
+/* WORK EXPERIENCE PAGE */
+.dark-mode .workexperience-page { 
+    color: blue;
+    background: black;
+}
+
+.dark-mode .work_experience_details {
+    color: white;
+}

@@ -8,9 +8,9 @@ const fbLink = (
     href="https://www.facebook.com/developersnz/"
     target="_blank"
     rel="noopener noreferrer"
-    className="text-blue-600"
+    className="text-blue-500"
   >
-    DI facebook
+    DI facebook page
   </a>
 );
 
@@ -19,9 +19,9 @@ const ytLink = (
     href="https://www.youtube.com/watch?v=bq9TF6BFJHo"
     target="_blank"
     rel="noopener noreferrer"
-    className="text-blue-600"
+    className="text-blue-500"
   >
-    Hack-a-thon
+    Hack-a-thon video
   </a>
 );
 
@@ -30,6 +30,9 @@ const WorkExperience = () => {
     <>
       <NavBar />
       <div className="container mx-auto p-4">
+        <h1 className="text-3xl font-bold text-center mt-6 mb-4 md:text-6xl">
+          Work Experience
+        </h1>
         <h2 className="text-3xl font-bold mb-4 border-b-2 border-gray-800 pb-2">
           Tech Related
         </h2>
@@ -69,9 +72,9 @@ const WorkExperience = () => {
           />
         </div>
         <h2 className="text-3xl font-bold mt-8 border-b-2 border-gray-800 pb-2">
-          Non-Tech Related
+          Non-Tech Related - coming soon :)
         </h2>
-        <div className="flex flex-wrap justify-center">
+        {/* <div className="flex flex-wrap justify-center">
           <WorkExperienceCard
             company="ABC Company"
             position="Software Developer"
@@ -84,7 +87,7 @@ const WorkExperience = () => {
             date="June 2018 - December 2019"
             description="Collaborated with the design team to implement responsive user interfaces for various projects."
           />
-        </div>
+        </div> */}
       </div>
       <Footer />
     </>
