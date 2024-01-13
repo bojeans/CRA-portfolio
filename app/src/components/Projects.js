@@ -20,7 +20,9 @@ const Projects = () => {
               </h2>
 
               <p>
-                <strong className="hyperlinks">
+                <strong>
+                  {" "}
+                  {/*className="hyperlinks" ADD THIS ONCE REPO CREATED */}
                   Fitness Tracker App (no repo yet){" "}
                 </strong>{" "}
                 - NextJS, PostgresSQL, Vercel
