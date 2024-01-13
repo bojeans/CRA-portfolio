@@ -29,21 +29,7 @@ const About = () => {
                     </em>
                   </span>
                 </li>
-                <li className="mb-2">
-                  <span className="rounded-md inline-block px-2 py-1 span-title">
-                    <strong>Work Experience 2021-2023</strong>
-                  </span>
-                  <span className="rounded-md inline-block px-2 py-1">
-                    <em>
-                      Essentially putting the above into practice and getting
-                      some workplace experience. Especially from the aspect of
-                      working as an agile team, getting more familiar with
-                      things like Jira and reading/creating internal
-                      documentation, debugging code. Plus also some new things
-                      such as: auth0, AWS, Okta & terraform.
-                    </em>
-                  </span>
-                </li>
+
                 <li className="mb-4">
                   <span className="rounded-md inline-block px-2 py-1 span-title">
                     <strong>Education</strong>

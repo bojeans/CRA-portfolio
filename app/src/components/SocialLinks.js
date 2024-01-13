@@ -17,7 +17,8 @@ const SocialIcon = ({ icon, href }) => {
         href={href}
         target="_blank"
         rel="noreferrer"
-        className="hover:text-blue-800"
+        className="hover:text-blue-800 dark-social"
+        aria-label="Social media external link"
       >
         {icon}
       </a>

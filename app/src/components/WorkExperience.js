@@ -8,7 +8,7 @@ const fbLink = (
     href="https://www.facebook.com/developersnz/"
     target="_blank"
     rel="noopener noreferrer"
-    className="text-blue-500"
+    className="text-blue-800 darkURL-links"
   >
     DI facebook page
   </a>
@@ -19,7 +19,7 @@ const ytLink = (
     href="https://www.youtube.com/watch?v=bq9TF6BFJHo"
     target="_blank"
     rel="noopener noreferrer"
-    className="text-blue-500"
+    className="text-blue-800 darkURL-links"
   >
     Hack-a-thon video
   </a>
