@@ -21,13 +21,72 @@ const About = () => {
                   <span className="rounded-md inline-block px-2 py-1 span-title">
                     <strong>Studying 2020-2021</strong>
                   </span>
-                  <span className="rounded-md inline-block px-2 py-1">
+                  <div className="rounded-md inline-block px-2 py-1">
                     <em>
-                      HTML5, CSS3, Javascript, React, Node, Git/Github, Jest
-                      testing, mongoDB, postgres, REST API, JWT, openAPI,
-                      docker, Agile DevOps
+                      <p>
+                        <strong>HTML5</strong> - including Semantic HTML and
+                        accessibility considerations.
+                      </p>
+                      <p>
+                        <strong>CSS3</strong> - CSS grid, flexbox and associated
+                        frameworks/libraries such as bootstrap, tailwindCSS
+                      </p>
+                      <p>
+                        <strong>Javascript</strong> - Basic DOM manipulation,
+                        although I am more comfortable using React functional
+                        components. Learning Typescript
+                      </p>
+                      <p>
+                        <strong>React.js</strong> - Not so much class
+                        components, more functional components. Across the
+                        common React Hooks such as useState & useEffect. For
+                        greater state management, getting across contextAPI.
+                        Haven't started on Redux.
+                      </p>
+                      <p>
+                        <strong>Node.js</strong> - for my backend. Across REST
+                        APIs and Express so fairly comfortable with my CRUD
+                        operations. Getting better with additional middleware
+                        such as errorhandling, auth0/jwt. And familiar with some
+                        related tools such as postman and insomnia.
+                      </p>
+                      <p>
+                        <strong>openAPI/Swagger</strong> - Have used it a few
+                        times and created the odd yaml file. Still reasonably
+                        unfamiliar to me.
+                      </p>
+                      <p>
+                        <strong>Docker</strong> - I have used Docker Compose as
+                        well as Docker Run. Again just haven't created many yaml
+                        files but would be confident figuring this out online.
+                        No Kubernetes exp.
+                      </p>
+                      <p>
+                        <strong>Git, Github & VScode</strong> - version control
+                        and collaborating tools I'm most familiar with and
+                        fairly comfortable on these.
+                      </p>
+                      <p>
+                        <strong>Testing/TDD</strong> - Jest is the main
+                        framework I've used, followed by supertest and react
+                        testing library. Tiny bit of cypress exposure, no mocha.
+                      </p>
+                      <p>
+                        <strong>Databases</strong> - Postgres(SQL) and
+                        MongoDB(NoSQL) are the two most familiar with me.
+                        Haven't played with any other NoSQL ones, a little on
+                        the SQL front with Oracle and MYSQL. Postico, Beekeeper
+                        Studios and mongoDB Compass are the tools I've used in
+                        this space.
+                      </p>
+                      <p>
+                        <strong>Agile DevOps</strong> CI/CD, User Stories,
+                        Kanban boards (jira, trello), Scrum, Standups, Retros.
+                        These were all common while I was both studying and
+                        working with Developers Institute.
+                      </p>
                     </em>
-                  </span>
+                  </div>
                 </li>
 
                 <li className="mb-4">
