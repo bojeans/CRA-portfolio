@@ -8,7 +8,7 @@
 }
 
 .dark-mode h1 {
-    color: blue;
+    color: yellow;
 }
 
 /* ABOUT PAGE */
@@ -26,7 +26,7 @@
   }
 
 .dark-mode .about-page .span-title {
-    color: blue;
+    color: yellow;
   }
 
 /* PROJECT PAGE */
@@ -40,11 +40,7 @@
 }
 
 .dark-mode .projects-page .hyperlinks {
-    color: blue;
-}
-
-.dark-mode .socials {
-    color: blue;
+    color: cyan;
 }
 
 /* CONTACT PAGE */
@@ -59,7 +55,7 @@
 }
 
 .dark-mode .contact-page label { 
-    color: blue;
+    color: yellow;
 }
 
 .dark-mode .contact-page button { 
@@ -74,10 +70,25 @@
 
 /* WORK EXPERIENCE PAGE */
 .dark-mode .workexperience-page { 
-    color: blue;
+    color: yellow;
     background: black;
 }
 
 .dark-mode .work_experience_details {
     color: white;
+}
+
+/* URL LINKS */
+.dark-mode .darkURL-links {
+    color: cyan;
+}
+
+/* FOOTER */
+.dark-mode .dark-footer {
+    color: yellow;
+}
+
+/* SOCIAL MEDIA ICONS */
+.dark-mode .dark-social{
+    color: cyan;
 }

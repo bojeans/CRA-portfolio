@@ -19,6 +19,7 @@ const DarkModeToggle = () => {
       <button
         className={`dark-mode-toggle ${darkMode ? "dark" : "light"} p-2`}
         onClick={toggleDarkMode}
+        aria-label="Toggle Dark Mode"
       >
         {darkMode ? (
           <IoSunnyOutline className="text-4xl hover:bg-gray-100 hover:text-black hover:font-bold dark:hover:text-black dark:text-yellow-300" />
