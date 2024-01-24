@@ -18,14 +18,8 @@ const Projects = () => {
                   Planning pipeline
                 </span>
               </h2>
-
               <p>
-                <strong>
-                  {" "}
-                  {/*className="hyperlinks" ADD THIS ONCE REPO CREATED */}
-                  Fitness Tracker App (no repo yet){" "}
-                </strong>{" "}
-                - NextJS, PostgresSQL, Vercel
+                <strong>Travel Blog</strong> - tbc
               </p>
             </div>
           </div>
@@ -34,7 +28,7 @@ const Projects = () => {
               <h2 className="text-lg font-bold mb-2">
                 <span className="border-b border-gray-500">Started</span>
               </h2>
-              <p>
+              {/* <p>
                 <a
                   href="https://github.com/bojeans/PERN-travel-blog"
                   className="text-blue-800 hyperlinks"
@@ -44,7 +38,7 @@ const Projects = () => {
                   <strong>Travel Blog</strong>{" "}
                 </a>
                 - React with Vite, supabase
-              </p>
+              </p> */}
               <p>
                 <a
                   href="https://github.com/bojeans/budgetting-app"
@@ -63,7 +57,17 @@ const Projects = () => {
               <h2 className="text-lg font-bold mb-2">
                 <span className="border-b border-gray-500">In Progress</span>
               </h2>
-              <p>Short pause while I priortise my next work-related role</p>
+              <p>
+                <a
+                  href="https://github.com/bojeans/fitness-app"
+                  className="text-blue-800 hyperlinks"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <strong>Fitness Tracker App</strong>{" "}
+                </a>{" "}
+                - Next.JS with Typescript, Docker, PostgresSQL, Vercel
+              </p>
             </div>
           </div>
           <div className="w-full md:w-1/4 px-4">
@@ -91,8 +95,8 @@ const Projects = () => {
                 >
                   <strong>Ecommerce Shop</strong>
                 </a>
-                - ReactJS with Typescript. Pagination. Very basic design with
-                CSS grid.
+                - ReactJS with Typescript. Pagination. Filter/Sort Very basic
+                design with CSS grid.
               </p>
             </div>
           </div>
