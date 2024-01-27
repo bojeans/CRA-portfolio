@@ -28,17 +28,6 @@ const Projects = () => {
               <h2 className="text-lg font-bold mb-2">
                 <span className="border-b border-gray-500">Started</span>
               </h2>
-              {/* <p>
-                <a
-                  href="https://github.com/bojeans/PERN-travel-blog"
-                  className="text-blue-800 hyperlinks"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <strong>Travel Blog</strong>{" "}
-                </a>
-                - React with Vite, supabase
-              </p> */}
               <p>
                 <a
                   href="https://github.com/bojeans/budgetting-app"
