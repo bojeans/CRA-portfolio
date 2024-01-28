@@ -25,6 +25,17 @@ const ytLink = (
   </a>
 );
 
+const cryptoProject = (
+  <a
+    href="https://risingstardigital.co.nz/portfolio/unodex-crypto-trading-app"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-blue-800 darkURL-links underline italic"
+  >
+    Crypto Trading App
+  </a>
+);
+
 const WorkExperience = () => {
   return (
     <>
@@ -41,10 +52,31 @@ const WorkExperience = () => {
             company="Rising Star Digital Ltd"
             position="Contract Developer"
             date="Nov 2023 - Present"
-            description="I worked on the frontend of the /trade page and /snipe page. Backend was pre-coded in C# by
-            another dev, my role was essentially using Swagger for API specs to manage React state between
-            several parent & child functional components. A smart search bar, trade history, top traded tokens,
-            buy/sell widget were some of the features I worked on."
+            description={
+              <>
+                *Note this role won't hinder my ability to engage in a full-time
+                role, as we don't have many clients. If work were to pickup I
+                have the ability to be flexible with my schedule/hrs and/or the
+                ability to decline jobs. Project I worked on - {cryptoProject} I
+                worked on the frontend of the /trade page and /snipe page.
+                Backend was pre-coded in C# by another dev, my role was
+                essentially using Swagger for API specs to manage React state
+                between several parent & child functional components. A smart
+                search bar, trade history, top traded tokens, buy/sell widget
+                were some of the features I worked on. *Note this role won't
+                hinder my ability to engage in a full-time role, as we don't
+                have many clients. If work were to pickup I have the ability to
+                be flexible with my schedule/hrs and/or the ability to decline
+                jobs. Project I worked on -
+                https://risingstardigital.co.nz/portfolio/unodex-crypto-trading-app
+                I worked on the frontend of the /trade page and /snipe page.
+                Backend was pre-coded in C# by another dev, my role was
+                essentially using Swagger for API specs to manage React state
+                between several parent & child functional components. A smart
+                search bar, trade history, top traded tokens, buy/sell widget
+                were some of the features I worked on.
+              </>
+            }
           />
           <WorkExperienceCard
             company="Developers Institute NZ Ltd"
