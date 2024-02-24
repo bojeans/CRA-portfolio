@@ -1,7 +1,29 @@
-import { useState } from "react";
+import React, { useState, useEffect } from "react";
 
-const CollapsibleText = ({ text, maxLength, buttonColor }) => {
+const ExpandableText = ({ text }) => {
   const [showAllText, setShowAllText] = useState(false);
+  const [maxChars, setMaxChars] = useState(100); // Default value
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 640) {
+        setMaxChars(50); // Mobile screens
+      } else if (window.innerWidth < 1024) {
+        setMaxChars(100); // Medium screens
+      } else {
+        setMaxChars(200); // Desktop screens
+      }
+    };
+
+    // Set initial maxChars on component mount
+    handleResize();
+
+    // Add event listener for window resize
+    window.addEventListener("resize", handleResize);
+
+    // Clean up event listener on component unmount
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   const toggleShowAllText = () => {
     setShowAllText(!showAllText);
@@ -9,22 +31,19 @@ const CollapsibleText = ({ text, maxLength, buttonColor }) => {
 
   return (
     <div>
-      {text.length <= maxLength ? (
-        <p>{text}</p>
-      ) : (
-        <div>
-          <p>{showAllText ? text : `${text.substring(0, maxLength)}...`}</p>
-          <button
-            className="expand-button"
-            style={{ color: showAllText ? "red" : "blue" }}
+      <p>
+        {showAllText ? text : `${text.substring(0, maxChars)} `}
+        {!showAllText && (
+          <span
+            className="text-blue-500 cursor-pointer"
             onClick={toggleShowAllText}
           >
-            {showAllText ? "-" : "+"}
-          </button>
-        </div>
-      )}
+            ...
+          </span>
+        )}
+      </p>
     </div>
   );
 };
 
-export default CollapsibleText;
+export default ExpandableText;
