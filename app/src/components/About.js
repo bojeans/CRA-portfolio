@@ -1,5 +1,6 @@
 import NavBar from "./NavBar";
 import Footer from "./Footer";
+import CollapsibleText from "./utils/CollapsibleText";
 
 const About = () => {
   return (
@@ -21,13 +22,16 @@ const About = () => {
               <ul className="list-none font-serif">
                 <li className="mb-4">
                   <div className="rounded-md inline-block px-2 py-1">
+                    <strong className="title">Agile DevOps</strong>
                     <em>
-                      <p>
-                        <strong className="title">Agile DevOps</strong> CI/CD,
-                        User Stories, Kanban boards (jira, trello), Scrum,
-                        Standups, Retros. These were all common while I was both
-                        studying and working with Developers Institute.
-                      </p>
+                      <CollapsibleText
+                        text="CI/CD,
+                    User Stories, Kanban boards (jira, trello), Scrum,
+                    Standups, Retros. These were all common while I was both
+                    studying and working with Developers Institute."
+                        maxLength={100}
+                      />
+
                       <p>
                         <strong className="title">CSS3</strong> - CSS grid,
                         flexbox and associated frameworks/libraries such as
