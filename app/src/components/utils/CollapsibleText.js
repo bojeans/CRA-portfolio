@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const CollapsibleText = ({ text, maxLength }) => {
+const CollapsibleText = ({ text, maxLength, buttonColor }) => {
   const [showAllText, setShowAllText] = useState(false);
 
   const toggleShowAllText = () => {
@@ -14,8 +14,12 @@ const CollapsibleText = ({ text, maxLength }) => {
       ) : (
         <div>
           <p>{showAllText ? text : `${text.substring(0, maxLength)}...`}</p>
-          <button onClick={toggleShowAllText}>
-            {showAllText ? "Show less" : "Show more"}
+          <button
+            className="expand-button"
+            style={{ color: showAllText ? "red" : "blue" }}
+            onClick={toggleShowAllText}
+          >
+            {showAllText ? "-" : "+"}
           </button>
         </div>
       )}

@@ -30,6 +30,7 @@ const About = () => {
                     Standups, Retros. These were all common while I was both
                     studying and working with Developers Institute."
                         maxLength={100}
+                        buttonColor="blue"
                       />
 
                       <p>
