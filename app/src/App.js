@@ -4,7 +4,7 @@ import About from "./components/About";
 import Projects from "./components/Projects";
 import WorkExperience from "./components/WorkExperience";
 import Contact from "./components/Contact";
-import { DarkModeProvider } from "./components/DarkModeContext";
+import { DarkModeProvider } from "./components/utils/DarkModeContext";
 
 const App = () => {
   return (
