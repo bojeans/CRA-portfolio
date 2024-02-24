@@ -6,7 +6,7 @@ const About = () => {
     <>
       <NavBar />
 
-      <h1 className="text-4xl font-bold text-center mt-6 mb-4 md:text-6xl">
+      <h1 className="font-sans text-4xl font-bold text-center mt-6 mb-4 md:text-6xl">
         About Me
       </h1>
       <div className="container mx-auto about-page">
@@ -14,9 +14,11 @@ const About = () => {
           <div className="w-full md:w-1/3 px-4 ">
             <div className="rounded-lg shadow-md p-4 mb-4 h-full flex flex-col">
               <h2 className="text-2xl font-bold mb-2">
-                <span className="border-b border-gray-500">Technical</span>
+                <span className="font-sans border-b border-gray-500">
+                  Technical
+                </span>
               </h2>
-              <ul className="list-none ">
+              <ul className="list-none font-serif">
                 <li className="mb-4">
                   <div className="rounded-md inline-block px-2 py-1">
                     <em>
@@ -106,7 +108,7 @@ const About = () => {
                   Hobbies/Interests
                 </span>
               </h2>
-              <ul className="list-none">
+              <ul className="list-none font-serif">
                 <li className="mb-4">
                   <span className="rounded-md inline-block px-2 py-1">
                     <strong className="title">Coding Career</strong> -
