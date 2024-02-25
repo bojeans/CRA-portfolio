@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { GoTriangleUp } from "react-icons/go";
 
 const ExpandableText = ({ text }) => {
   const [showAllText, setShowAllText] = useState(false);
@@ -31,17 +32,21 @@ const ExpandableText = ({ text }) => {
 
   return (
     <div>
-      <p>
-        {showAllText ? text : `${text.substring(0, maxChars)} `}
-        {!showAllText && (
-          <span
-            className="text-blue-500 cursor-pointer"
-            onClick={toggleShowAllText}
-          >
+      {showAllText ? (
+        <>
+          <p>{text}</p>
+          <button onClick={toggleShowAllText} className="dark-collapse">
+            <GoTriangleUp />
+          </button>
+        </>
+      ) : (
+        <>
+          <p>{text.substring(0, maxChars)}</p>
+          <button onClick={toggleShowAllText} className="dark-expand">
             ...
-          </span>
-        )}
-      </p>
+          </button>
+        </>
+      )}
     </div>
   );
 };

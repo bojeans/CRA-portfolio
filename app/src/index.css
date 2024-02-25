@@ -29,6 +29,14 @@
     color: yellow;
   }
 
+.dark-mode .about-page .dark-expand {
+    color: blue;
+  }
+
+.dark-mode .about-page .dark-collapse {
+    color: red;
+  }
+  
 /* PROJECT PAGE */
 .dark-mode .projects-page { 
     color: white;
