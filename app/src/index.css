@@ -51,6 +51,14 @@
     color: blue;
 }
 
+.dark-mode .projects-page .dark-expand {
+    color: rgb(0, 255, 0);
+  }
+
+.dark-mode .projects-page .dark-collapse {
+    color: red;
+  }
+
 /* CONTACT PAGE */
 
 .dark-mode .contact-page { 
