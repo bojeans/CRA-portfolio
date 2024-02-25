@@ -86,6 +86,14 @@
     color: white;
 }
 
+.dark-mode .work_experience_expand {
+    color: blue;
+}
+
+.dark-mode .work_experience_collapse {
+    color: red;
+}
+
 /* URL LINKS */
 .dark-mode .darkURL-links {
     color: blue;
