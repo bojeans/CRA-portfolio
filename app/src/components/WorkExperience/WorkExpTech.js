@@ -62,9 +62,8 @@ const WorkExpTech = () => {
           company="Developers Institute NZ Ltd"
           position="Associate Software Developer & Remote Teaching Assistant"
           date="April 2021 - August 2023"
-          description={
-            <>
-              {fbLink} Worked in a platform team on a SaaS project. Involved
+          fblink={fbLink}
+          description="Worked in a platform team on a SaaS project. Involved
               integrating our organisation onto Okta and syncing up our various
               apps. A lot of this was learning as we went, so documented
               everything in confluence and worked in an agile environment with
@@ -78,9 +77,8 @@ const WorkExpTech = () => {
               enough to represent Developers Institute externally at a 1 week
               hackathon in Whangarei with a client Northpower and AWS reps.
               Short, somewhat uninformative, video they made of that experience
-              if you’re interested: {ytLink}
-            </>
-          }
+              if you’re interested:"
+          ytlink={ytLink}
         />
       </div>
     </>

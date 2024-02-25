@@ -1,7 +1,15 @@
 import React from "react";
 import CollapsibleText from "../utils/CollapsibleText";
 
-const WorkExperienceCard = ({ company, position, date, description, link }) => {
+const WorkExperienceCard = ({
+  company,
+  position,
+  date,
+  description,
+  link,
+  fblink,
+  ytlink,
+}) => {
   return (
     <div className="bg-white rounded-lg overflow-hidden shadow-lg m-4 sm:w-1/2 lg:w-1/3 workexperience-page">
       <div className="px-6 py-4">
@@ -12,7 +20,7 @@ const WorkExperienceCard = ({ company, position, date, description, link }) => {
         <h4 className="text-gray-600 text-lg mb-2 work_experience_details">
           {date}
         </h4>
-
+        {fblink}
         {description && (
           <CollapsibleText
             text={description}
@@ -20,6 +28,8 @@ const WorkExperienceCard = ({ company, position, date, description, link }) => {
           />
         )}
         {link}
+
+        {ytlink}
       </div>
     </div>
   );
