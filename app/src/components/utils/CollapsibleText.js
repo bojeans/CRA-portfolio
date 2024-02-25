@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { GoTriangleUp } from "react-icons/go";
 
-const ExpandableText = ({ text }) => {
+const CollapsibleText = ({ text }) => {
   const [showAllText, setShowAllText] = useState(false);
   const [maxChars, setMaxChars] = useState(100); // Default value
 
@@ -30,6 +30,11 @@ const ExpandableText = ({ text }) => {
     setShowAllText(!showAllText);
   };
 
+  // Check if text is defined and is a string
+  if (typeof text !== "string") {
+    return null; // Or handle the case where text is not valid
+  }
+
   return (
     <div>
       {showAllText ? (
@@ -51,4 +56,4 @@ const ExpandableText = ({ text }) => {
   );
 };
 
-export default ExpandableText;
+export default CollapsibleText;

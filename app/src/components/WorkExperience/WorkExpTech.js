@@ -1,4 +1,3 @@
-import CollapsibleText from "../utils/CollapsibleText";
 import WorkExperienceCard from "./WorkExperienceCard";
 
 const fbLink = (
@@ -41,32 +40,23 @@ const WorkExpTech = () => {
         Tech Related
       </h2>
       <div className="flex flex-wrap justify-center work_experience_expand">
-        {/* <WorkExperienceCard
+        <WorkExperienceCard
           company="Rising Star Digital Ltd"
           position="Contract Developer"
           date="Nov 2023 - Present"
-          description={
-            <CollapsibleText
-              text={
-                <>
-                  `*Note this role won't hinder my ability to engage in a
-                  full-time role, as we don't have many clients. If work were to
-                  pickup I have the ability to be flexible with my schedule/hrs
-                  and/or the ability to decline jobs. Project I worked on -{" "}
-                  {cryptoProject} I worked on the frontend of the /trade page
-                  and /snipe page. Backend was pre-coded in C# by another dev,
-                  my role was essentially using Swagger for API specs to manage
-                  React state between several parent & child functional
-                  components. A smart search bar, trade history, top traded
-                  tokens, buy/sell widget were some of the features I worked
-                  on.`
-                </>
-              }
-              maxLength={100}
-              buttonColor="blue"
-            />
-          }
-        /> */}
+          description="*Note this role won't hinder my ability to engage in a full-time
+              role, as we don't have many clients. If work were to pickup I have
+              the ability to be flexible with my schedule/hrs and/or the ability
+              to decline jobs. Project I worked on linked below. I worked
+              on the frontend of the /trade page and /snipe page. Backend was
+              pre-coded in C# by another dev, my role was essentially using
+              Swagger for API specs to manage React state between several parent
+              & child functional components. A smart search bar, trade history,
+              top traded tokens, buy/sell widget were some of the features I
+              worked on.
+            "
+          link={cryptoProject}
+        />
 
         <WorkExperienceCard
           company="Developers Institute NZ Ltd"
