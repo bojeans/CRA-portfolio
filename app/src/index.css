@@ -40,7 +40,7 @@
 }
 
 .dark-mode .projects-page .hyperlinks {
-    color: cyan;
+    color: blue;
 }
 
 /* CONTACT PAGE */
@@ -80,7 +80,7 @@
 
 /* URL LINKS */
 .dark-mode .darkURL-links {
-    color: cyan;
+    color: blue;
 }
 
 /* FOOTER */
@@ -90,6 +90,6 @@
 
 /* SOCIAL MEDIA ICONS */
 .dark-mode .dark-social{
-    color: cyan;
+    color: blue;
 }
 
