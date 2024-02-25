@@ -36,7 +36,7 @@ const CollapsibleText = ({ text }) => {
   }
 
   return (
-    <div>
+    <>
       {showAllText ? (
         <>
           <p>{text}</p>
@@ -52,7 +52,7 @@ const CollapsibleText = ({ text }) => {
           </button>
         </>
       )}
-    </div>
+    </>
   );
 };
 

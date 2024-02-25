@@ -21,12 +21,9 @@ const WorkExperienceCard = ({
           {date}
         </h4>
         {fblink}
-        {description && (
-          <CollapsibleText
-            text={description}
-            className="text-gray-700 text-base work_experience_details"
-          />
-        )}
+        <div className="text-gray-700 font-sans text-base work_experience_details">
+          {description && <CollapsibleText text={description} />}
+        </div>
         {link}
 
         {ytlink}

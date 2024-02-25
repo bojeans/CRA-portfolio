@@ -30,7 +30,7 @@
   }
 
 .dark-mode .about-page .dark-expand {
-    color: blue;
+    color: rgb(0, 255, 0);
   }
 
 .dark-mode .about-page .dark-collapse {
@@ -82,17 +82,21 @@
     background: black;
 }
 
-.dark-mode .work_experience_details {
+.dark-mode .workexperience-page h1 { 
     color: white;
 }
 
-.dark-mode .work_experience_expand {
-    color: blue;
+.dark-mode .workexperience-page .work_experience_details {
+    color: white;
 }
 
-.dark-mode .work_experience_collapse {
+.dark-mode .workexperience-page .dark-expand {
+    color: rgb(0, 255, 0);
+  }
+
+.dark-mode .workexperience-page .dark-collapse {
     color: red;
-}
+  }
 
 /* URL LINKS */
 .dark-mode .darkURL-links {
@@ -100,8 +104,12 @@
 }
 
 /* FOOTER */
-.dark-mode .dark-footer {
+.dark-mode .dark-footer-name {
     color: yellow;
+}
+
+.dark-mode .dark-footer-text {
+    color: white;
 }
 
 /* SOCIAL MEDIA ICONS */
