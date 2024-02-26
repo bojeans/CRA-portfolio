@@ -3,7 +3,8 @@ import { GoTriangleUp } from "react-icons/go";
 
 const CollapsibleText = ({ text }) => {
   const [showAllText, setShowAllText] = useState(false);
-  const [maxChars, setMaxChars] = useState(100); // Default value
+  const [maxChars, setMaxChars] = useState(100);
+  const [isTextTooShort, setIsTextTooShort] = useState(true);
 
   useEffect(() => {
     const handleResize = () => {
@@ -26,6 +27,10 @@ const CollapsibleText = ({ text }) => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  useEffect(() => {
+    setIsTextTooShort(text.length <= maxChars);
+  }, [text, maxChars]);
+
   const toggleShowAllText = () => {
     setShowAllText(!showAllText);
   };
@@ -37,20 +42,14 @@ const CollapsibleText = ({ text }) => {
 
   return (
     <>
-      {showAllText ? (
-        <>
-          <p>{text}</p>
-          <button onClick={toggleShowAllText} className="dark-collapse">
-            <GoTriangleUp />
-          </button>
-        </>
-      ) : (
-        <>
-          <p>{text.substring(0, maxChars)}</p>
-          <button onClick={toggleShowAllText} className="dark-expand">
-            ...
-          </button>
-        </>
+      <p>{showAllText ? text : text.substring(0, maxChars)}</p>
+      {!isTextTooShort && (
+        <button
+          onClick={toggleShowAllText}
+          className={showAllText ? "dark-collapse" : "dark-expand"}
+        >
+          {showAllText ? <GoTriangleUp /> : "..."}
+        </button>
       )}
     </>
   );

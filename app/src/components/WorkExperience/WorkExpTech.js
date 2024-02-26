@@ -5,7 +5,7 @@ const fbLink = (
     href="https://www.facebook.com/developersnz/"
     target="_blank"
     rel="noopener noreferrer"
-    className="text-blue-800 darkURL-links underline italic"
+    className="text-blue-800 hyperlinks underline italic"
   >
     DI facebook page
   </a>
@@ -16,7 +16,7 @@ const ytLink = (
     href="https://www.youtube.com/watch?v=bq9TF6BFJHo"
     target="_blank"
     rel="noopener noreferrer"
-    className="text-blue-800 darkURL-links underline italic"
+    className="text-blue-800 hyperlinks underline italic"
   >
     Hack-a-thon video
   </a>
@@ -27,7 +27,7 @@ const cryptoProject = (
     href="https://risingstardigital.co.nz/portfolio/unodex-crypto-trading-app"
     target="_blank"
     rel="noopener noreferrer"
-    className="text-blue-800 darkURL-links underline italic"
+    className="text-blue-800 hyperlinks underline italic"
   >
     Crypto Trading App
   </a>

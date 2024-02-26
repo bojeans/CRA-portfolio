@@ -2,106 +2,136 @@
 @tailwind components;
 @tailwind utilities;
 
-.dark-mode {
- background: #000;
-    color: #fff;
+/* CSS Variables */
+
+:root {
+/* LIGHT MODE */
+--lightModeBackground: #fff;
+--lightModeText: #000;
+--lightModeHyperlink: blue;
+
+/* DARK MODE */
+--darkModeBackground: #000;
+--darkModeText: #fff;
+--darkModeHyperlink: cyan;
+--darkModeHeading: yellow;
+--darkModeExpand: rgb(0, 255, 0);
+--darkModeCollapse: red;
 }
 
-.dark-mode h1 {
-    color: yellow;
+/* LANDING PAGE */
+.dark-mode {
+ background: var(--darkModeBackground);
+    color: var(--darkModeText);
 }
 
 /* ABOUT PAGE */
-.dark-mode .about-page {
-    background: black;
-  }
-
 .dark-mode .about-page ul {
-    color: white;
-    background: black;
+    color: var(--darkModeText);
+    background: var(--darkModeBackground);
   }
 
-.dark-mode .about-page h2 {
-    color: white;   
-  }
+.dark-mode .about-page h1 h2 {
+    color: var(--darkModeText);
+}
 
-.dark-mode .about-page .title {
-    color: yellow;
+.dark-mode .about-page .sub-title {
+    color: var(--darkModeHeading);
   }
 
 .dark-mode .about-page .dark-expand {
-    color: rgb(0, 255, 0);
+    color: var(--darkModeExpand);
   }
 
 .dark-mode .about-page .dark-collapse {
-    color: red;
+    color: var(--darkModeCollapse);
   }
   
 /* PROJECT PAGE */
 .dark-mode .projects-page { 
-    color: white;
-    background: black;
+    color: var(--darkModeText);
+    background: var(--darkModeBackground);
+}
+
+.dark-mode .projects-page h1 {
+    color: var(--darkModeText);
 }
 
 .dark-mode .projects-page h2 {
-    color: white;
+    color: var(--darkModeHeading);
 }
 
 .dark-mode .projects-page .hyperlinks {
-    color: blue;
+    color: var(--darkModeHyperlink);
 }
+
+.dark-mode .projects-page .dark-expand {
+    color: var(--darkModeExpand);
+  }
+
+.dark-mode .projects-page .dark-collapse {
+    color: var(--darkModeCollapse);
+  }
+
+/* WORK EXPERIENCE PAGE */
+.dark-mode .workexperience-page { 
+    color: var(--darkModeText);
+    background: var(--darkModeBackground);
+}
+
+.dark-mode .workexperience-page h1 { 
+    color: var(--darkModeText);
+}
+.dark-mode .workexperience-page h2 { 
+    color: var(--darkModeHeading);
+}
+
+.dark-mode .workexperience-page .work_experience_company {
+    color: var(--darkModeHeading);
+}
+
+.dark-mode .workexperience-page .work_experience_details {
+    color: var(--darkModeText);
+}
+
+.dark-mode .hyperlinks {
+    color: var(--darkModeHyperlink);
+}
+
+.dark-mode .workexperience-page .dark-expand {
+    color: var(--darkModeExpand)
+  }
+
+.dark-mode .workexperience-page .dark-collapse {
+    color: var(--darkModeCollapse)
+  }
 
 /* CONTACT PAGE */
 
 .dark-mode .contact-page { 
-    color: white;
-    background: black;
+    color: var(--darkModeText);
+    background: var(--darkModeBackground);
 }
 
 .dark-mode .contact-page h2 { 
-    color: white;
+    color: var(--darkModeText)
 }
 
 .dark-mode .contact-page label { 
-    color: yellow;
+    color: var(--darkModeHeading);
 }
 
-.dark-mode .contact-page button { 
-    color: black;
-    background: white;
-}
-
-.dark-mode .contact-page button:hover {
+.dark-mode .contact-page button {
     background:blue;
-    color: white;
+    color: var(--darkModeText);
 }
 
-/* WORK EXPERIENCE PAGE */
-.dark-mode .workexperience-page { 
-    color: yellow;
-    background: black;
+.dark-mode .contact-page button:hover { 
+    color: var(--darkModeText);
+    background: rgb(98, 169, 255);
 }
 
-.dark-mode .workexperience-page h1 { 
-    color: white;
-}
 
-.dark-mode .workexperience-page .work_experience_details {
-    color: white;
-}
-
-.dark-mode .workexperience-page .dark-expand {
-    color: rgb(0, 255, 0);
-  }
-
-.dark-mode .workexperience-page .dark-collapse {
-    color: red;
-  }
-
-/* URL LINKS */
-.dark-mode .darkURL-links {
-    color: blue;
-}
 
 /* FOOTER */
 .dark-mode .dark-footer-name {
@@ -109,11 +139,11 @@
 }
 
 .dark-mode .dark-footer-text {
-    color: white;
+    color: var(--darkModeText);
 }
 
 /* SOCIAL MEDIA ICONS */
 .dark-mode .dark-social{
-    color: blue;
+    color: var(--darkModeHyperlink);
 }
 
