@@ -12,7 +12,7 @@ const WorkExperience = () => {
         <h1 className="text-3xl font-bold text-center mt-6 mb-4 md:text-6xl">
           Work Experience
         </h1>
-        <div className="">
+        <div className="workexperience-page">
           <WorkExpTech />
           <WorkExpNonTech />
         </div>

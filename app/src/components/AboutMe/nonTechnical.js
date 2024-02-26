@@ -9,7 +9,7 @@ const NonTechnical = () => {
         </h2>
         <ul className="list-none font-serif">
           <li className="mb-4">
-            <strong className="title">Coding Career</strong> -
+            <strong className="sub-title">Coding Career</strong> -
             <span className="rounded-md inline-block  px-2 py-1">
               <CollapsibleText
                 text="Reasonably flexible, accepting that this is largerly going to
@@ -26,7 +26,7 @@ const NonTechnical = () => {
             </span>
           </li>
           <li className="mb-4">
-            <strong className="title">Recognised Education</strong> -
+            <strong className="sub-title">Recognised Education</strong> -
             <span className="rounded-md inline-block px-2 py-1">
               <CollapsibleText
                 text="Bachelor of Management Studies - University of Waikato. Majoring
@@ -46,7 +46,7 @@ const NonTechnical = () => {
             </span>
           </li>
           <li className="mb-4">
-            <strong className="title">Sports</strong> -
+            <strong className="sub-title">Sports</strong> -
             <span className="rounded-md inline-block px-2 py-1">
               <CollapsibleText
                 text="
@@ -61,7 +61,7 @@ const NonTechnical = () => {
             </span>
           </li>
           <li className="mb-4">
-            <strong className="title">Travel</strong> -
+            <strong className="sub-title">Travel</strong> -
             <span className="rounded-md inline-block px-2 py-1">
               <CollapsibleText
                 text="

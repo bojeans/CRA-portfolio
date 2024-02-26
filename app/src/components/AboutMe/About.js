@@ -8,7 +8,7 @@ const About = () => {
     <>
       <NavBar />
 
-      <h1 className="font-sans text-4xl font-bold text-center mt-6 mb-4 md:text-6xl">
+      <h1 className="font-sans text-4xl font-bold about-page text-center mt-6 mb-4 md:text-6xl">
         About Me
       </h1>
       <div className="container mx-auto about-page">
