@@ -25,6 +25,10 @@
     color: var(--darkModeText);
 }
 
+.rounded-custom {
+    border-radius: 50%;
+  }
+
 /* ABOUT PAGE */
 .dark-mode .about-page ul {
     color: var(--darkModeText);
