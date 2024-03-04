@@ -1,5 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useForm, ValidationError } from "@formspree/react";
+import NavBar from "./NavBar";
+import Footer from "./Footer";
 
 const Contact = () => {
   const [state, handleSubmit, reset] = useForm("xnqwbjwd");
@@ -25,6 +27,7 @@ const Contact = () => {
 
   return (
     <>
+      <NavBar />
       <div className="flex flex-col items-center justify-center bg-gray-100 py-12 px-4 sm:px-6 lg:px-8 contact-page">
         <form ref={formRef} onSubmit={handleSubmit} className="w-full max-w-lg">
           {submitCount >= 2 && (
@@ -91,6 +94,7 @@ const Contact = () => {
           </button>
         </form>
       </div>
+      <Footer />
     </>
   );
 };

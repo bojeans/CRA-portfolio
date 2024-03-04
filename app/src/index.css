@@ -27,6 +27,7 @@
 
 .rounded-custom {
     border-radius: 50%;
+    border-right: 0.1px solid var(--darkModeBackground);
   }
 
 /* ABOUT PAGE */

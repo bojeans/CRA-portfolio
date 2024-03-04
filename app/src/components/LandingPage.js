@@ -9,13 +9,10 @@ const LandingPage = () => {
     <div className="flex flex-col min-h-screen">
       <NavBar />
       <div className="flex flex-col md:flex-row flex-1">
-        {/* Left side with CodeBackground */}
         <div className="w-full md:w-8/12 flex-grow">
           <CodeBackground />
         </div>
-
-        {/* Right side with Hero and Contact */}
-        <div className="w-full md:w-4/12 flex flex-col justify-between">
+        <div className="w-full md:w-4/12 flex-grow">
           <div className="flex flex-col h-full">
             <Hero />
             <Footer />
