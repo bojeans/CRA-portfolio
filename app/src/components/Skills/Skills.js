@@ -101,34 +101,34 @@ const Skills = () => {
         <SkillsCard
           icon={
             <>
-              <li className="mx-2">
+              <li className="mx-2 dark-css3">
                 <IoLogoCss3 />
               </li>
-              <li className="mx-2">
+              <li className="mx-2 dark-tailwindcss">
                 <BiLogoTailwindCss />
               </li>
-              <li className="mx-2">
+              <li className="mx-2 dark-typescript">
                 <SiTypescript />
               </li>
-              <li className="mx-2">
+              <li className="mx-2 dark-nextjs">
                 <TbBrandNextjs />
               </li>
-              <li className="mx-2">
+              <li className="mx-2 dark-docker">
                 <FaDocker />
               </li>
-              <li className="mx-2">
+              <li className="mx-2 dark-jest">
                 <SiJest />
               </li>
-              <li className="mx-2">
+              <li className="mx-2 dark-swagger">
                 <SiSwagger />
               </li>
-              <li className="mx-2">
+              <li className="mx-2 dark-postgres">
                 <SiPostgresql />
               </li>
-              <li className="mx-2">
+              <li className="mx-2 dark-mongodb">
                 <SiMongodb />
               </li>
-              <li className="mx-2">
+              <li className="mx-2 dark-mongoose">
                 <SiMongoose />
               </li>
             </>

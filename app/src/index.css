@@ -167,6 +167,46 @@
     color: rgb(14, 141, 237);
 }
 
+.dark-mode .skills-page .dark-css3 {
+    color: rgb(0, 149, 255);
+}
+
+.dark-mode .skills-page .dark-tailwindcss {
+    color: rgb(0, 209, 178);
+}
+
+.dark-mode .skills-page .dark-typescript {
+    color: rgb(0, 122, 204);
+}
+
+.dark-mode .skills-page .dark-nextjs {
+    color: white;
+    background: rgb(31 41 55);
+}
+
+.dark-mode .skills-page .dark-docker {
+    color: rgb(0, 122, 204);
+}
+
+.dark-mode .skills-page .dark-jest {
+    color: rgb(98, 44, 80);
+}
+
+.dark-mode .skills-page .dark-swagger {
+    color: rgb(19, 151, 19);
+}
+
+.dark-mode .skills-page .dark-postgres {
+    color: rgb(0, 97, 162);
+}
+
+.dark-mode .skills-page .dark-mongodb {
+    color: rgb(17, 185, 90)
+}
+
+.dark-mode .skills-page .dark-mongoose {
+    color: rgb(98, 44, 80);
+}
 
 /* CONTACT PAGE */
 
