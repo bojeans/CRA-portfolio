@@ -1,6 +1,6 @@
 import NavBar from "../NavBar";
 import Footer from "../Footer";
-import Technical from "./technical";
+// import Technical from "./technical";
 import NonTechnical from "./nonTechnical";
 
 const About = () => {
@@ -13,7 +13,7 @@ const About = () => {
       </h1>
       <div className="container mx-auto about-page">
         <div className="flex flex-wrap justify-center">
-          <Technical />
+          {/* <Technical /> */}
           <NonTechnical />
         </div>
         <Footer />

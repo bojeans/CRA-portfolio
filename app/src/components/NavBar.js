@@ -53,6 +53,7 @@ const NavBar = () => {
           <div className="hidden md:flex items-center justify-evenly flex-grow">
             <ul className="flex ">
               <NavItem to="/" label="Home" />
+              <NavItem to="/skills" label="Skills" />
               <NavItem to="/about" label="About" />
               <NavItem to="/projects" label="Projects" />
               <NavItem to="/work-experience" label="Work Experience" />
@@ -106,6 +107,7 @@ const NavBar = () => {
         id="mobile-menu"
       >
         <MobileLink to="/" label="Home" />
+        <MobileLink to="/skills" label="Skills" />
         <MobileLink to="/about" label="About" />
         <MobileLink to="/projects" label="Projects" />
         <MobileLink to="/work-experience" label="Work Experience" />
