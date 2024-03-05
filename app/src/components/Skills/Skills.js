@@ -140,28 +140,28 @@ const Skills = () => {
         <SkillsCard
           icon={
             <>
-              <li className="mx-2">
+              <li className="mx-2 dark-solidity">
                 <SiSolidity />
               </li>
-              <li className="mx-2">
+              <li className="mx-2 dark-ethereum">
                 <FaEthereum />
               </li>
-              <li className="mx-2">
+              <li className="mx-2 dark-web3js">
                 <SiWeb3Dotjs />
               </li>
-              <li className="mx-2">
+              <li className="mx-2 dark-figma">
                 <FaFigma />
               </li>
-              <li className="mx-2">
+              <li className="mx-2 dark-webflow">
                 <SiWebflow />
               </li>
-              <li className="mx-2">
+              <li className="mx-2 dark-sass">
                 <IoLogoSass />
               </li>
-              <li className="mx-2">
+              <li className="mx-2 dark-semantic-ui">
                 <SiSemanticuireact />
               </li>
-              <li className="mx-2">
+              <li className="mx-2 dark-python">
                 <FaPython />
               </li>
               <li className="mx-2">

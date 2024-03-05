@@ -208,6 +208,40 @@
     color: rgb(98, 44, 80);
 }
 
+.dark-mode .skills-page .dark-solidity {
+    color: #5C5C5C;
+}
+
+.dark-mode .skills-page .dark-ethereum {
+    color: #7a6bff
+}
+
+.dark-mode .skills-page .dark-web3js {
+    color: #f1682f;
+}
+
+.dark-mode .skills-page .dark-figma {
+    background: linear-gradient(to right, #f24e1e, #ff7262, #a259ff, #1abcfe, #0acf83);
+    color: var(--darkModeBackground)
+}
+
+.dark-mode .skills-page .dark-webflow {
+    color: rgb(61, 71, 255);
+}
+
+.dark-mode .skills-page .dark-sass {
+    color: rgb(204, 102, 153);
+}
+
+.dark-mode .skills-page .dark-semantic-ui {
+    color: rgb(3, 178, 178);
+}
+
+.dark-mode .skills-page .dark-python {
+    background: linear-gradient(to right, #306998, #FFD43B);
+    color: white;
+}
+
 /* CONTACT PAGE */
 
 .dark-mode .contact-page { 
