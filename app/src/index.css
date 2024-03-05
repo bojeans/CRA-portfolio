@@ -111,6 +111,24 @@
     color: var(--darkModeCollapse)
   }
 
+/* SKILLS PAGE */
+.dark-mode .skills-page { 
+    color: var(--darkModeText);
+    background: var(--darkModeBackground);
+}
+
+.dark-mode .skills-page .skills-icons {
+    color: var(--darkModeHeading)
+}
+
+.dark-mode .skills-page .dark-expand {
+    color: var(--darkModeExpand);
+  }
+
+.dark-mode .skills-page .dark-collapse {
+    color: var(--darkModeCollapse);
+  }
+
 /* CONTACT PAGE */
 
 .dark-mode .contact-page { 
