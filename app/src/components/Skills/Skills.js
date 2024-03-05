@@ -45,6 +45,7 @@ import { SiTerraform } from "react-icons/si";
 import { SiPostgresql } from "react-icons/si";
 import { SiMongodb } from "react-icons/si";
 import { SiSqlite } from "react-icons/si";
+import { SiMongoose } from "react-icons/si";
 // SECURITY
 import { SiAuth0 } from "react-icons/si";
 import { SiJsonwebtokens } from "react-icons/si";
@@ -61,131 +62,132 @@ const Skills = () => {
       <div>
         <SkillsCard
           icon={
-            <div className="flex text-5xl text-gray-600">
-              <span className="mx-2">
+            <>
+              <li className="mx-2">
                 <SiJavascript />
-              </span>
-              <span className="mx-2">
+              </li>
+              <li className="mx-2">
                 <SiReact />
-              </span>
-              <span className="mx-2">
+              </li>
+              <li className="mx-2">
                 <DiNodejs />
-              </span>
-              <span className="mx-2">
+              </li>
+              <li className="mx-2">
                 <FaHtml5 />
-              </span>
-              <span className="mx-2">
+              </li>
+              <li className="mx-2">
+                <BsFiletypeJson />
+              </li>
+              <li className="mx-2 text-base">
                 <FaGitAlt />
                 <FaGit />
-              </span>
-              <span className="mx-2">
+              </li>
+              <li className="mx-2">
                 <FaGithub />
-              </span>
-              <span className="mx-2">
+              </li>
+              <li className="mx-2">
                 <TbBrandVscode />
-              </span>
-            </div>
+              </li>
+            </>
           }
           experience="2+ Years"
-          description="Placeholder"
+          description="This space is where I am most comfortable. Studying I learned the PERN/MERN stack (postgres/mongodb, express, react, node). Whilst I haven't been doing much database querying in recent times I have continued using React and started to self teach myself other things such as Typescript & Next.js, and most recently Solidity."
         />
 
         <SkillsCard
           icon={
-            <div className="flex text-5xl text-gray-600">
-              <span className="mx-2">
+            <>
+              <li className="mx-2">
                 <IoLogoCss3 />
-              </span>
-              <span className="mx-2">
+              </li>
+              <li className="mx-2">
                 <BiLogoTailwindCss />
-              </span>
-              <span className="mx-2">
+              </li>
+              <li className="mx-2">
                 <SiTypescript />
-              </span>
-              <span className="mx-2">
+              </li>
+              <li className="mx-2">
                 <TbBrandNextjs />
-              </span>
-              <span className="mx-2">
+              </li>
+              <li className="mx-2">
                 <FaDocker />
-              </span>
-              <span className="mx-2">
+              </li>
+              <li className="mx-2">
                 <SiJest />
-              </span>
-              <span className="mx-2">
-                <BsFiletypeJson />
-              </span>
-              <span className="mx-2">
+              </li>
+              <li className="mx-2">
                 <SiSwagger />
-              </span>
-              <span className="mx-2">
+              </li>
+              <li className="mx-2">
                 <SiPostgresql />
-              </span>
-              <span className="mx-2">
+              </li>
+              <li className="mx-2">
                 <SiMongodb />
-              </span>
-            </div>
+              </li>
+              <li className="mx-2">
+                <SiMongoose />
+              </li>
+            </>
           }
           name="Web Design"
           experience="3 Months - 2 Years"
-          description="Placeholder"
+          description="Typescript, Next.js and tailwindCSS are the main things I'm continuing to develop in this space. Though I am still mindful of trying to apply TDD with things like jest, supertest, react testing library, where possible."
         />
         <SkillsCard
           icon={
-            <div className="flex text-3xl text-gray-600">
-              <span className="mx-2">
+            <>
+              <li className="mx-2">
                 <SiSolidity />
-              </span>
-              <span className="mx-2">
+              </li>
+              <li className="mx-2">
                 <FaEthereum />
-              </span>
-              <span className="mx-2">
+              </li>
+              <li className="mx-2">
                 <SiWeb3Dotjs />
-              </span>
-              <span className="mx-2">
+              </li>
+              <li className="mx-2">
                 <FaFigma />
-              </span>
-              <span className="mx-2">
+              </li>
+              <li className="mx-2">
                 <SiWebflow />
-              </span>
-              <span className="mx-2">
+              </li>
+              <li className="mx-2">
                 <IoLogoSass />
-              </span>
-              <span className="mx-2">
+              </li>
+              <li className="mx-2">
                 <SiSemanticuireact />
-              </span>
-              <span className="mx-2">
+              </li>
+              <li className="mx-2">
                 <FaPython />
-              </span>
-              <span className="mx-2">
+              </li>
+              <li className="mx-2">
                 <FaAws />
-              </span>
-              <span className="mx-2">
+              </li>
+              <li className="mx-2">
                 <SiTerraform />
-              </span>
-              <span className="mx-2">
+              </li>
+              <li className="mx-2">
                 <FaHardHat />
-              </span>
-              <span className="mx-2">
+              </li>
+              <li className="mx-2">
                 <SiDotnet />
-              </span>
-              <span className="mx-2">
+              </li>
+              <li className="mx-2">
                 <TbBrandCSharp />
-              </span>
-              <span className="mx-2">
+              </li>
+              <li className="mx-2">
                 <SiSqlite />
-              </span>
-              <span className="mx-2">
+              </li>
+              <li className="mx-2">
                 <SiAuth0 />
-              </span>
-              <span className="mx-2">
+              </li>
+              <li className="mx-2">
                 <SiJsonwebtokens />
-              </span>
-            </div>
+              </li>
+            </>
           }
-          name="Blockchain Developer"
           experience="Less than 3 months"
-          type="Blockchain"
-          description="Placeholder"
+          description="Most of my Exposure here has been through code-a-long tutorials through sources like youtube, udemy, pluralsight. I am eventually hoping to shift towards becoming a blockchain developer and have just started diving down the Web3 rabbit hole."
         />
       </div>
 
