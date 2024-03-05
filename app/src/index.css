@@ -209,7 +209,7 @@
 }
 
 .dark-mode .skills-page .dark-solidity {
-    color: #5C5C5C;
+    color: #727272;
 }
 
 .dark-mode .skills-page .dark-ethereum {
@@ -241,6 +241,38 @@
     background: linear-gradient(to right, #306998, #FFD43B);
     color: white;
 }
+
+.dark-mode .skills-page .dark-aws {
+    color: rgb(255, 153, 0);
+}
+
+.dark-mode .skills-page .dark-terraform {
+    color: rgb(84, 92, 247);
+} 
+
+.dark-mode .skills-page .dark-dotnet {
+    color: rgb(141, 139, 139);
+}
+
+.dark-mode .skills-page .dark-csharp {
+    color: rgb(52, 154, 0);
+}
+
+.dark-mode .skills-page .dark-sqlite {
+    background: linear-gradient(to right, #5BBBFB, #007ACC, #004573 );
+    color: darkblue;
+}
+
+.dark-mode .skills-page .dark-auth0 {
+    color: rgb(255, 111, 0);
+}
+
+.dark-mode .skills-page .dark-jwt {
+    color: rgb(0, 153, 255);
+}
+
+
+
 
 /* CONTACT PAGE */
 

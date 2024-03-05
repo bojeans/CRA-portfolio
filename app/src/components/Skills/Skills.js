@@ -164,28 +164,28 @@ const Skills = () => {
               <li className="mx-2 dark-python">
                 <FaPython />
               </li>
-              <li className="mx-2">
+              <li className="mx-2 dark-aws">
                 <FaAws />
               </li>
-              <li className="mx-2">
+              <li className="mx-2 dark-terraform">
                 <SiTerraform />
               </li>
               <li className="mx-2">
                 <FaHardHat />
               </li>
-              <li className="mx-2">
+              <li className="mx-2 dark-dotnet">
                 <SiDotnet />
               </li>
-              <li className="mx-2">
+              <li className="mx-2 dark-csharp">
                 <TbBrandCSharp />
               </li>
-              <li className="mx-2">
+              <li className="mx-2 dark-sqlite">
                 <SiSqlite />
               </li>
-              <li className="mx-2">
+              <li className="mx-2 dark-auth0">
                 <SiAuth0 />
               </li>
-              <li className="mx-2">
+              <li className="mx-2 dark-jwt">
                 <SiJsonwebtokens />
               </li>
             </>
