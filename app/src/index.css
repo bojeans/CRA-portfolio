@@ -114,7 +114,12 @@
 /* SKILLS PAGE */
 .dark-mode .skills-page { 
     color: var(--darkModeText);
+    font-weight: 900;
     background: var(--darkModeBackground);
+}
+
+.dark-mode .skills-page .dark-border {
+    background: rgb(31 41 55);
 }
 
 .dark-mode .skills-page .skills-icons {

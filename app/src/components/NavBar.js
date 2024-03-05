@@ -46,7 +46,7 @@ const NavBar = () => {
             to="/"
             className="inline-block max-w-max text-gray-50 text-2xl hover:bg-gray-100 hover:text-black hover:font-bold hover:text-2xl px-3 py-2 rounded-md font-medium"
           >
-            My Portfolio
+            Home
           </Link>
           <DarkModeToggle />
 
