@@ -129,6 +129,40 @@
     color: var(--darkModeCollapse);
   }
 
+/* DarkMode Icons */
+.dark-mode .skills-page .dark-react-icon {
+    color: rgb(38, 198, 252);
+}  
+
+.dark-mode .skills-page .dark-nodejs-icon {
+    color: rgb(0, 171, 0);
+}  
+
+.dark-mode .skills-page .dark-html5-icon {
+    color: orange;
+}
+
+.dark-mode .skills-page .dark-json-icon {
+    color: var(--darkModeText);
+}
+
+.dark-mode .skills-page .dark-git-symbol {
+    color: rgb(253, 99, 33);
+}
+
+.dark-mode .skills-page .dark-git-text {
+    color: var(--darkModeText);
+}
+
+.dark-mode .skills-page .dark-github {
+    color: var(--darkModeText);
+}
+
+.dark-mode .skills-page .dark-vscode {
+    color: rgb(14, 141, 237);
+}
+
+
 /* CONTACT PAGE */
 
 .dark-mode .contact-page { 

@@ -66,26 +66,30 @@ const Skills = () => {
               <li className="mx-2">
                 <SiJavascript />
               </li>
-              <li className="mx-2">
+              <li className="mx-2 dark-react-icon">
                 <SiReact />
               </li>
-              <li className="mx-2">
+              <li className="mx-2 dark-nodejs-icon ">
                 <DiNodejs />
               </li>
-              <li className="mx-2">
+              <li className="mx-2 dark-html5-icon">
                 <FaHtml5 />
               </li>
-              <li className="mx-2">
+              <li className="mx-2 dark-json-icon">
                 <BsFiletypeJson />
               </li>
               <li className="mx-2 text-base">
-                <FaGitAlt />
-                <FaGit />
+                <span className="dark-git-symbol">
+                  <FaGitAlt />
+                </span>
+                <span className="dark-git-text">
+                  <FaGit />
+                </span>
               </li>
-              <li className="mx-2">
+              <li className="mx-2 dark-github">
                 <FaGithub />
               </li>
-              <li className="mx-2">
+              <li className="mx-2 dark-vscode">
                 <TbBrandVscode />
               </li>
             </>
