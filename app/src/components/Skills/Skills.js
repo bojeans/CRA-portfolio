@@ -96,7 +96,7 @@ const Skills = () => {
               </>
             }
             experience="2+ Years"
-            description="This space is where I am most comfortable. Studying I learned the PERN/MERN stack (postgres/mongodb, express, react, node). Whilst I haven't been doing much database querying in recent times I have continued using React and started to self teach myself other things such as Typescript & Next.js, and most recently Solidity."
+            description="This space is where I am most comfortable. While studying, I learned the PERN/MERN stack (postgres/mongodb, express, react, node). Whilst I haven't been doing much database querying in recent times, I have continued using React and started to self teach myself other things such as Typescript & Next.js, and most recently Solidity."
           />
 
           <SkillsCard
