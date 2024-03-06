@@ -6,7 +6,7 @@ const CodeBackground = () => (
     <img
       src={pic}
       alt="screen shot of portfolio code"
-      className="absolute inset-0 w-50 h-50 object-cover md:h-70 md:w-30 opacity-50"
+      className="inset-0 object-cover opacity-40 md:opacity-30 lg:opacity-20"
     />
   </div>
 );

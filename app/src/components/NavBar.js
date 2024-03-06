@@ -51,7 +51,7 @@ const NavBar = () => {
           <DarkModeToggle />
 
           <div className="hidden md:flex items-center justify-evenly flex-grow">
-            <ul className="flex ">
+            <ul className="flex font-serif">
               <NavItem to="/" label="Home" />
               <NavItem to="/skills" label="Skills" />
               <NavItem to="/about" label="About" />
