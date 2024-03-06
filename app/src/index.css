@@ -122,6 +122,11 @@
     background: rgb(31 41 55);
 }
 
+.dark-mode .skills-page .dark-border h3 {
+    color: var(--darkModeHeading);
+
+}
+
 .dark-mode .skills-page .skills-icons {
     color: var(--darkModeHeading)
 }
