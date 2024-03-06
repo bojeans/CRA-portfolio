@@ -1,10 +1,5 @@
-import React, { useState, useEffect } from "react";
 import NavBar from "../NavBar";
 import Footer from "../Footer";
-// import Pagination from "../utils/Pagination";
-// import SearchBy from "./SearchBy";
-// import SortBy from "./SortBy";
-// import FilterBy from "./FilterBy";
 import SkillsCard from "./SkillsCard";
 
 // ICONS
@@ -57,11 +52,6 @@ const Skills = () => {
       <h1 className="font-sans text-4xl font-bold about-page text-center mt-6 mb-4 md:text-6xl">
         Skills
       </h1>
-      {/* <div>
-        <SearchBy />
-        <FilterBy />
-        <SortBy />
-      </div> */}
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
           <SkillsCard
@@ -199,7 +189,6 @@ const Skills = () => {
           />
         </div>
       </div>
-      {/* <Pagination /> */}
       <Footer />
     </div>
   );
