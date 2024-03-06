@@ -31,6 +31,15 @@
   }
 
 /* ABOUT PAGE */
+.dark-mode .about-page { 
+    color: var(--darkModeText);
+    background: var(--darkModeBackground);
+}
+
+.dark-mode .about-page .dark-border {
+    background: rgb(31 41 55);
+}
+
 .dark-mode .about-page ul {
     color: var(--darkModeText);
     background: var(--darkModeBackground);
@@ -58,6 +67,10 @@
     background: var(--darkModeBackground);
 }
 
+.dark-mode .projects-page .dark-border {
+    background: rgb(31 41 55);
+}
+
 .dark-mode .projects-page h1 {
     color: var(--darkModeText);
 }
@@ -82,6 +95,10 @@
 .dark-mode .workexperience-page { 
     color: var(--darkModeText);
     background: var(--darkModeBackground);
+}
+
+.dark-mode .workexperience-page .dark-border {
+    background: rgb(31 41 55);
 }
 
 .dark-mode .workexperience-page h1 { 
@@ -114,7 +131,6 @@
 /* SKILLS PAGE */
 .dark-mode .skills-page { 
     color: var(--darkModeText);
-    font-weight: 900;
     background: var(--darkModeBackground);
 }
 
