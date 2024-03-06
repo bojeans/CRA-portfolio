@@ -54,6 +54,9 @@ const Skills = () => {
   return (
     <div>
       <NavBar />
+      <h1 className="font-sans text-4xl font-bold about-page text-center mt-6 mb-4 md:text-6xl">
+        Skills
+      </h1>
       {/* <div>
         <SearchBy />
         <FilterBy />

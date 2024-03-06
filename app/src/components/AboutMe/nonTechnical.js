@@ -2,7 +2,7 @@ import CollapsibleText from "../utils/CollapsibleText";
 
 const NonTechnical = () => {
   return (
-    <div className="w-full md:w-1/3 px-4">
+    <div className="w-full px-4">
       <div className="rounded-lg shadow-md p-4 mb-4 h-full flex flex-col">
         <ul className="list-none font-serif">
           <li className="mb-4">

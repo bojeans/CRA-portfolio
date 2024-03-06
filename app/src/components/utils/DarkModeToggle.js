@@ -17,7 +17,7 @@ const DarkModeToggle = () => {
   return (
     <div className="flex justify-center items-center p-1">
       <button
-        className={`dark-mode-toggle ${darkMode ? "dark" : "light"} p-2`}
+        className={`dark-mode-toggle ${darkMode ? "dark" : "light"}`}
         onClick={toggleDarkMode}
         aria-label="Toggle Dark Mode"
       >
