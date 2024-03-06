@@ -43,15 +43,15 @@ const NavBar = () => {
     <nav className="bg-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
+          <DarkModeToggle />
           <Link
             to="/"
             className="inline-block max-w-max text-gray-50 text-2xl hover:bg-gray-100 hover:text-black hover:font-bold hover:text-2xl px-3 py-2 rounded-md font-medium"
           >
-            <FaHome />
+            <FaHome className="text-4xl" />
           </Link>
-          <DarkModeToggle />
 
-          <div className="hidden md:flex items-center justify-evenly flex-grow">
+          <div className="hidden md:flex items-center justify-end flex-grow">
             <ul className="flex font-serif">
               <NavItem to="/" label="Home" />
               <NavItem to="/skills" label="Skills" />

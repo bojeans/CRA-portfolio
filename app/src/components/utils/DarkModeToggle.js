@@ -22,9 +22,9 @@ const DarkModeToggle = () => {
         aria-label="Toggle Dark Mode"
       >
         {darkMode ? (
-          <IoSunnyOutline className="text-4xl hover:bg-gray-100 hover:text-black hover:font-bold dark:hover:text-black dark:text-yellow-300" />
+          <IoSunnyOutline className="text-3xl hover:bg-gray-100 hover:text-black hover:font-bold dark:hover:text-black dark:text-yellow-300" />
         ) : (
-          <MdOutlineDarkMode className="text-4xl hover:bg-gray-100 hover:text-black hover:font-bold text-gray-300" />
+          <MdOutlineDarkMode className="text-3xl hover:bg-gray-100 hover:text-black hover:font-bold text-gray-300" />
         )}
       </button>
     </div>
