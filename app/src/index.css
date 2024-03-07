@@ -13,7 +13,7 @@
 /* DARK MODE */
 --darkModeBackground: #000;
 --darkModeText: #fff;
---darkModeHyperlink: cyan;
+--darkModeHyperlink: #7df2fd;
 --darkModeHeading: yellow;
 --darkModeExpand: rgb(0, 255, 0);
 --darkModeCollapse: red;
@@ -97,7 +97,7 @@
 
 .dark-mode .projects-page .dark-button  {
   display: flex;
-  background-color: #a1b2c3; 
+  background-color: #6EE7B7; 
   color: var(--darkModeBackground);
   width: 7rem;
   align-content: center;
@@ -111,8 +111,8 @@
 }
 
 .dark-mode .projects-page .dark-button:hover {
-  background-color: #ccd1d5;
-    color: blue;
+  background-color: #047857;
+    color: var(--darkModeText);
 }
 
 .light-button {
@@ -181,7 +181,7 @@
     background: rgb(31 41 55);
 }
 
-.dark-mode .skills-page .dark-border h3 {
+.dark-mode .skills-page .dark-border h2 {
     color: var(--darkModeHeading);
 
 }
@@ -354,13 +354,13 @@
 }
 
 .dark-mode .contact-page button {
-    background:blue;
-    color: var(--darkModeText);
+    background:#6EE7B7;
+    color: var(--darkModeBackground);
 }
 
 .dark-mode .contact-page button:hover { 
+    background-color: #047857;
     color: var(--darkModeText);
-    background: rgb(98, 169, 255);
 }
 
 

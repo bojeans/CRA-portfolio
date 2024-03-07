@@ -12,12 +12,11 @@ const socialLinks = [
 
 const SocialIcon = ({ icon, href }) => {
   return (
-    <li className="socials mr-2 hover:bg-gray-100 hover:text-2xl">
+    <li className="dark-social mr-2 text-2xl text-blue-700 hover:opacity-50 hover:text-3xl hover:rounded">
       <a
         href={href}
         target="_blank"
         rel="noreferrer"
-        className="hover:text-blue-800 dark-social"
         aria-label="Social media external link"
       >
         {icon}

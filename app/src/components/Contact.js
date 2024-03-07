@@ -88,7 +88,7 @@ const Contact = () => {
           <button
             type="submit"
             disabled={submitCount >= 2}
-            className="shadow bg-green-700 hover:bg-green-300 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
+            className="shadow bg-blue-200 hover:bg-blue-600 focus:shadow-outline focus:outline-none font-bold py-2 px-4 rounded"
           >
             Submit
           </button>

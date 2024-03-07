@@ -17,6 +17,7 @@ const cryptoWebsite = (
     target="_blank"
     rel="noopener noreferrer"
     className="underline italic"
+    aria-label="link to Crypto Project"
   >
     <IoIosGlobe />
   </a>
@@ -34,6 +35,7 @@ const portfolioWebsite = (
     target="_blank"
     rel="noopener noreferrer"
     className="underline italic"
+    aria-label="link to my portfolio project website"
   >
     <IoIosGlobe />
   </a>
@@ -45,6 +47,7 @@ const portfolioCode = (
     target="_blank"
     rel="noopener noreferrer"
     className="underline italic"
+    aria-label="link to my portfolio project code"
   >
     <FaRegFileCode />
   </a>
@@ -57,6 +60,7 @@ const ecommerceWebsite = (
     target="_blank"
     rel="noopener noreferrer"
     className="underline italic "
+    aria-label="link to ecommerce project website"
   >
     <IoIosGlobe />
   </a>
@@ -68,6 +72,7 @@ const ecommerceCode = (
     target="_blank"
     rel="noopener noreferrer"
     className="underline italic"
+    aria-label="link to ecommerce project code"
   >
     <FaRegFileCode />
   </a>

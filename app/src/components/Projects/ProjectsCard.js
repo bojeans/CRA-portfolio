@@ -35,7 +35,11 @@ const ProjectsCard = ({
         </p>
         <div className="flex flex-row mt-5">
           <button className="dark-button light-button">{website}</button>
-          <button onClick={code2} className="dark-button light-button ml-auto">
+          <button
+            onClick={code2}
+            className="dark-button light-button ml-auto"
+            aria-label="link to external website or github code"
+          >
             {code}
           </button>
         </div>
