@@ -118,8 +118,8 @@
     border: none;
     width: 7rem;
     align-content: center;
-  align-items: center;
-  justify-content: center;
+    align-items: center;
+    justify-content: center;
     border-radius: 5px; 
     font-size: 1.5rem;
     cursor: pointer;
@@ -129,7 +129,6 @@
     background-color: #1b4bf9;
     color: var(--darkModeText);
 }
-
 
 /* WORK EXPERIENCE PAGE */
 .dark-mode .workexperience-page { 
@@ -375,4 +374,33 @@
 .dark-mode .dark-social{
     color: var(--darkModeHyperlink);
 }
+
+.proj-Images {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    list-style: none;
+    padding: 0;
+  }
+  
+  .proj-Images li {
+    max-width: 100%;
+    max-height: auto; 
+    margin-bottom: 1rem; 
+  }
+  
+  @media (min-width: 48rem) {
+    .proj-Images {
+      max-width: 80%;
+      margin: 0 auto;
+    }
+  }
+  
+  @media (min-width: 60rem) {
+    .proj-Images {
+      max-width: 60%;
+    }
+  }
+  
+  
 
