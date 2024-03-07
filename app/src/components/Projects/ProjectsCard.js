@@ -27,13 +27,13 @@ const ProjectsCard = ({
           <li className="object-cover h-auto">{image2}</li>
           <li className="object-cover h-auto">{image3}</li>
         </ul>
-        <p className="font-serif text-base">
+        <p className="font-serif text-base heading">
           {skills && <CollapsibleText text={skills} />}
         </p>
         <p className="font-serif text-base mt-5">
           {description && <CollapsibleText text={description} />}
         </p>
-        <div className="flex flex-row">
+        <div className="flex flex-row mt-5">
           <button className="dark-button light-button">{website}</button>
           <button onClick={code2} className="dark-button light-button ml-auto">
             {code}

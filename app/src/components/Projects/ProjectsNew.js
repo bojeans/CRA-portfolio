@@ -111,7 +111,7 @@ const ProjectsNew = () => {
         image={<EcommerceHome />}
         image2={<EcommerceSearch />}
         image3={<EcommercePagination />}
-        skills="React with Typescript. CSS grid"
+        skills="React with Typescript. CSS grid. Javascript Array Methods."
         description="I didn't spend a lot of time styling this project other than a simple grid layout. My main focus was implementing features such as sort/filter categories as well as a search bar and pagination. Getting more comfortable with Typescript was also a goal in this project. If I was doing something like this for real, then would use something like StripeAPI for payment gateway and have that functionality attached to the 'buy now' buttons and/or a cart feature"
         website={ecommerceWebsite}
         code={ecommerceCode}

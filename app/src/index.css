@@ -79,6 +79,10 @@
     color: var(--darkModeHeading);
 }
 
+.dark-mode .projects-page .heading {
+    color: var(--darkModeHeading);
+}
+
 .dark-mode .projects-page .hyperlinks {
     color: var(--darkModeHyperlink);
 }
@@ -375,6 +379,7 @@
     color: var(--darkModeHyperlink);
 }
 
+/* Project Page Images */
 .proj-Images {
     display: flex;
     flex-direction: column; 
@@ -391,14 +396,14 @@
   
   @media (min-width: 48rem) {
     .proj-Images {
-      max-width: 80%;
+      max-width: 70%;
       margin: 0 auto;
     }
   }
   
   @media (min-width: 60rem) {
     .proj-Images {
-      max-width: 60%;
+      max-width: 40rem;
     }
   }
   
