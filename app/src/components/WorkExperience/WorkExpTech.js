@@ -11,17 +11,6 @@ const fbLink = (
   </a>
 );
 
-const ytLink = (
-  <a
-    href="https://www.youtube.com/watch?v=bq9TF6BFJHo"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="text-blue-800 hyperlinks underline italic"
-  >
-    Hack-a-thon video
-  </a>
-);
-
 const cryptoProject = (
   <a
     href="https://risingstardigital.co.nz/portfolio/unodex-crypto-trading-app"
@@ -29,7 +18,7 @@ const cryptoProject = (
     rel="noopener noreferrer"
     className="text-blue-800 hyperlinks underline italic"
   >
-    Crypto Trading App
+    Rising Star Digital
   </a>
 );
 
@@ -44,17 +33,9 @@ const WorkExpTech = () => {
           company="Rising Star Digital Ltd"
           position="Contract Developer"
           date="Nov 2023 - Present"
-          description="*Note this role won't hinder my ability to engage in a full-time
-              role, as we don't have many clients. If work were to pickup I have
-              the ability to be flexible with my schedule/hrs and/or the ability
-              to decline jobs. Project I worked on linked below. I worked
-              on the frontend of the /trade page and /snipe page. Backend was
-              pre-coded in C# by another dev, my role was essentially using
-              Swagger for API specs to manage React state between several parent
-              & child functional components. A smart search bar, trade history,
-              top traded tokens, buy/sell widget were some of the features I
-              worked on.
-            "
+          description="Technically still employed here but haven't had any jobs since the end of 2023. I can pick and choose my workload around fulltime work if/when I need or resign on good terms. 
+          
+          I worked on the frontend of the /trade page and /snipe pages predominately. My role was essentially managing React state between several functional components. A smart search bar, trade history, top traded tokens, buy/sell widget were among some of the features I worked on. Most of my work was on functionality rather than implementing design. "
           link={cryptoProject}
         />
 
@@ -63,22 +44,13 @@ const WorkExpTech = () => {
           position="Associate Software Developer & Remote Teaching Assistant"
           date="April 2021 - August 2023"
           fblink={fbLink}
-          description="Worked in a platform team on a SaaS project. Involved
-              integrating our organisation onto Okta and syncing up our various
-              apps. A lot of this was learning as we went, so documented
-              everything in confluence and worked in an agile environment with
-              weekly sprints. We also had a help desk type ticketing automation
-              system so students could lodge a support request ticket to us. So
-              I also had a lot of direct contact with students (customers) on a
-              regular basis. Matters such as okta login problems,
-              exercise/project assistance helping them debug code, mental
-              health/anxiety reasons. Quite a challenging but fun role given I
-              am reasonably new to the industry as well. Was also fortunate
-              enough to represent Developers Institute externally at a 1 week
-              hackathon in Whangarei with a client Northpower and AWS reps.
-              Short, somewhat uninformative, video they made of that experience
-              if you’re interested:"
-          ytlink={ytLink}
+          description="The company operated as an education provider (tertiary institute) and was a startup in Whangarei, so my role and day-to-day operations were quite varied over the two year period. 
+          I am using past tense as this company unfortunately became insolvent late 2023. 
+          
+          Given we were a startup, regarding my day to day, I wore a lot of hats.
+          My Primary role was to monitor the progress of learners (students) and help them debug their coding exercises/projects. So not so much mentoring juniors but more peer programming and helping deal with other challenges juniors face such as imposter syndrome. 
+          
+          I also helped our platform team for 4 months research and develop our software infrastructure integrating apps onto the Okta platform firstly with SAML/SSO then customised with Terraform. An example of this was coding infrastructure for our different Github Organisations within our Github Enterprise account. "
         />
       </div>
     </>

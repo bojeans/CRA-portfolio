@@ -8,7 +8,6 @@ const WorkExperienceCard = ({
   description,
   link,
   fblink,
-  ytlink,
 }) => {
   return (
     <div className="bg-white rounded-lg overflow-hidden shadow-lg m-4 sm:w-1/2 lg:w-1/3 workexperience-page">
@@ -27,7 +26,6 @@ const WorkExperienceCard = ({
           {description && <CollapsibleText text={description} />}
         </p>
         <p className="text-gray-600 text-lg mb-2 hyperlinks">{link}</p>
-        <p className="text-gray-600 text-lg mb-2 hyperlinks">{ytlink}</p>
       </div>
     </div>
   );

@@ -1,5 +1,3 @@
-import NavBar from "../NavBar";
-import Footer from "../Footer";
 import CryptoProjLight from "../ScreenshotRelated/CryptoProjLight";
 import CryptoProjDark from "../ScreenshotRelated/CryptoProjDark";
 import ProjectsCard from "./ProjectsCard";
@@ -78,7 +76,6 @@ const ecommerceCode = (
 const ProjectsNew = () => {
   return (
     <>
-      <NavBar />
       <ProjectsCard
         image={<CryptoProjLight />}
         image2={<CryptoProjDark />}
@@ -116,7 +113,6 @@ const ProjectsNew = () => {
         website={ecommerceWebsite}
         code={ecommerceCode}
       />
-      <Footer />
     </>
   );
 };
