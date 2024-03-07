@@ -13,7 +13,7 @@
 /* DARK MODE */
 --darkModeBackground: #000;
 --darkModeText: #fff;
---darkModeHyperlink: cyan;
+--darkModeHyperlink: #7df2fd;
 --darkModeHeading: yellow;
 --darkModeExpand: rgb(0, 255, 0);
 --darkModeCollapse: red;
@@ -354,13 +354,13 @@
 }
 
 .dark-mode .contact-page button {
-    background:blue;
-    color: var(--darkModeText);
+    background:#6EE7B7;
+    color: var(--darkModeBackground);
 }
 
 .dark-mode .contact-page button:hover { 
+    background-color: #047857;
     color: var(--darkModeText);
-    background: rgb(98, 169, 255);
 }
 
 
