@@ -3,6 +3,9 @@ import Footer from "../Footer";
 import CryptoProjLight from "../ScreenshotRelated/CryptoProjLight";
 import CryptoProjDark from "../ScreenshotRelated/CryptoProjDark";
 import ProjectsCard from "./ProjectsCard";
+import PortfolioAboutDark from "../ScreenshotRelated/PortfolioAbout_Dark";
+import PortfolioHome from "../ScreenshotRelated/PortfolioHome";
+import PortfolioProjects from "../ScreenshotRelated/PortfolioProjects";
 
 const cryptoWebsite = (
   <a
@@ -15,6 +18,28 @@ const cryptoWebsite = (
   </a>
 );
 
+const ecommerceWebsite = (
+  <a
+    href="https://relaxed-choux-9389d7.netlify.app/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-blue-800 hyperlinks underline italic"
+  >
+    Site
+  </a>
+);
+
+const ecommerceCode = (
+  <a
+    href="https://github.com/bojeans/mock-product-site"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-blue-800 hyperlinks underline italic"
+  >
+    Code
+  </a>
+);
+
 const ProjectsNew = () => {
   return (
     <>
@@ -24,6 +49,7 @@ const ProjectsNew = () => {
         image2={<CryptoProjDark />}
         title="Decentralised trading platform"
         company="Unodex"
+        skills="React.js, Node.js, Swagger, REST API, Trunk-based Development, Agile DevOps"
         description="I worked
         on the frontend of the /trade page and /snipe page. Backend was
         pre-coded in C# by another dev, my role was essentially using
@@ -33,7 +59,21 @@ const ProjectsNew = () => {
         worked on."
         website={cryptoWebsite}
       />
-
+      <ProjectsCard
+        title="My Portfolio"
+        image={<PortfolioHome />}
+        image2={<PortfolioProjects />}
+        image3={<PortfolioAboutDark />}
+        skills="React.js, Node.js, TailwindCSS"
+        description="I built this portfolio using Create React App. The images are a view of an earlier iteration. I got the vibe halfway through that I needed less text and a few more images to hopefully make it more appealing to the eye. I learnt how handy it is creating reuseable functions such as truncating text, and how I should have applied a similar logic to setup styling for my 'cards' and also image styles. DarkMode went amazingly well and I had a bit of help from chatgpt as well as React docs for using createContext. In my wireframes for the skills page I was planning on implementing search/sort/filter/pagination but in the end I went with a more simple approach with icons. Plus if you want to see evidence I can do those, you can see the basic ecommerce mock project below."
+      />
+      <ProjectsCard
+        title="E-commerce mock"
+        skills="React with Typescript CSS grid"
+        description="This was a mock ecommerce shop. I didn't spend a lot of time styling this project other than a simple grid layout. My main focus was implementing features such as sort/filter categories as well as a search bar and pagination. Getting more comfortable with Typescript was also a goal in this project. If I was doing something like this for real, then would use something like StripeAPI for payment gateway and have that functionality attached to the 'buy now' buttons and/or a cart feature"
+        website={ecommerceWebsite}
+        code={ecommerceCode}
+      />
       <Footer />
     </>
   );
