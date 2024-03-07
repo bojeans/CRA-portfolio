@@ -11,6 +11,7 @@ const ProjectsCard = ({
   description,
   website,
   code,
+  code2,
 }) => {
   return (
     <div className="bg-white rounded-lg overflow-hidden shadow-lg m-4 projects-page md:gap-y-6">
@@ -32,8 +33,12 @@ const ProjectsCard = ({
         <p className="font-serif text-base mt-5 work_experience_details">
           {description && <CollapsibleText text={description} />}
         </p>
-        <button>{website}</button>
-        <button>{code}</button>
+        <div className="flex flex-row">
+          <button className="dark-button light-button">{website}</button>
+          <button onClick={code2} className="dark-button light-button ml-auto">
+            {code}
+          </button>
+        </div>
       </div>
     </div>
   );

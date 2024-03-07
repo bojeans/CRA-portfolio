@@ -91,6 +91,46 @@
     color: var(--darkModeCollapse);
   }
 
+.dark-mode .projects-page .dark-button  {
+  display: flex;
+  background-color: #a1b2c3; 
+  color: var(--darkModeBackground);
+  width: 7rem;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem; 
+  border: none;
+  border-radius: 5px; 
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.dark-mode .projects-page .dark-button:hover {
+  background-color: #ccd1d5;
+    color: blue;
+}
+
+.light-button {
+    display: flex;
+    background-color: #c3e0ff; 
+    padding: 0.5rem 1rem; 
+    border: none;
+    width: 7rem;
+    align-content: center;
+  align-items: center;
+  justify-content: center;
+    border-radius: 5px; 
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.light-button:hover {
+    background-color: #1b4bf9;
+    color: var(--darkModeText);
+}
+
+
 /* WORK EXPERIENCE PAGE */
 .dark-mode .workexperience-page { 
     color: var(--darkModeText);

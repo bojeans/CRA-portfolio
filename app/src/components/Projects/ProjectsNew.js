@@ -6,26 +6,58 @@ import ProjectsCard from "./ProjectsCard";
 import PortfolioAboutDark from "../ScreenshotRelated/PortfolioAbout_Dark";
 import PortfolioHome from "../ScreenshotRelated/PortfolioHome";
 import PortfolioProjects from "../ScreenshotRelated/PortfolioProjects";
+import { IoIosGlobe } from "react-icons/io";
+import { FaRegFileCode } from "react-icons/fa";
 
+// CRYPTO PROJECT
 const cryptoWebsite = (
   <a
     href="https://unodex.fi/"
     target="_blank"
     rel="noopener noreferrer"
-    className="text-blue-800 hyperlinks underline italic"
+    className="underline italic"
   >
-    Site
+    <IoIosGlobe />
   </a>
 );
 
+const cryptoCode = () => {
+  alert("Unfortately, the code is not publically available.");
+};
+const cryptoBlank = <FaRegFileCode />;
+
+// PORTFOLIO PROJECT
+const portfolioWebsite = (
+  <a
+    href="https://chrisanderson-portfolio.netlify.app/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="underline italic"
+  >
+    <IoIosGlobe />
+  </a>
+);
+
+const portfolioCode = (
+  <a
+    href="https://github.com/bojeans/CRA-portfolio"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="underline italic"
+  >
+    <FaRegFileCode />
+  </a>
+);
+
+// ECOMMERCE PROJECT
 const ecommerceWebsite = (
   <a
     href="https://relaxed-choux-9389d7.netlify.app/"
     target="_blank"
     rel="noopener noreferrer"
-    className="text-blue-800 hyperlinks underline italic"
+    className="underline italic "
   >
-    Site
+    <IoIosGlobe />
   </a>
 );
 
@@ -34,9 +66,9 @@ const ecommerceCode = (
     href="https://github.com/bojeans/mock-product-site"
     target="_blank"
     rel="noopener noreferrer"
-    className="text-blue-800 hyperlinks underline italic"
+    className="underline italic"
   >
-    Code
+    <FaRegFileCode />
   </a>
 );
 
@@ -58,6 +90,8 @@ const ProjectsNew = () => {
         top traded tokens, buy/sell widget were some of the features I
         worked on."
         website={cryptoWebsite}
+        code={cryptoBlank}
+        code2={cryptoCode}
       />
       <ProjectsCard
         title="My Portfolio"
@@ -66,11 +100,13 @@ const ProjectsNew = () => {
         image3={<PortfolioAboutDark />}
         skills="React.js, Node.js, TailwindCSS"
         description="I built this portfolio using Create React App. The images are a view of an earlier iteration. I got the vibe halfway through that I needed less text and a few more images to hopefully make it more appealing to the eye. I learnt how handy it is creating reuseable functions such as truncating text, and how I should have applied a similar logic to setup styling for my 'cards' and also image styles. DarkMode went amazingly well and I had a bit of help from chatgpt as well as React docs for using createContext. In my wireframes for the skills page I was planning on implementing search/sort/filter/pagination but in the end I went with a more simple approach with icons. Plus if you want to see evidence I can do those, you can see the basic ecommerce mock project below."
+        website={portfolioWebsite}
+        code={portfolioCode}
       />
       <ProjectsCard
-        title="E-commerce mock"
-        skills="React with Typescript CSS grid"
-        description="This was a mock ecommerce shop. I didn't spend a lot of time styling this project other than a simple grid layout. My main focus was implementing features such as sort/filter categories as well as a search bar and pagination. Getting more comfortable with Typescript was also a goal in this project. If I was doing something like this for real, then would use something like StripeAPI for payment gateway and have that functionality attached to the 'buy now' buttons and/or a cart feature"
+        title="Mock E-Commerce Site"
+        skills="React with Typescript. CSS grid"
+        description="I didn't spend a lot of time styling this project other than a simple grid layout. My main focus was implementing features such as sort/filter categories as well as a search bar and pagination. Getting more comfortable with Typescript was also a goal in this project. If I was doing something like this for real, then would use something like StripeAPI for payment gateway and have that functionality attached to the 'buy now' buttons and/or a cart feature"
         website={ecommerceWebsite}
         code={ecommerceCode}
       />
