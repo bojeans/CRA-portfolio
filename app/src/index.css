@@ -25,7 +25,21 @@
     color: var(--darkModeText);
 }
 
+.rounded-custom {
+    border-radius: 50%;
+    border-right: 0.1px solid var(--darkModeBackground);
+  }
+
 /* ABOUT PAGE */
+.dark-mode .about-page { 
+    color: var(--darkModeText);
+    background: var(--darkModeBackground);
+}
+
+.dark-mode .about-page .dark-border {
+    background: rgb(31 41 55);
+}
+
 .dark-mode .about-page ul {
     color: var(--darkModeText);
     background: var(--darkModeBackground);
@@ -53,11 +67,19 @@
     background: var(--darkModeBackground);
 }
 
+.dark-mode .projects-page .dark-border {
+    background: rgb(31 41 55);
+}
+
 .dark-mode .projects-page h1 {
     color: var(--darkModeText);
 }
 
 .dark-mode .projects-page h2 {
+    color: var(--darkModeHeading);
+}
+
+.dark-mode .projects-page .heading {
     color: var(--darkModeHeading);
 }
 
@@ -73,10 +95,53 @@
     color: var(--darkModeCollapse);
   }
 
+.dark-mode .projects-page .dark-button  {
+  display: flex;
+  background-color: #a1b2c3; 
+  color: var(--darkModeBackground);
+  width: 7rem;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem; 
+  border: none;
+  border-radius: 5px; 
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.dark-mode .projects-page .dark-button:hover {
+  background-color: #ccd1d5;
+    color: blue;
+}
+
+.light-button {
+    display: flex;
+    background-color: #c3e0ff; 
+    padding: 0.5rem 1rem; 
+    border: none;
+    width: 7rem;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px; 
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.light-button:hover {
+    background-color: #1b4bf9;
+    color: var(--darkModeText);
+}
+
 /* WORK EXPERIENCE PAGE */
 .dark-mode .workexperience-page { 
     color: var(--darkModeText);
     background: var(--darkModeBackground);
+}
+
+.dark-mode .workexperience-page .dark-border {
+    background: rgb(31 41 55);
 }
 
 .dark-mode .workexperience-page h1 { 
@@ -105,6 +170,173 @@
 .dark-mode .workexperience-page .dark-collapse {
     color: var(--darkModeCollapse)
   }
+
+/* SKILLS PAGE */
+.dark-mode .skills-page { 
+    color: var(--darkModeText);
+    background: var(--darkModeBackground);
+}
+
+.dark-mode .skills-page .dark-border {
+    background: rgb(31 41 55);
+}
+
+.dark-mode .skills-page .dark-border h3 {
+    color: var(--darkModeHeading);
+
+}
+
+.dark-mode .skills-page .skills-icons {
+    color: var(--darkModeHeading)
+}
+
+.dark-mode .skills-page .dark-expand {
+    color: var(--darkModeExpand);
+  }
+
+.dark-mode .skills-page .dark-collapse {
+    color: var(--darkModeCollapse);
+  }
+
+/* DarkMode Icons */
+.dark-mode .skills-page .dark-react-icon {
+    color: rgb(38, 198, 252);
+}  
+
+.dark-mode .skills-page .dark-nodejs-icon {
+    color: rgb(0, 171, 0);
+}  
+
+.dark-mode .skills-page .dark-html5-icon {
+    color: orange;
+}
+
+.dark-mode .skills-page .dark-json-icon {
+    color: var(--darkModeText);
+}
+
+.dark-mode .skills-page .dark-git-symbol {
+    color: rgb(253, 99, 33);
+}
+
+.dark-mode .skills-page .dark-git-text {
+    color: var(--darkModeText);
+}
+
+.dark-mode .skills-page .dark-github {
+    color: var(--darkModeText);
+}
+
+.dark-mode .skills-page .dark-vscode {
+    color: rgb(14, 141, 237);
+}
+
+.dark-mode .skills-page .dark-css3 {
+    color: rgb(0, 149, 255);
+}
+
+.dark-mode .skills-page .dark-tailwindcss {
+    color: rgb(0, 209, 178);
+}
+
+.dark-mode .skills-page .dark-typescript {
+    color: rgb(0, 122, 204);
+}
+
+.dark-mode .skills-page .dark-nextjs {
+    color: white;
+    background: rgb(31 41 55);
+}
+
+.dark-mode .skills-page .dark-docker {
+    color: rgb(0, 122, 204);
+}
+
+.dark-mode .skills-page .dark-jest {
+    color: rgb(98, 44, 80);
+}
+
+.dark-mode .skills-page .dark-swagger {
+    color: rgb(19, 151, 19);
+}
+
+.dark-mode .skills-page .dark-postgres {
+    color: rgb(0, 97, 162);
+}
+
+.dark-mode .skills-page .dark-mongodb {
+    color: rgb(17, 185, 90)
+}
+
+.dark-mode .skills-page .dark-mongoose {
+    color: rgb(98, 44, 80);
+}
+
+.dark-mode .skills-page .dark-solidity {
+    color: #727272;
+}
+
+.dark-mode .skills-page .dark-ethereum {
+    color: #7a6bff
+}
+
+.dark-mode .skills-page .dark-web3js {
+    color: #f1682f;
+}
+
+.dark-mode .skills-page .dark-figma {
+    background: linear-gradient(to right, #f24e1e, #ff7262, #a259ff, #1abcfe, #0acf83);
+    color: var(--darkModeBackground)
+}
+
+.dark-mode .skills-page .dark-webflow {
+    color: rgb(61, 71, 255);
+}
+
+.dark-mode .skills-page .dark-sass {
+    color: rgb(204, 102, 153);
+}
+
+.dark-mode .skills-page .dark-semantic-ui {
+    color: rgb(3, 178, 178);
+}
+
+.dark-mode .skills-page .dark-python {
+    background: linear-gradient(to right, #306998, #FFD43B);
+    color: white;
+}
+
+.dark-mode .skills-page .dark-aws {
+    color: rgb(255, 153, 0);
+}
+
+.dark-mode .skills-page .dark-terraform {
+    color: rgb(84, 92, 247);
+} 
+
+.dark-mode .skills-page .dark-dotnet {
+    color: rgb(141, 139, 139);
+}
+
+.dark-mode .skills-page .dark-csharp {
+    color: rgb(52, 154, 0);
+}
+
+.dark-mode .skills-page .dark-sqlite {
+    background: linear-gradient(to right, #5BBBFB, #007ACC, #004573 );
+    color: darkblue;
+}
+
+.dark-mode .skills-page .dark-auth0 {
+    color: rgb(255, 111, 0);
+}
+
+.dark-mode .skills-page .dark-jwt {
+    color: rgb(0, 153, 255);
+}
+
+
+
 
 /* CONTACT PAGE */
 
@@ -146,4 +378,34 @@
 .dark-mode .dark-social{
     color: var(--darkModeHyperlink);
 }
+
+/* Project Page Images */
+.proj-Images {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    list-style: none;
+    padding: 0;
+  }
+  
+  .proj-Images li {
+    max-width: 100%;
+    max-height: auto; 
+    margin-bottom: 1rem; 
+  }
+  
+  @media (min-width: 48rem) {
+    .proj-Images {
+      max-width: 70%;
+      margin: 0 auto;
+    }
+  }
+  
+  @media (min-width: 60rem) {
+    .proj-Images {
+      max-width: 40rem;
+    }
+  }
+  
+  
 

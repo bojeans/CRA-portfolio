@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import DarkModeToggle from "./utils/DarkModeToggle";
+import { FaHome } from "react-icons/fa";
 
 const MobileLink = ({ to, label }) => {
   return (
@@ -42,17 +43,18 @@ const NavBar = () => {
     <nav className="bg-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
+          <DarkModeToggle />
           <Link
             to="/"
             className="inline-block max-w-max text-gray-50 text-2xl hover:bg-gray-100 hover:text-black hover:font-bold hover:text-2xl px-3 py-2 rounded-md font-medium"
           >
-            My Portfolio
+            <FaHome className="text-4xl" />
           </Link>
-          <DarkModeToggle />
 
-          <div className="hidden md:flex items-center justify-evenly flex-grow">
-            <ul className="flex ">
+          <div className="hidden md:flex items-center justify-end flex-grow">
+            <ul className="flex font-serif">
               <NavItem to="/" label="Home" />
+              <NavItem to="/skills" label="Skills" />
               <NavItem to="/about" label="About" />
               <NavItem to="/projects" label="Projects" />
               <NavItem to="/work-experience" label="Work Experience" />
@@ -106,6 +108,7 @@ const NavBar = () => {
         id="mobile-menu"
       >
         <MobileLink to="/" label="Home" />
+        <MobileLink to="/skills" label="Skills" />
         <MobileLink to="/about" label="About" />
         <MobileLink to="/projects" label="Projects" />
         <MobileLink to="/work-experience" label="Work Experience" />

@@ -1,9 +1,6 @@
 import NavBar from "../NavBar";
 import Footer from "../Footer";
-import Planning from "./Planning";
-import Started from "./Started";
-import InProgress from "./InProgress";
-import Done from "./Done";
+import ProjectsNew from "./ProjectsNew";
 
 const Projects = () => {
   return (
@@ -14,10 +11,7 @@ const Projects = () => {
       </h1>
       <div className="container mx-auto projects-page">
         <div className="flex flex-wrap justify-center">
-          <Planning />
-          <Started />
-          <InProgress />
-          <Done />
+          <ProjectsNew />
         </div>
         <Footer />
       </div>

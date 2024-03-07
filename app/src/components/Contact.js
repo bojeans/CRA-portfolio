@@ -1,7 +1,7 @@
-import NavBar from "./NavBar";
-import Footer from "./Footer";
 import React, { useState, useEffect, useRef } from "react";
 import { useForm, ValidationError } from "@formspree/react";
+import NavBar from "./NavBar";
+import Footer from "./Footer";
 
 const Contact = () => {
   const [state, handleSubmit, reset] = useForm("xnqwbjwd");
@@ -29,12 +29,6 @@ const Contact = () => {
     <>
       <NavBar />
       <div className="flex flex-col items-center justify-center bg-gray-100 py-12 px-4 sm:px-6 lg:px-8 contact-page">
-        <span className="max-w-md w-full space-y-8">
-          <h2 className="text-center text-2xl font-bold text-gray-900">
-            I'm open to contractor dev work. Either send me a short message
-            below or get in touch via my social media links in the footer.
-          </h2>
-        </span>
         <form ref={formRef} onSubmit={handleSubmit} className="w-full max-w-lg">
           {submitCount >= 2 && (
             <p className="text-red-600 font-bold">
