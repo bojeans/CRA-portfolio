@@ -48,14 +48,14 @@ const NavBar = () => {
             to="/"
             className="inline-block max-w-max text-gray-50 text-2xl hover:bg-gray-100 hover:text-black hover:font-bold hover:text-2xl px-3 py-2 rounded-md font-medium"
           >
-            <FaHome className="text-4xl" />
+            <FaHome className="text-4xl" aria-label="Home Page" />
           </Link>
 
           <div className="hidden md:flex items-center justify-end flex-grow">
             <ul className="flex font-serif">
               <NavItem to="/" label="Home" />
-              <NavItem to="/skills" label="Skills" />
               <NavItem to="/about" label="About" />
+              <NavItem to="/skills" label="Skills" />
               <NavItem to="/projects" label="Projects" />
               <NavItem to="/work-experience" label="Work Experience" />
               <NavItem to="/contact" label="Contact" />
@@ -108,8 +108,8 @@ const NavBar = () => {
         id="mobile-menu"
       >
         <MobileLink to="/" label="Home" />
-        <MobileLink to="/skills" label="Skills" />
         <MobileLink to="/about" label="About" />
+        <MobileLink to="/skills" label="Skills" />
         <MobileLink to="/projects" label="Projects" />
         <MobileLink to="/work-experience" label="Work Experience" />
         <MobileLink to="/contact" label="Contact" />

@@ -181,7 +181,7 @@
     background: rgb(31 41 55);
 }
 
-.dark-mode .skills-page .dark-border h3 {
+.dark-mode .skills-page .dark-border h2 {
     color: var(--darkModeHeading);
 
 }
