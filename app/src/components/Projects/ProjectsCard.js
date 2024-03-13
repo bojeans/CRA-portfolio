@@ -10,6 +10,7 @@ const ProjectsCard = ({
   skills,
   description,
   website,
+  website2,
   code,
   code2,
 }) => {
@@ -34,11 +35,17 @@ const ProjectsCard = ({
           {description && <CollapsibleText text={description} />}
         </p>
         <div className="flex flex-row mt-5">
-          <button className="dark-button light-button">{website}</button>
+          <button
+            onclick={website2}
+            className="dark-button light-button"
+            aria-label="link to external website"
+          >
+            {website}
+          </button>
           <button
             onClick={code2}
             className="dark-button light-button ml-auto"
-            aria-label="link to external website or github code"
+            aria-label="link to external github code"
           >
             {code}
           </button>

@@ -78,13 +78,47 @@ const ecommerceCode = (
   </a>
 );
 
+// In Progress - Fitness App
+const inProgressWebsite = () => {
+  alert("Coming Soon");
+};
+const fitnessAppWebsite = (
+  <button
+    onClick={inProgressWebsite}
+    className="underline italic"
+    aria-label="link to fitness app website"
+  >
+    {" "}
+    <IoIosGlobe />{" "}
+  </button>
+);
+
+const fitnessAppCode = (
+  <a
+    href="https://github.com/bojeans/fitness-app"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="underline italic"
+    aria-label="link to fitness app code"
+  >
+    <FaRegFileCode />
+  </a>
+);
+
 const ProjectsNew = () => {
   return (
     <>
       <ProjectsCard
+        title="In Progress - Fitness App"
+        skills="Next.js, Typescript, PostgreSQL, Docker, TailwindCSS, Jest, React Testing Library, Figma, Auth"
+        website={fitnessAppWebsite}
+        website2={inProgressWebsite}
+        code={fitnessAppCode}
+      />
+      <ProjectsCard
         image={<CryptoProjLight />}
         image2={<CryptoProjDark />}
-        title="Decentralised trading platform"
+        title="Work Experience - Decentralised trading platform"
         company="Unodex"
         skills="React.js, Node.js, Swagger, REST API, Trunk-based Development, Agile DevOps"
         description="I worked
@@ -99,7 +133,7 @@ const ProjectsNew = () => {
         code2={cryptoCode}
       />
       <ProjectsCard
-        title="My Portfolio"
+        title="Personal Projects - My Portfolio"
         image={<PortfolioHome />}
         image2={<PortfolioProjects />}
         image3={<PortfolioAboutDark />}
