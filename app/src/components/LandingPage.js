@@ -16,7 +16,7 @@ const LandingPage = () => {
     }
   };
 
-  // Add event listener to detect window resize
+  // event listener to detect window resize
   useEffect(() => {
     handleResize();
     window.addEventListener("resize", handleResize);
@@ -29,7 +29,6 @@ const LandingPage = () => {
     <div className="flex flex-col min-h-screen">
       <NavBar />
       <div className="flex flex-col md:flex-row flex-1">
-        {/* Conditionally render components based on mobile view */}
         {isMobileView ? (
           <>
             <div className="w-full flex-grow">
@@ -45,8 +44,8 @@ const LandingPage = () => {
             <div className="w-full md:w-8/12 flex-grow">
               <CodeBackground />
             </div>
-            <div className="w-full md:w-4/12 flex-grow">
-              <div className="flex flex-col h-full">
+            <div className="w-full md:w-4/12 flex-grow flex justify-center items-center">
+              <div className="flex flex-col">
                 <Hero />
                 <Footer />
               </div>
