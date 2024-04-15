@@ -79,42 +79,44 @@ const ecommerceCode = (
 );
 
 // In Progress - Fitness App
-const inProgressWebsite = () => {
-  alert("Coming Soon");
-};
-const fitnessAppWebsite = (
-  <button
-    onClick={inProgressWebsite}
-    className="underline italic"
-    aria-label="link to fitness app website"
-  >
-    {" "}
-    <IoIosGlobe />{" "}
-  </button>
-);
 
-const fitnessAppCode = (
-  <a
-    href="https://github.com/bojeans/fitness-app"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="underline italic"
-    aria-label="link to fitness app code"
-  >
-    <FaRegFileCode />
-  </a>
-);
+// ADD or EDIT
+// const inProgressWebsite = () => {
+//   alert("Coming Soon");
+// };
+// const fitnessAppWebsite = (
+//   <button
+//     onClick={inProgressWebsite}
+//     className="underline italic"
+//     aria-label="link to fitness app website"
+//   >
+//     {" "}
+//     <IoIosGlobe />{" "}
+//   </button>
+// );
+
+// const fitnessAppCode = (
+//   <a
+//     href="https://github.com/bojeans/fitness-app"
+//     target="_blank"
+//     rel="noopener noreferrer"
+//     className="underline italic"
+//     aria-label="link to fitness app code"
+//   >
+//     <FaRegFileCode />
+//   </a>
+// );
 
 const ProjectsNew = () => {
   return (
     <>
-      <ProjectsCard
+      {/* <ProjectsCard
         title="In Progress - Fitness App"
         skills="Next.js, Typescript, PostgreSQL, Docker, TailwindCSS, Jest, React Testing Library, Figma, Auth"
         website={fitnessAppWebsite}
         website2={inProgressWebsite}
         code={fitnessAppCode}
-      />
+      /> */}
       <ProjectsCard
         image={<CryptoProjLight />}
         image2={<CryptoProjDark />}
