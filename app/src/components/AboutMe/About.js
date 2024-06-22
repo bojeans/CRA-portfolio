@@ -18,6 +18,7 @@ const About = () => {
           <AboutCard
             title="Education"
             description="Bachelor of Management Studies - University of Waikato. Majors: Information Systems & Strategic Management. Also, attained a NZ Diploma in Web Development and Design from Developers Institute NZ."
+            link="/qualifications"
           />
           <AboutCard
             title="Other"
