@@ -21,7 +21,7 @@ const Qualifications = () => {
             description="Certificate in Adult Education & Training"
             image={
               <img
-                className="w-full h-auto mb-6 py-5"
+                className="w-full h-auto py-5"
                 src={PP}
                 alt="People Potential qualification certificate"
               />
@@ -33,7 +33,7 @@ const Qualifications = () => {
             description="NZ diploma in Web Development & Design level 5"
             image={
               <img
-                className="w-full h-auto mb-6 py-5"
+                className="w-full h-auto mt-5 mb-5"
                 src={DI}
                 alt="Developers Institute qualification certificate"
               />
@@ -45,7 +45,7 @@ const Qualifications = () => {
             description="Bachelor of Management Studies. Majors in Information Systems & Strategic Management"
             image={
               <img
-                className="transform -rotate-90 w-full h-auto max-h-35 mb-6 py-5"
+                className="transform -rotate-90 h-80 mt-1 w-60"
                 src={Uni}
                 alt="University of Waikato qualification certificate"
               />
@@ -58,7 +58,7 @@ const Qualifications = () => {
             description="NCEA Level 3"
             image={
               <img
-                className="transform -rotate-180 w-full h-auto mb-9 py-3"
+                className="transform -rotate-180 w-full h-auto py-3"
                 src={School}
                 alt="Tauraroa Area School qualification certificate"
               />
