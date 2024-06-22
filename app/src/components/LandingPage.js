@@ -28,31 +28,27 @@ const LandingPage = () => {
   return (
     <div className="flex flex-col min-h-screen">
       <NavBar />
-      <div className="flex flex-col md:flex-row flex-1">
-        {isMobileView ? (
-          <>
-            <div className="w-full flex-grow">
-              <Hero />
-            </div>
-            <div className="w-full flex-grow">
-              <Contact />
-              <Footer />
-            </div>
-          </>
-        ) : (
-          <>
-            <div className="w-full md:w-8/12 flex-grow">
-              <Contact />
-            </div>
-            <div className="w-full md:w-4/12 flex-grow flex justify-center items-center">
-              <div className="flex flex-col">
-                <Hero />
-                <Footer />
-              </div>
-            </div>
-          </>
-        )}
+      <div
+        className={`flex-1 ${
+          isMobileView ? "flex flex-col" : "flex flex-col md:flex-row"
+        }`}
+      >
+        <div
+          className={`w-full ${
+            isMobileView
+              ? "mb-4"
+              : "md:w-1/3 md:flex md:items-center md:justify-center"
+          }`}
+        >
+          <div className="w-full md:w-11/12 lg:w-10/12">
+            <Hero />
+          </div>
+        </div>
+        <div className={`w-full px-3 ${isMobileView ? "" : "md:w-2/3"}`}>
+          <Contact />
+        </div>
       </div>
+      <Footer className="mt-auto" />
     </div>
   );
 };

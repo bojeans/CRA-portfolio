@@ -1,10 +1,18 @@
 import React from "react";
-import { FaGithub, FaFacebookF, FaLinkedin, FaRegUser } from "react-icons/fa";
+import {
+  FaGithub,
+  FaFacebookF,
+  FaLinkedin,
+  FaUserCircle,
+} from "react-icons/fa";
 import cv from "../assets/cv.pdf";
 
 // social link global variables
 const socialLinks = [
-  { icon: <FaRegUser />, href: cv },
+  {
+    icon: <FaUserCircle />,
+    href: cv,
+  },
   { icon: <FaLinkedin />, href: process.env.REACT_APP_LINKEDIN_ENDPOINT },
   { icon: <FaGithub />, href: process.env.REACT_APP_GITHUB_ENDPOINT },
   { icon: <FaFacebookF />, href: process.env.REACT_APP_FACEBOOK_ENDPOINT },
