@@ -13,12 +13,11 @@ const App = () => {
       <Router>
         <Routes>
           <Route exact path="/" element={<LandingPage />} />
-          <Route exact path="/skills" element={<Skills />} />
           <Route path="/about" element={<About />} />
+          <Route path="/skills" element={<Skills />} />
+          <Route path="/qualifications" element={<Qualifications />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/work-experience" element={<WorkExperience />} />
-          <Route path="/qualifications" element={<Qualifications />} />
-          <Route path="/skills" element={<Skills />} />
         </Routes>
       </Router>
     </DarkModeProvider>
