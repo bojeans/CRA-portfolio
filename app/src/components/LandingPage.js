@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Hero from "./ScreenshotRelated/Hero";
 import Footer from "./Footer";
 import NavBar from "./NavBar";
-import CodeBackground from "./ScreenshotRelated/CodeBackground";
+import Contact from "./Contact";
 
 const LandingPage = () => {
   const [isMobileView, setIsMobileView] = useState(false);
@@ -35,14 +35,14 @@ const LandingPage = () => {
               <Hero />
             </div>
             <div className="w-full flex-grow">
-              <CodeBackground />
+              <Contact />
               <Footer />
             </div>
           </>
         ) : (
           <>
             <div className="w-full md:w-8/12 flex-grow">
-              <CodeBackground />
+              <Contact />
             </div>
             <div className="w-full md:w-4/12 flex-grow flex justify-center items-center">
               <div className="flex flex-col">
