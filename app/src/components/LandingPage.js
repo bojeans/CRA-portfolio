@@ -7,7 +7,6 @@ import Contact from "./Contact";
 const LandingPage = () => {
   const [isMobileView, setIsMobileView] = useState(false);
 
-  // Function to detect mobile view
   const handleResize = () => {
     if (window.innerWidth < 768) {
       setIsMobileView(true);
@@ -16,7 +15,6 @@ const LandingPage = () => {
     }
   };
 
-  // event listener to detect window resize
   useEffect(() => {
     handleResize();
     window.addEventListener("resize", handleResize);
@@ -36,22 +34,16 @@ const LandingPage = () => {
         <div
           className={`w-full ${
             isMobileView
-              ? "mb-4"
+              ? "mb-4 flex justify-center"
               : "md:w-1/3 md:flex md:items-center md:justify-center"
           }`}
         >
-          <div className="w-full">
-            <Hero
-              className={`${
-                isMobileView
-                  ? "w-full"
-                  : "w-full md:mx-auto md:max-w-md lg:max-w-lg"
-              }`}
-            />
+          <div className="m-3 w-full max-w-xs md:max-w-md md:ml-6 lg:max-w-lg">
+            <Hero />
           </div>
         </div>
         <div
-          className={`w-full px-3 ${isMobileView ? "" : "md:w-2/3 py-10 mr-5"}`}
+          className={`w-full px-3 ${isMobileView ? "" : "md:w-2/3 py-5 mr-5"}`}
         >
           <Contact />
         </div>
