@@ -3,7 +3,7 @@ import LandingPage from "./components/LandingPage";
 import About from "./components/AboutMe/About";
 import Projects from "./components/Projects/Projects";
 import WorkExperience from "./components/WorkExperience/WorkExperience";
-import Qualifications from "./components/Qualifications";
+import Qualifications from "./components/Qualifications/Qualifications";
 import Skills from "./components/Skills/Skills";
 import { DarkModeProvider } from "./components/utils/DarkModeContext";
 
