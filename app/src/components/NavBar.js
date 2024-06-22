@@ -58,7 +58,7 @@ const NavBar = () => {
               <NavItem to="/skills" label="Skills" />
               <NavItem to="/projects" label="Projects" />
               <NavItem to="/work-experience" label="Work Experience" />
-              <NavItem to="/contact" label="Contact" />
+              <NavItem to="/qualifications" label="Qualifications" />
             </ul>
           </div>
 
@@ -112,7 +112,7 @@ const NavBar = () => {
         <MobileLink to="/skills" label="Skills" />
         <MobileLink to="/projects" label="Projects" />
         <MobileLink to="/work-experience" label="Work Experience" />
-        <MobileLink to="/contact" label="Contact" />
+        <MobileLink to="/qualifications" label="Qualifications" />
       </div>
     </nav>
   );
