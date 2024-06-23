@@ -26,7 +26,7 @@ const NavBar = () => {
           spy={"true"}
           smooth={"true"}
           duration={500}
-          className="text-gray-50 hover:bg-gray-100 hover:text-black hover:font-bold hover:text-2xl px-3 py-2 rounded-md text-sm font-medium md:text-lg"
+          className="text-gray-50 hover:bg-gray-100 hover:text-black hover:font-bold hover:text-2xl px-3 py-2 rounded-md text-sm font-medium md:text-lg lg:text-xl"
           onClick={onClick}
         >
           {label}

@@ -17,12 +17,12 @@ const About = () => {
           />
           <AboutCard
             title="Education"
-            description="Bachelor of Management Studies - University of Waikato. Majors: Information Systems & Strategic Management. Also, attained a NZ Diploma in Web Development and Design from Developers Institute NZ."
+            description="Bachelor of Management Studies - University of Waikato. Majors: Information Systems & Strategic Management. NZ Diploma in Web Development and Design from Developers Institute NZ."
             link="/qualifications"
           />
           <AboutCard
             title="Other"
-            description="Passionate about sports and travelling. Explored over 30 countries, including hiking Machu Picchu, motorbiking Ha Giang Loop in Vietnam, and attending Oktoberfest in Munich."
+            description="Passionate about sports and travelling. Explored over 30 countries, some highlights: hiking Machu Picchu, motorbiking Ha Giang Loop in Vietnam, and attending Oktoberfest in Munich."
           />
         </div>
         <Footer />
