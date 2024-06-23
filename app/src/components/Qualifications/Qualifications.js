@@ -47,7 +47,7 @@ const Qualifications = () => {
               <ZoomableImage
                 src={Uni}
                 alt="University of Waikato qualification certificate"
-                rotation="rotate(-90deg)"
+                rotation="transform -rotate-90"
               />
             }
           />
@@ -59,7 +59,7 @@ const Qualifications = () => {
               <ZoomableImage
                 src={School}
                 alt="Tauraroa Area School qualification certificate"
-                rotation="rotate(-180deg)"
+                rotation="transform -rotate-180"
               />
             }
           />
