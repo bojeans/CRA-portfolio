@@ -40,9 +40,16 @@ const CollapsibleText = ({ text }) => {
     return null; // Or handle the case where text is not valid
   }
 
+  const truncatedText = text.substring(0, maxChars);
+  const fullText = text;
+
   return (
     <>
-      <p>{showAllText ? text : text.substring(0, maxChars)}</p>
+      <p
+        dangerouslySetInnerHTML={{
+          __html: showAllText ? fullText : truncatedText,
+        }}
+      />
       {!isTextTooShort && (
         <button
           onClick={toggleShowAllText}

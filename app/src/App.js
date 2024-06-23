@@ -3,7 +3,7 @@ import LandingPage from "./components/LandingPage";
 import About from "./components/AboutMe/About";
 import Projects from "./components/Projects/Projects";
 import WorkExperience from "./components/WorkExperience/WorkExperience";
-import Contact from "./components/Contact";
+import Qualifications from "./components/Qualifications/Qualifications";
 import Skills from "./components/Skills/Skills";
 import { DarkModeProvider } from "./components/utils/DarkModeContext";
 
@@ -13,12 +13,11 @@ const App = () => {
       <Router>
         <Routes>
           <Route exact path="/" element={<LandingPage />} />
-          <Route exact path="/skills" element={<Skills />} />
           <Route path="/about" element={<About />} />
+          <Route path="/skills" element={<Skills />} />
+          <Route path="/qualifications" element={<Qualifications />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/work-experience" element={<WorkExperience />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/skills" element={<Skills />} />
         </Routes>
       </Router>
     </DarkModeProvider>

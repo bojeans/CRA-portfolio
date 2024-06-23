@@ -335,8 +335,13 @@
     color: rgb(0, 153, 255);
 }
 
+.dark-mode .skills-page .dark-redux {
+    color: rgb(118, 74, 188);
+}
 
-
+.dark-mode .skills-page .dark-php {
+    color: rgb(119, 123, 179);
+}
 
 /* CONTACT PAGE */
 

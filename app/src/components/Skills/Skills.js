@@ -34,6 +34,8 @@ import { BsFiletypeJson } from "react-icons/bs";
 import { SiSwagger } from "react-icons/si";
 import { SiDotnet } from "react-icons/si";
 import { TbBrandCSharp } from "react-icons/tb";
+import { SiRedux } from "react-icons/si";
+import { FaPhp } from "react-icons/fa6";
 // CLOUD & Database
 import { FaAws } from "react-icons/fa";
 import { SiTerraform } from "react-icons/si";
@@ -69,6 +71,9 @@ const Skills = () => {
                 <li className="mx-2 dark-html5-icon">
                   <FaHtml5 />
                 </li>
+                <li className="mx-2 dark-css3">
+                  <IoLogoCss3 />
+                </li>
                 <li className="mx-2 dark-json-icon">
                   <BsFiletypeJson />
                 </li>
@@ -95,9 +100,6 @@ const Skills = () => {
           <SkillsCard
             icon={
               <>
-                <li className="mx-2 dark-css3">
-                  <IoLogoCss3 />
-                </li>
                 <li className="mx-2 dark-tailwindcss">
                   <BiLogoTailwindCss />
                 </li>
@@ -181,6 +183,12 @@ const Skills = () => {
                 </li>
                 <li className="mx-2 dark-jwt">
                   <SiJsonwebtokens />
+                </li>
+                <li className="mx-2 dark-redux">
+                  <SiRedux />
+                </li>
+                <li className="mx-2 dark-php">
+                  <FaPhp />
                 </li>
               </>
             }

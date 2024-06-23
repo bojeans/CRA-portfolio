@@ -2,12 +2,11 @@ import React, { useState, useEffect } from "react";
 import Hero from "./ScreenshotRelated/Hero";
 import Footer from "./Footer";
 import NavBar from "./NavBar";
-import CodeBackground from "./ScreenshotRelated/CodeBackground";
+import Contact from "./Contact";
 
 const LandingPage = () => {
   const [isMobileView, setIsMobileView] = useState(false);
 
-  // Function to detect mobile view
   const handleResize = () => {
     if (window.innerWidth < 768) {
       setIsMobileView(true);
@@ -16,7 +15,6 @@ const LandingPage = () => {
     }
   };
 
-  // event listener to detect window resize
   useEffect(() => {
     handleResize();
     window.addEventListener("resize", handleResize);
@@ -28,31 +26,29 @@ const LandingPage = () => {
   return (
     <div className="flex flex-col min-h-screen">
       <NavBar />
-      <div className="flex flex-col md:flex-row flex-1">
-        {isMobileView ? (
-          <>
-            <div className="w-full flex-grow">
-              <Hero />
-            </div>
-            <div className="w-full flex-grow">
-              <CodeBackground />
-              <Footer />
-            </div>
-          </>
-        ) : (
-          <>
-            <div className="w-full md:w-8/12 flex-grow">
-              <CodeBackground />
-            </div>
-            <div className="w-full md:w-4/12 flex-grow flex justify-center items-center">
-              <div className="flex flex-col">
-                <Hero />
-                <Footer />
-              </div>
-            </div>
-          </>
-        )}
+      <div
+        className={`flex-1 ${
+          isMobileView ? "flex flex-col items-center" : "flex md:flex-row"
+        }`}
+      >
+        <div
+          className={`w-full ${
+            isMobileView
+              ? "mb-4 flex justify-center"
+              : "md:w-1/3 md:flex md:items-center md:justify-center"
+          }`}
+        >
+          <div className="m-3 w-full max-w-xs md:max-w-md md:ml-6 lg:max-w-lg">
+            <Hero />
+          </div>
+        </div>
+        <div
+          className={`w-full px-3 ${isMobileView ? "" : "md:w-2/3 py-5 mr-5"}`}
+        >
+          <Contact />
+        </div>
       </div>
+      <Footer className="mt-auto" />
     </div>
   );
 };

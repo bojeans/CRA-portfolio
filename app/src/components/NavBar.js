@@ -26,7 +26,7 @@ const NavBar = () => {
           spy={"true"}
           smooth={"true"}
           duration={500}
-          className="text-gray-50 hover:bg-gray-100 hover:text-black hover:font-bold hover:text-2xl px-3 py-2 rounded-md text-sm font-medium md:text-lg"
+          className="text-gray-50 hover:bg-gray-100 hover:text-black hover:font-bold hover:text-2xl px-3 py-2 rounded-md text-sm font-medium md:text-lg lg:text-xl"
           onClick={onClick}
         >
           {label}
@@ -56,9 +56,9 @@ const NavBar = () => {
               <NavItem to="/" label="Home" />
               <NavItem to="/about" label="About" />
               <NavItem to="/skills" label="Skills" />
+              <NavItem to="/qualifications" label="Qualifications" />
               <NavItem to="/projects" label="Projects" />
               <NavItem to="/work-experience" label="Work Experience" />
-              <NavItem to="/contact" label="Contact" />
             </ul>
           </div>
 
@@ -110,9 +110,9 @@ const NavBar = () => {
         <MobileLink to="/" label="Home" />
         <MobileLink to="/about" label="About" />
         <MobileLink to="/skills" label="Skills" />
+        <MobileLink to="/qualifications" label="Qualifications" />
         <MobileLink to="/projects" label="Projects" />
         <MobileLink to="/work-experience" label="Work Experience" />
-        <MobileLink to="/contact" label="Contact" />
       </div>
     </nav>
   );
