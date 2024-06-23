@@ -3,7 +3,7 @@ import CollapsibleText from "../utils/CollapsibleText";
 
 const AboutCard = ({ title, description, link }) => {
   const fullDescription = link
-    ? `${description} <a href="${link}" class="text-blue-500 hover:text-blue-700">See Qualifications for evidence</a>`
+    ? `${description} <a href="${link}" class="text-blue-500 hover:text-blue-700 hyperlinks">See Qualifications for evidence</a>`
     : description;
 
   return (
