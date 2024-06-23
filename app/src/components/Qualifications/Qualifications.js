@@ -5,6 +5,8 @@ import DI from "../../assets/developersinstitute.jpg";
 import Uni from "../../assets/waikatouni.jpg";
 import School from "../../assets/ncealvl3.jpg";
 import PP from "../../assets/peoplepotential.jpg";
+import ZoomableImage from "../utils/ZoomableImage";
+import "react-medium-image-zoom/dist/styles.css";
 
 const Qualifications = () => {
   return (
@@ -20,8 +22,7 @@ const Qualifications = () => {
             year="2022"
             description="Certificate in Adult Education & Training"
             image={
-              <img
-                className="w-full h-auto py-5"
+              <ZoomableImage
                 src={PP}
                 alt="People Potential qualification certificate"
               />
@@ -32,8 +33,7 @@ const Qualifications = () => {
             year="2021"
             description="NZ diploma in Web Development & Design level 5"
             image={
-              <img
-                className="w-full h-auto mt-5 mb-5"
+              <ZoomableImage
                 src={DI}
                 alt="Developers Institute qualification certificate"
               />
@@ -44,23 +44,22 @@ const Qualifications = () => {
             year="2010"
             description="Bachelor of Management Studies. Majors in Information Systems & Strategic Management"
             image={
-              <img
-                className="transform -rotate-90 h-80 mt-1 w-60"
+              <ZoomableImage
                 src={Uni}
                 alt="University of Waikato qualification certificate"
+                rotation="rotate(-90deg)"
               />
             }
           />
-
           <QualificationsCard
             title="Tauraroa Area School"
             year="2005"
             description="NCEA Level 3"
             image={
-              <img
-                className="transform -rotate-180 w-full h-auto py-3"
+              <ZoomableImage
                 src={School}
                 alt="Tauraroa Area School qualification certificate"
+                rotation="rotate(-180deg)"
               />
             }
           />
