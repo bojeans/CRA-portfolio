@@ -45,9 +45,10 @@ const Qualifications = () => {
             description="Bachelor of Management Studies. Majors in Information Systems & Strategic Management"
             image={
               <ZoomableImage
+                className="w-full h-48 mt-6 mb-8"
                 src={Uni}
                 alt="University of Waikato qualification certificate"
-                rotation="transform -rotate-90"
+                rotation="rotate(-90deg)"
               />
             }
           />
@@ -59,7 +60,7 @@ const Qualifications = () => {
               <ZoomableImage
                 src={School}
                 alt="Tauraroa Area School qualification certificate"
-                rotation="transform -rotate-180"
+                rotation="rotate(-180deg)"
               />
             }
           />
