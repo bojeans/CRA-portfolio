@@ -48,7 +48,7 @@ const Qualifications = () => {
                 className="w-full h-48 mt-6 mb-8"
                 src={Uni}
                 alt="University of Waikato qualification certificate"
-                rotation="rotate(-90deg)"
+                rotation={-90}
               />
             }
           />
@@ -60,7 +60,7 @@ const Qualifications = () => {
               <ZoomableImage
                 src={School}
                 alt="Tauraroa Area School qualification certificate"
-                rotation="rotate(-180deg)"
+                rotation={180}
               />
             }
           />
