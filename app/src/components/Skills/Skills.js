@@ -57,7 +57,7 @@ const Skills = () => {
           Skills
         </h1>
         <ContainerBackground>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 gap-var(--gridGap)">
             <SkillsCard
               icon={
                 <>
@@ -98,7 +98,6 @@ const Skills = () => {
               experience="2+ Years"
               description="This space is where I am most comfortable. While studying, I learned the PERN/MERN stack (postgres/mongodb, express, react, node). Whilst I haven't been doing much database querying in recent times, I have continued using React and started to self teach myself other things such as Typescript & Next.js, and most recently Solidity."
             />
-
             <SkillsCard
               icon={
                 <>

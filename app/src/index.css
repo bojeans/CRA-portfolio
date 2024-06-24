@@ -223,10 +223,11 @@
 .dark-mode .skills-page { 
     color: var(--darkModeText);
     background: var(--darkModeBackground);
+    margin: 1.5rem;
 }
 
 .dark-mode .skills-page .dark-border {
-    background: rgb(31 41 55);
+    background: linear-gradient(135deg, #2c2c2c 0%, #3a3a3a 100%);
 }
 
 .dark-mode .skills-page .dark-border h2 {
@@ -407,13 +408,14 @@
 }
 
 .dark-mode .contact-page button {
-    background:#6EE7B7;
-    color: var(--darkModeBackground);
+    background: #047857;
+    color: var(--darkModeText);
+  
 }
 
 .dark-mode .contact-page button:hover { 
-    background-color: #047857;
-    color: var(--darkModeText);
+      background-color:#57e65b;
+      color: var(--darkModeBackground);
 }
 
 
