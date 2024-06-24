@@ -3,7 +3,7 @@ import React from "react";
 
 const SkillsCard = ({ icon, experience, description }) => {
   return (
-    <div className="bg-white rounded-lg overflow-hidden shadow-lg m-4 skills-page md:gap-y-6">
+    <div className="about-card rounded-lg overflow-hidden shadow-lg m-4 skills-page md:gap-y-6">
       <div className="h-full flex flex-col px-6 py-4 dark-border">
         <h2 className="text-lg text-center font-sans mb-2 md:mb-8 md:text-2xl work_experience_details">
           {experience}

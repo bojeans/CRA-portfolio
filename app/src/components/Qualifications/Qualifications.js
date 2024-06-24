@@ -6,16 +6,18 @@ import Uni from "../../assets/waikatouni.jpg";
 import School from "../../assets/ncealvl3.jpg";
 import PP from "../../assets/peoplepotential.jpg";
 import ZoomableImage from "../utils/ZoomableImage";
+import ContainerBackground from "../utils/ContainerBackground";
 import "react-medium-image-zoom/dist/styles.css";
 
 const Qualifications = () => {
   return (
     <>
       <NavBar />
+
       <h1 className="text-3xl font-bold projects-page text-center mt-6 mb-4 md:text-6xl">
         Qualifications
       </h1>
-      <div className="container mx-auto">
+      <ContainerBackground>
         <div className="flex flex-wrap justify-center">
           <QualificationsCard
             title="People Potential"
@@ -65,8 +67,9 @@ const Qualifications = () => {
             }
           />
         </div>
+
         <Footer />
-      </div>
+      </ContainerBackground>
     </>
   );
 };
