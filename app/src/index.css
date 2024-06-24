@@ -21,12 +21,17 @@
 
 .container {
     display: grid;
-    width: 100%;
+    width: auto;
     height: auto;
     box-sizing: border-box;    
   }
 
 /* LANDING PAGE */
+.dark-mode .home {
+    background: var(--darkModeBackground);
+       color: var(--darkModeText);
+   }
+
 .dark-mode .about-card {
  background: var(--darkModeBackground);
     color: var(--darkModeText);

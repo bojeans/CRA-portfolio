@@ -24,7 +24,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center py-12 px-4 sm:px-6 lg:px-8 contact-page">
+    <div className="flex flex-col items-center contact-page justify-center py-12 px-4 sm:px-6 lg:px-8">
       <form ref={formRef} onSubmit={handleSubmit} className="w-full max-w-lg">
         {submitCount >= 2 && (
           <p className="text-red-600 font-bold">
