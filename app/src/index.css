@@ -19,8 +19,15 @@
 --darkModeCollapse: red;
 }
 
+.container {
+    display: grid;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;    
+  }
+
 /* LANDING PAGE */
-.dark-mode {
+.dark-mode .about-card {
  background: var(--darkModeBackground);
     color: var(--darkModeText);
 }
@@ -31,13 +38,49 @@
   }
 
 /* ABOUT PAGE */
-.dark-mode .about-page { 
-    color: var(--darkModeText);
-    background: var(--darkModeBackground);
-}
 
-.dark-mode .about-page .dark-border {
+/* styles.css */
+.about-card {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    overflow: hidden;
+  }
+  
+  .about-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 0.5rem;
+  }
+  
+  .description {
+    font-family: 'Merriweather', serif;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-top: 1rem;
+  }
+  
+  .skills-icons {
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+  .sub-title {
+    overflow: hidden;
+  }
+
+.dark-mode .about-card .dark-border {
     background: rgb(31 41 55);
+    width: 100%;
+    border-radius: 10px;
+    padding: 1rem;
 }
 
 .dark-mode .about-page ul {
@@ -45,19 +88,19 @@
     background: var(--darkModeBackground);
   }
 
-.dark-mode .about-page h1 h2 {
+.dark-mode .about-card h1 h2 {
     color: var(--darkModeText);
 }
 
-.dark-mode .about-page .sub-title {
+.dark-mode .about-card .sub-title {
     color: var(--darkModeHeading);
   }
 
-.dark-mode .about-page .dark-expand {
+.dark-mode .about-card .dark-expand {
     color: var(--darkModeExpand);
   }
 
-.dark-mode .about-page .dark-collapse {
+.dark-mode .about-card .dark-collapse {
     color: var(--darkModeCollapse);
   }
   
