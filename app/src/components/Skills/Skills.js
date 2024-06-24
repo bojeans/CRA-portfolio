@@ -1,7 +1,7 @@
+import React from "react";
 import NavBar from "../NavBar";
 import Footer from "../Footer";
 import SkillsCard from "./SkillsCard";
-import ContainerBackground from "../utils/ContainerBackground";
 
 // ICONS
 
@@ -56,8 +56,7 @@ const Skills = () => {
         <h1 className="font-sans text-4xl font-bold about-page text-center mt-6 mb-4 md:text-6xl">
           Skills
         </h1>
-        {/* <ContainerBackground> */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 gap-var(--gridGap)">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
           <SkillsCard
             icon={
               <>
@@ -197,7 +196,6 @@ const Skills = () => {
             description="Most of my Exposure here has been through code-a-long tutorials through sources like youtube, udemy, pluralsight. I am eventually hoping to shift towards becoming a blockchain developer and have just started diving down the Web3 rabbit hole."
           />
         </div>
-        {/* </ContainerBackground> */}
         <Footer />
       </div>
     </>
