@@ -6,7 +6,7 @@ const About = () => {
   return (
     <>
       <NavBar />
-      <div className="about-card">
+      <div className="about-page">
         <h1 className="font-sans text-4xl font-bold about-page text-center mt-6 mb-4 md:text-6xl">
           About Me
         </h1>

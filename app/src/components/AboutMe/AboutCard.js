@@ -9,13 +9,11 @@ const AboutCard = ({ title, description, link }) => {
 
   return (
     <ContainerBackground>
-      <div className="h-full dark-border">
-        <div className="flex items-center justify-center font-bold gap-6 text-xl mt-2 mb-5 skills-icons sub-title card-title">
-          {title}
-        </div>
-        <div className="card-description">
-          <CollapsibleText text={fullDescription} />
-        </div>
+      <div className="flex items-center justify-center font-bold gap-6 text-xl mt-2 mb-5 sub-title">
+        {title}
+      </div>
+      <div className="description">
+        <CollapsibleText text={fullDescription} />
       </div>
     </ContainerBackground>
   );

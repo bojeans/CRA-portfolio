@@ -9,6 +9,7 @@
 --lightModeBackground: #fff;
 --lightModeText: #000;
 --lightModeHyperlink: blue;
+--lightModeBGfade: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
 
 /* DARK MODE */
 --darkModeBackground: #000;
@@ -17,6 +18,7 @@
 --darkModeHeading: yellow;
 --darkModeExpand: rgb(0, 255, 0);
 --darkModeCollapse: red;
+--darkModeBGfade: linear-gradient(135deg, #2c2c2c 0%, #3a3a3a 100%);
 }
 
 .container {
@@ -28,13 +30,16 @@
 
 /* LANDING PAGE */
 .dark-mode .home {
-    background: var(--darkModeBackground);
+    background: var(--darkModeBGfade);
        color: var(--darkModeText);
    }
 
-.dark-mode .about-card {
+.dark-mode .card {
  background: var(--darkModeBackground);
     color: var(--darkModeText);
+    width: auto;
+    margin: 0;
+    border-radius: 0;
 }
 
 .rounded-custom {
@@ -45,14 +50,17 @@
 /* ABOUT PAGE */
 
 /* styles.css */
-.about-card {
-    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+.card {
+    background: var(--lightModeBGfade);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
     overflow: hidden;
+    width: auto;
+    margin: 1rem;
+    border-radius: 10%;
   }
   
-  .about-card:hover {
+  .card:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   }
@@ -81,32 +89,43 @@
     overflow: hidden;
   }
 
-.dark-mode .about-card .dark-border {
-    background: rgb(31 41 55);
-    width: auto;
-    border-radius: 10px;
+  .regular {
+    background-color: var(--lightModeBGfade);
+    width: 100%;
+    height: auto;
+    
+  }
+
+.dark-mode .about-page {
+    color: var(--darkModeText);
+    background: var(--darkModeBackground);
+    margin: 0;
+  }
+
+.dark-mode .about-page h1  {
+    color: var(--darkModeText);
     padding: 1rem;
 }
 
-.dark-mode .about-page ul {
-    color: var(--darkModeText);
-    background: var(--darkModeBackground);
-  }
-
-.dark-mode .about-card h1 h2 {
-    color: var(--darkModeText);
-}
-
-.dark-mode .about-card .sub-title {
+.dark-mode .about-page .sub-title {
     color: var(--darkModeHeading);
   }
 
-.dark-mode .about-card .dark-expand {
+.dark-mode .about-page .description {
+    color: var(--darkModeText);
+  }  
+
+.dark-mode .about-page .dark-expand {
     color: var(--darkModeExpand);
   }
 
-.dark-mode .about-card .dark-collapse {
+.dark-mode .about-page .dark-collapse {
     color: var(--darkModeCollapse);
+  }
+
+.dark-mode .about-page .card {
+    font-size: 4rem;
+    color: red;
   }
   
 /* PROJECT PAGE */
@@ -222,12 +241,12 @@
 /* SKILLS PAGE */
 .dark-mode .skills-page { 
     color: var(--darkModeText);
-    background: var(--darkModeBackground);
+    background: var(--darkModeBGfade);
     margin: 1.5rem;
 }
 
 .dark-mode .skills-page .dark-border {
-    background: linear-gradient(135deg, #2c2c2c 0%, #3a3a3a 100%);
+    background: var(--darkModeBGfade)
 }
 
 .dark-mode .skills-page .dark-border h2 {
@@ -421,6 +440,13 @@
 
 
 /* FOOTER */
+
+.dark-mode .dark-footer {
+    background: var(--darkModeBGfade);
+    color: var(--darkModeText);
+    margin: 0;
+}
+
 .dark-mode .dark-footer-name {
     color: yellow;
 }

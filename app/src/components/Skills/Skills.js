@@ -56,148 +56,148 @@ const Skills = () => {
         <h1 className="font-sans text-4xl font-bold about-page text-center mt-6 mb-4 md:text-6xl">
           Skills
         </h1>
-        <ContainerBackground>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 gap-var(--gridGap)">
-            <SkillsCard
-              icon={
-                <>
-                  <li className="mx-2">
-                    <SiJavascript />
-                  </li>
-                  <li className="mx-2 dark-react-icon">
-                    <SiReact />
-                  </li>
-                  <li className="mx-2 dark-nodejs-icon ">
-                    <DiNodejs />
-                  </li>
-                  <li className="mx-2 dark-html5-icon">
-                    <FaHtml5 />
-                  </li>
-                  <li className="mx-2 dark-css3">
-                    <IoLogoCss3 />
-                  </li>
-                  <li className="mx-2 dark-json-icon">
-                    <BsFiletypeJson />
-                  </li>
-                  <li className="mx-2 text-base">
-                    <span className="dark-git-symbol">
-                      <FaGitAlt />
-                    </span>
-                    <span className="dark-git-text">
-                      <FaGit />
-                    </span>
-                  </li>
-                  <li className="mx-2 dark-github">
-                    <FaGithub />
-                  </li>
-                  <li className="mx-2 dark-vscode">
-                    <TbBrandVscode />
-                  </li>
-                </>
-              }
-              experience="2+ Years"
-              description="This space is where I am most comfortable. While studying, I learned the PERN/MERN stack (postgres/mongodb, express, react, node). Whilst I haven't been doing much database querying in recent times, I have continued using React and started to self teach myself other things such as Typescript & Next.js, and most recently Solidity."
-            />
-            <SkillsCard
-              icon={
-                <>
-                  <li className="mx-2 dark-tailwindcss">
-                    <BiLogoTailwindCss />
-                  </li>
-                  <li className="mx-2 dark-typescript">
-                    <SiTypescript />
-                  </li>
-                  <li className="mx-2 dark-nextjs">
-                    <TbBrandNextjs />
-                  </li>
-                  <li className="mx-2 dark-docker">
-                    <FaDocker />
-                  </li>
-                  <li className="mx-2 dark-jest">
-                    <SiJest />
-                  </li>
-                  <li className="mx-2 dark-swagger">
-                    <SiSwagger />
-                  </li>
-                  <li className="mx-2 dark-postgres">
-                    <SiPostgresql />
-                  </li>
-                  <li className="mx-2 dark-mongodb">
-                    <SiMongodb />
-                  </li>
-                  <li className="mx-2 dark-mongoose">
-                    <SiMongoose />
-                  </li>
-                </>
-              }
-              name="Web Design"
-              experience="6 Months - 2 Years"
-              description="Typescript, Next.js and tailwindCSS are the main things I'm continuing to develop in this space. Though I am still mindful of trying to apply TDD with things like jest, supertest, react testing library, where possible."
-            />
-            <SkillsCard
-              icon={
-                <>
-                  <li className="mx-2 dark-solidity">
-                    <SiSolidity />
-                  </li>
-                  <li className="mx-2 dark-ethereum">
-                    <FaEthereum />
-                  </li>
-                  <li className="mx-2 dark-web3js">
-                    <SiWeb3Dotjs />
-                  </li>
-                  <li className="mx-2 dark-figma">
-                    <FaFigma />
-                  </li>
-                  <li className="mx-2 dark-webflow">
-                    <SiWebflow />
-                  </li>
-                  <li className="mx-2 dark-sass">
-                    <IoLogoSass />
-                  </li>
-                  <li className="mx-2 dark-semantic-ui">
-                    <SiSemanticuireact />
-                  </li>
-                  <li className="mx-2 dark-python">
-                    <FaPython />
-                  </li>
-                  <li className="mx-2 dark-aws">
-                    <FaAws />
-                  </li>
-                  <li className="mx-2 dark-terraform">
-                    <SiTerraform />
-                  </li>
-                  <li className="mx-2">
-                    <FaHardHat />
-                  </li>
-                  <li className="mx-2 dark-dotnet">
-                    <SiDotnet />
-                  </li>
-                  <li className="mx-2 dark-csharp">
-                    <TbBrandCSharp />
-                  </li>
-                  <li className="mx-2 dark-sqlite">
-                    <SiSqlite />
-                  </li>
-                  <li className="mx-2 dark-auth0">
-                    <SiAuth0 />
-                  </li>
-                  <li className="mx-2 dark-jwt">
-                    <SiJsonwebtokens />
-                  </li>
-                  <li className="mx-2 dark-redux">
-                    <SiRedux />
-                  </li>
-                  <li className="mx-2 dark-php">
-                    <FaPhp />
-                  </li>
-                </>
-              }
-              experience="Less than 6 months"
-              description="Most of my Exposure here has been through code-a-long tutorials through sources like youtube, udemy, pluralsight. I am eventually hoping to shift towards becoming a blockchain developer and have just started diving down the Web3 rabbit hole."
-            />
-          </div>
-        </ContainerBackground>
+        {/* <ContainerBackground> */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 gap-var(--gridGap)">
+          <SkillsCard
+            icon={
+              <>
+                <li className="mx-2">
+                  <SiJavascript />
+                </li>
+                <li className="mx-2 dark-react-icon">
+                  <SiReact />
+                </li>
+                <li className="mx-2 dark-nodejs-icon ">
+                  <DiNodejs />
+                </li>
+                <li className="mx-2 dark-html5-icon">
+                  <FaHtml5 />
+                </li>
+                <li className="mx-2 dark-css3">
+                  <IoLogoCss3 />
+                </li>
+                <li className="mx-2 dark-json-icon">
+                  <BsFiletypeJson />
+                </li>
+                <li className="mx-2 text-base">
+                  <span className="dark-git-symbol">
+                    <FaGitAlt />
+                  </span>
+                  <span className="dark-git-text">
+                    <FaGit />
+                  </span>
+                </li>
+                <li className="mx-2 dark-github">
+                  <FaGithub />
+                </li>
+                <li className="mx-2 dark-vscode">
+                  <TbBrandVscode />
+                </li>
+              </>
+            }
+            experience="2+ Years"
+            description="This space is where I am most comfortable. While studying, I learned the PERN/MERN stack (postgres/mongodb, express, react, node). Whilst I haven't been doing much database querying in recent times, I have continued using React and started to self teach myself other things such as Typescript & Next.js, and most recently Solidity."
+          />
+          <SkillsCard
+            icon={
+              <>
+                <li className="mx-2 dark-tailwindcss">
+                  <BiLogoTailwindCss />
+                </li>
+                <li className="mx-2 dark-typescript">
+                  <SiTypescript />
+                </li>
+                <li className="mx-2 dark-nextjs">
+                  <TbBrandNextjs />
+                </li>
+                <li className="mx-2 dark-docker">
+                  <FaDocker />
+                </li>
+                <li className="mx-2 dark-jest">
+                  <SiJest />
+                </li>
+                <li className="mx-2 dark-swagger">
+                  <SiSwagger />
+                </li>
+                <li className="mx-2 dark-postgres">
+                  <SiPostgresql />
+                </li>
+                <li className="mx-2 dark-mongodb">
+                  <SiMongodb />
+                </li>
+                <li className="mx-2 dark-mongoose">
+                  <SiMongoose />
+                </li>
+              </>
+            }
+            name="Web Design"
+            experience="6 Months - 2 Years"
+            description="Typescript, Next.js and tailwindCSS are the main things I'm continuing to develop in this space. Though I am still mindful of trying to apply TDD with things like jest, supertest, react testing library, where possible."
+          />
+          <SkillsCard
+            icon={
+              <>
+                <li className="mx-2 dark-solidity">
+                  <SiSolidity />
+                </li>
+                <li className="mx-2 dark-ethereum">
+                  <FaEthereum />
+                </li>
+                <li className="mx-2 dark-web3js">
+                  <SiWeb3Dotjs />
+                </li>
+                <li className="mx-2 dark-figma">
+                  <FaFigma />
+                </li>
+                <li className="mx-2 dark-webflow">
+                  <SiWebflow />
+                </li>
+                <li className="mx-2 dark-sass">
+                  <IoLogoSass />
+                </li>
+                <li className="mx-2 dark-semantic-ui">
+                  <SiSemanticuireact />
+                </li>
+                <li className="mx-2 dark-python">
+                  <FaPython />
+                </li>
+                <li className="mx-2 dark-aws">
+                  <FaAws />
+                </li>
+                <li className="mx-2 dark-terraform">
+                  <SiTerraform />
+                </li>
+                <li className="mx-2">
+                  <FaHardHat />
+                </li>
+                <li className="mx-2 dark-dotnet">
+                  <SiDotnet />
+                </li>
+                <li className="mx-2 dark-csharp">
+                  <TbBrandCSharp />
+                </li>
+                <li className="mx-2 dark-sqlite">
+                  <SiSqlite />
+                </li>
+                <li className="mx-2 dark-auth0">
+                  <SiAuth0 />
+                </li>
+                <li className="mx-2 dark-jwt">
+                  <SiJsonwebtokens />
+                </li>
+                <li className="mx-2 dark-redux">
+                  <SiRedux />
+                </li>
+                <li className="mx-2 dark-php">
+                  <FaPhp />
+                </li>
+              </>
+            }
+            experience="Less than 6 months"
+            description="Most of my Exposure here has been through code-a-long tutorials through sources like youtube, udemy, pluralsight. I am eventually hoping to shift towards becoming a blockchain developer and have just started diving down the Web3 rabbit hole."
+          />
+        </div>
+        {/* </ContainerBackground> */}
         <Footer />
       </div>
     </>

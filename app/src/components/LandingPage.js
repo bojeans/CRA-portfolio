@@ -52,9 +52,8 @@ const LandingPage = () => {
             <Contact />
           </div>
         </div>
-
-        <Footer className="mt-auto" />
       </ContainerBackground>
+      <Footer className="mt-auto" />
     </>
   );
 };
