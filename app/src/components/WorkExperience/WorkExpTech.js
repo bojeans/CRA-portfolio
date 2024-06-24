@@ -28,7 +28,7 @@ const WorkExpTech = () => {
       <h2 className="text-2xl font-bold text-center mb-4 border-b-2 border-gray-800 pb-2 font-serif">
         Tech Related
       </h2>
-      <div className="flex flex-wrap justify-center work_experience_expand">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <WorkExperienceCard
           company="Rising Star Digital Ltd"
           position="Contract Developer"
@@ -38,7 +38,6 @@ const WorkExpTech = () => {
           I worked on the frontend of the /trade page and /snipe pages predominately. My role was essentially managing React state between several functional components. A smart search bar, trade history, top traded tokens, buy/sell widget were among some of the features I worked on. Most of my work was on functionality rather than implementing design. "
           link={cryptoProject}
         />
-
         <WorkExperienceCard
           company="Developers Institute NZ Ltd"
           position="Associate Software Developer & Remote Teaching Assistant"
