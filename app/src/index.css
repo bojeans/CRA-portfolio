@@ -28,18 +28,24 @@
     box-sizing: border-box;    
   }
 
+.dark-mode {
+    background-color: var(--darkModeBackground);
+    color: var(--darkModeText);
+   
+}
+
 /* LANDING PAGE */
 .dark-mode .home {
     background: var(--darkModeBGfade);
        color: var(--darkModeText);
    }
 
-.dark-mode .card {
- background: var(--darkModeBackground);
+.dark-mode .card { 
     color: var(--darkModeText);
-    width: auto;
-    margin: 0;
-    border-radius: 0;
+    background: var(--darkModeBGfade);
+    margin: 1rem;
+    border-radius: 10%;
+    padding: 1rem;
 }
 
 .rounded-custom {
@@ -99,7 +105,7 @@
 .dark-mode .about-page {
     color: var(--darkModeText);
     background: var(--darkModeBackground);
-    margin: 0;
+    margin: auto;
   }
 
 .dark-mode .about-page h1  {
@@ -109,10 +115,12 @@
 
 .dark-mode .about-page .sub-title {
     color: var(--darkModeHeading);
+    margin-top: 2rem;
   }
 
 .dark-mode .about-page .description {
     color: var(--darkModeText);
+    margin: 0 1rem 1rem 1rem;
   }  
 
 .dark-mode .about-page .dark-expand {
@@ -123,10 +131,6 @@
     color: var(--darkModeCollapse);
   }
 
-.dark-mode .about-page .card {
-    font-size: 4rem;
-    color: red;
-  }
   
 /* PROJECT PAGE */
 .dark-mode .projects-page { 
@@ -240,18 +244,15 @@
 
 /* SKILLS PAGE */
 .dark-mode .skills-page { 
-    color: var(--darkModeText);
+    color: var(--darkModeHeading);
     background: var(--darkModeBGfade);
-    margin: 1.5rem;
+    margin: 1rem;
+    border-radius: 10%;
 }
 
-.dark-mode .skills-page .dark-border {
-    background: var(--darkModeBGfade)
-}
 
 .dark-mode .skills-page .dark-border h2 {
     color: var(--darkModeHeading);
-
 }
 
 .dark-mode .skills-page .skills-icons {
@@ -446,7 +447,7 @@
 
 .dark-mode .contact-page { 
     color: var(--darkModeText);
-    background: var(--darkModeBackground);
+    background: var(--darkModeBGfade);
 }
 
 .dark-mode .contact-page h2 { 
@@ -473,7 +474,7 @@
 /* FOOTER */
 
 .dark-mode .dark-footer {
-    background: var(--darkModeBGfade);
+    background: var(--darkModeBackground);
     color: var(--darkModeText);
     margin: 0;
 }

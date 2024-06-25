@@ -4,7 +4,7 @@ import ContainerBackground from "../utils/ContainerBackground";
 const SkillsCard = ({ icon, experience, description }) => {
   return (
     <ContainerBackground>
-      <div className="skills-page p-6 md:gap-y-6">
+      <div className="skills-page dark-border p-6 md:gap-y-6">
         <h2 className="text-lg text-center font-sans mb-4 md:mb-8 md:text-2xl work_experience_details">
           {experience}
         </h2>

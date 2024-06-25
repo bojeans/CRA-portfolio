@@ -11,7 +11,7 @@ const About = () => {
           About Me
         </h1>
         <div className="container mx-auto px-4 max-w">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
+          <div className="card-container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
             <AboutCard
               title="Coding Related"
               description="I'm focused on advancing my career as a full-stack developer. Exploring AI, machine learning, and blockchain development are among my interests on top of continuing with React."

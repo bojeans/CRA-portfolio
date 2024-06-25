@@ -52,8 +52,8 @@ const Skills = () => {
   return (
     <>
       <NavBar />
-      <div className="about-card">
-        <h1 className="font-sans text-4xl font-bold about-page text-center mt-6 mb-4 md:text-6xl">
+      <div>
+        <h1 className="font-sans text-4xl font-bold text-center mt-6 mb-4 md:text-6xl">
           Skills
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
