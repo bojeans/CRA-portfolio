@@ -14,12 +14,13 @@ const Qualifications = () => {
     <>
       <NavBar />
 
-      <h1 className="text-3xl font-bold projects-page text-center mt-6 mb-4 md:text-6xl">
+      <h1 className="text-3xl font-bold text-center mt-6 mb-4 md:text-6xl">
         Qualifications
       </h1>
-      <p className="text-center zoom-instruction">
+      <p className="text-center italic text-base text-gray-700 mt-4 mb-8 p-2 zoom-instruction">
         Click the images to zoom in
       </p>
+
       <div className="container mx-auto px-4 max-w">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
           <QualificationsCard

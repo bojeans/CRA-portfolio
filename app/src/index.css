@@ -431,13 +431,12 @@
     margin-bottom: 20px;
   }
 
-  .zoom-instruction {
-  font-style: italic;
-  font-size: 1rem; /* Adjust size as needed */
-  color: #555; /* Adjust color as needed */
-  margin-top: 1rem;
-  margin-bottom: 2rem;
-  padding: 0.5rem;
+.dark-mode .qualification-page { 
+    color: var(--darkModeHeading);
+}
+
+.dark-mode .zoom-instruction {
+  color: var(--darkModeHeading)
 }
 
   
