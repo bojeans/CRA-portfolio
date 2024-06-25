@@ -9,7 +9,7 @@ const Projects = () => {
       <h1 className="text-3xl font-bold projects-page text-center mt-6 mb-4 md:text-6xl">
         Projects
       </h1>
-      <div className="container mx-auto projects-page">
+      <div className="container mx-auto px-4 max-w">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
           <ProjectsNew />
         </div>

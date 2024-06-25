@@ -20,59 +20,60 @@ const Qualifications = () => {
       <p className="text-center zoom-instruction">
         Click the images to zoom in
       </p>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-        <QualificationsCard
-          title="People Potential"
-          year="2022"
-          description="Certificate in Adult Education & Training"
-          image={
-            <ZoomableImage
-              className="qualification-image"
-              src={PP}
-              alt="People Potential qualification certificate"
-            />
-          }
-        />
-        <QualificationsCard
-          title="Developers Institute"
-          year="2021"
-          description="NZ diploma in Web Development & Design level 5"
-          image={
-            <ZoomableImage
-              className="qualification-image"
-              src={DI}
-              alt="Developers Institute qualification certificate"
-            />
-          }
-        />
-        <QualificationsCard
-          title="University of Waikato"
-          year="2010"
-          description="Bachelor of Management Studies. Majors in Information Systems & Strategic Management"
-          image={
-            <ZoomableImage
-              className="qualification-image"
-              src={Uni}
-              alt="University of Waikato qualification certificate"
-              rotation={-90}
-            />
-          }
-        />
-        <QualificationsCard
-          title="Tauraroa Area School"
-          year="2005"
-          description="NCEA Level 3"
-          image={
-            <ZoomableImage
-              className="qualification-image"
-              src={School}
-              alt="Tauraroa Area School qualification certificate"
-              rotation={180}
-            />
-          }
-        />
+      <div className="container mx-auto px-4 max-w">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+          <QualificationsCard
+            title="People Potential"
+            year="2022"
+            description="Certificate in Adult Education & Training"
+            image={
+              <ZoomableImage
+                className="qualification-image"
+                src={PP}
+                alt="People Potential qualification certificate"
+              />
+            }
+          />
+          <QualificationsCard
+            title="Developers Institute"
+            year="2021"
+            description="NZ diploma in Web Development & Design level 5"
+            image={
+              <ZoomableImage
+                className="qualification-image"
+                src={DI}
+                alt="Developers Institute qualification certificate"
+              />
+            }
+          />
+          <QualificationsCard
+            title="University of Waikato"
+            year="2010"
+            description="Bachelor of Management Studies. Majors in Information Systems & Strategic Management"
+            image={
+              <ZoomableImage
+                className="qualification-image"
+                src={Uni}
+                alt="University of Waikato qualification certificate"
+                rotation={-90}
+              />
+            }
+          />
+          <QualificationsCard
+            title="Tauraroa Area School"
+            year="2005"
+            description="NCEA Level 3"
+            image={
+              <ZoomableImage
+                className="qualification-image"
+                src={School}
+                alt="Tauraroa Area School qualification certificate"
+                rotation={180}
+              />
+            }
+          />
+        </div>
       </div>
-
       <Footer />
     </>
   );
