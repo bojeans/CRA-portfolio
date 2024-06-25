@@ -1,5 +1,6 @@
 import React from "react";
 import CollapsibleText from "../utils/CollapsibleText";
+import ContainerBackground from "../utils/ContainerBackground";
 
 const ProjectsCard = ({
   image,
@@ -15,8 +16,8 @@ const ProjectsCard = ({
   code2,
 }) => {
   return (
-    <div className="bg-white rounded-lg overflow-hidden shadow-lg m-4 projects-page md:gap-y-6">
-      <div className="h-full px-6 py-4 dark-border">
+    <ContainerBackground>
+      <div className="h-full px-6 py-4 dark-border projects-page">
         <h2 className="text-lg text-center font-sans mb-2 md:text-3xl lg:text-4xl">
           {title}
         </h2>
@@ -51,7 +52,7 @@ const ProjectsCard = ({
           </button>
         </div>
       </div>
-    </div>
+    </ContainerBackground>
   );
 };
 

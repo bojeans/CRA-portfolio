@@ -18,15 +18,13 @@ const MobileLink = ({ to, label }) => {
 
 const NavBar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
+
   const NavItem = ({ label, to, onClick }) => {
     return (
-      <li className="mr-6 my-2 lg:my-0 justify-right">
+      <li className="mr-4 my-2 lg:my-0">
         <Link
           to={to}
-          spy={"true"}
-          smooth={"true"}
-          duration={500}
-          className="text-gray-50 hover:bg-gray-100 hover:text-black hover:font-bold hover:text-2xl px-3 py-2 rounded-md text-sm font-medium md:text-lg lg:text-xl"
+          className="text-gray-50 hover:bg-gray-100 hover:text-black hover:font-bold px-3 py-2 rounded-md text-sm font-medium md:text-lg lg:text-xl"
           onClick={onClick}
         >
           {label}
@@ -43,26 +41,15 @@ const NavBar = () => {
     <nav className="bg-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <DarkModeToggle />
-          <Link
-            to="/"
-            className="inline-block max-w-max text-gray-50 text-2xl hover:bg-gray-100 hover:text-black hover:font-bold hover:text-2xl px-3 py-2 rounded-md font-medium"
-          >
-            <FaHome className="text-4xl" aria-label="Home Page" />
-          </Link>
-
-          <div className="hidden md:flex items-center justify-end flex-grow">
-            <ul className="flex font-serif">
-              <NavItem to="/" label="Home" />
-              <NavItem to="/about" label="About" />
-              <NavItem to="/skills" label="Skills" />
-              <NavItem to="/qualifications" label="Qualifications" />
-              <NavItem to="/projects" label="Projects" />
-              <NavItem to="/work-experience" label="Work Experience" />
-            </ul>
+          <div className="flex items-center">
+            <Link
+              to="/"
+              className="text-gray-50 text-xl hover:bg-gray-100 hover:text-black hover:font-bold px-3 py-2 rounded-md font-medium"
+            >
+              <FaHome className="text-3xl" aria-label="Home Page" />
+            </Link>
           </div>
-
-          <div className="-mr-2 flex md:hidden">
+          <div className="md:hidden flex items-center justify-center flex-grow">
             <button
               type="button"
               className="bg-gray-800 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-800 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
@@ -101,6 +88,19 @@ const NavBar = () => {
               </svg>
             </button>
           </div>
+          <div className="md:hidden">
+            <DarkModeToggle />
+          </div>
+          <div className="hidden md:flex items-center justify-end flex-grow">
+            <ul className="flex font-serif space-x-4">
+              <NavItem to="/about" label="About" />
+              <NavItem to="/skills" label="Skills" />
+              <NavItem to="/qualifications" label="Qualifications" />
+              <NavItem to="/projects" label="Projects" />
+              <NavItem to="/work-experience" label="Work Exp" />
+            </ul>
+            <DarkModeToggle />
+          </div>
         </div>
       </div>
       <div
@@ -112,7 +112,7 @@ const NavBar = () => {
         <MobileLink to="/skills" label="Skills" />
         <MobileLink to="/qualifications" label="Qualifications" />
         <MobileLink to="/projects" label="Projects" />
-        <MobileLink to="/work-experience" label="Work Experience" />
+        <MobileLink to="/work-experience" label="Work Exp" />
       </div>
     </nav>
   );

@@ -24,7 +24,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center py-12 px-4 sm:px-6 lg:px-8 contact-page">
+    <div className="flex flex-col items-center contact-page justify-center py-12 px-4 sm:px-6 lg:px-8">
       <form ref={formRef} onSubmit={handleSubmit} className="w-full max-w-lg">
         {submitCount >= 2 && (
           <p className="text-red-600 font-bold">
@@ -50,7 +50,7 @@ const Contact = () => {
             </label>
             <input
               onDoubleClick={handleClick}
-              className="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+              className="appearance-none block w-full bg-white text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
               id="email"
               type="email"
               name="email"
@@ -71,7 +71,7 @@ const Contact = () => {
             </label>
             <textarea
               onDoubleClick={handleClick}
-              className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 md:h-32 lg:h-40"
+              className="appearance-none block w-full bg-white text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 md:h-32 lg:h-40"
               id="message"
               name="message"
               required
@@ -86,7 +86,7 @@ const Contact = () => {
         <button
           type="submit"
           disabled={submitCount >= 2}
-          className="shadow bg-blue-200 hover:bg-blue-600 focus:shadow-outline focus:outline-none font-bold py-2 px-4 rounded"
+          className="shadow bg-blue-800 text-white hover:bg-blue-500 focus:shadow-outline focus:outline-none font-bold py-2 px-4 rounded"
         >
           Submit
         </button>

@@ -6,7 +6,7 @@ const WorkExpNonTech = () => {
       <h2 className="text-2xl font-bold text-center mt-8 border-b-2 border-gray-800 pb-2 font-sans">
         Non-Tech Related
       </h2>
-      <div className="flex flex-wrap justify-center">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <WorkExperienceCard
           company="Madison Recruitment Agency"
           position="Customer Service Representative"

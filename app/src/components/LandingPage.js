@@ -3,6 +3,7 @@ import Hero from "./ScreenshotRelated/Hero";
 import Footer from "./Footer";
 import NavBar from "./NavBar";
 import Contact from "./Contact";
+import ContainerBackground from "./utils/ContainerBackground";
 
 const LandingPage = () => {
   const [isMobileView, setIsMobileView] = useState(false);
@@ -24,32 +25,36 @@ const LandingPage = () => {
   }, []);
 
   return (
-    <div className="flex flex-col min-h-screen">
+    <>
       <NavBar />
-      <div
-        className={`flex-1 ${
-          isMobileView ? "flex flex-col items-center" : "flex md:flex-row"
-        }`}
-      >
+      <ContainerBackground>
         <div
-          className={`w-full ${
-            isMobileView
-              ? "mb-4 flex justify-center"
-              : "md:w-1/3 md:flex md:items-center md:justify-center"
+          className={`flex-1 ${
+            isMobileView ? "flex flex-col items-center" : "flex md:flex-row"
           }`}
         >
-          <div className="m-3 w-full max-w-xs md:max-w-md md:ml-6 lg:max-w-lg">
-            <Hero />
+          <div
+            className={`w-full ${
+              isMobileView
+                ? "mb-4 flex justify-center"
+                : "md:w-1/3 md:flex md:items-center md:justify-center"
+            }`}
+          >
+            <div className="m-3 w-full max-w-xs md:max-w-md md:ml-6 lg:max-w-lg">
+              <Hero />
+            </div>
+          </div>
+          <div
+            className={`w-full px-3 ${
+              isMobileView ? "" : "md:w-2/3 py-5 mr-5"
+            }`}
+          >
+            <Contact />
           </div>
         </div>
-        <div
-          className={`w-full px-3 ${isMobileView ? "" : "md:w-2/3 py-5 mr-5"}`}
-        >
-          <Contact />
-        </div>
-      </div>
+      </ContainerBackground>
       <Footer className="mt-auto" />
-    </div>
+    </>
   );
 };
 

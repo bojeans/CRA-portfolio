@@ -9,6 +9,7 @@
 --lightModeBackground: #fff;
 --lightModeText: #000;
 --lightModeHyperlink: blue;
+--lightModeBGfade: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
 
 /* DARK MODE */
 --darkModeBackground: #000;
@@ -17,12 +18,34 @@
 --darkModeHeading: yellow;
 --darkModeExpand: rgb(0, 255, 0);
 --darkModeCollapse: red;
+--darkModeBGfade: linear-gradient(135deg, #2c2c2c 0%, #3a3a3a 100%);
+}
+
+.container {
+    display: grid;
+    width: auto;
+    height: auto;
+    box-sizing: border-box;    
+  }
+
+.dark-mode {
+    background-color: var(--darkModeBackground);
+    color: var(--darkModeText);
+   
 }
 
 /* LANDING PAGE */
-.dark-mode {
- background: var(--darkModeBackground);
+.dark-mode .home {
+    background: var(--darkModeBGfade);
+       color: var(--darkModeText);
+   }
+
+.dark-mode .card { 
     color: var(--darkModeText);
+    background: var(--darkModeBGfade);
+    margin: 1rem;
+    border-radius: 10%;
+    padding: 1rem;
 }
 
 .rounded-custom {
@@ -31,27 +54,74 @@
   }
 
 /* ABOUT PAGE */
-.dark-mode .about-page { 
-    color: var(--darkModeText);
-    background: var(--darkModeBackground);
-}
 
-.dark-mode .about-page .dark-border {
-    background: rgb(31 41 55);
-}
-
-.dark-mode .about-page ul {
-    color: var(--darkModeText);
-    background: var(--darkModeBackground);
+/* styles.css */
+.card {
+    background: var(--lightModeBGfade);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    overflow: hidden;
+    width: auto;
+    margin: 1rem;
+    border-radius: 10%;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 0.5rem;
+  }
+  
+  .description {
+    font-family: 'Merriweather', serif;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-top: 1rem;
+  }
+  
+  .skills-icons {
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+  .sub-title {
+    overflow: hidden;
   }
 
-.dark-mode .about-page h1 h2 {
+  .regular {
+    background-color: var(--lightModeBGfade);
+    width: 100%;
+    height: auto;
+    
+  }
+
+.dark-mode .about-page {
     color: var(--darkModeText);
+    background: var(--darkModeBackground);
+    margin: auto;
+  }
+
+.dark-mode .about-page h1  {
+    color: var(--darkModeText);
+    padding: 1rem;
 }
 
 .dark-mode .about-page .sub-title {
     color: var(--darkModeHeading);
+    margin-top: 2rem;
   }
+
+.dark-mode .about-page .description {
+    color: var(--darkModeText);
+    margin: 0 1rem 1rem 1rem;
+  }  
 
 .dark-mode .about-page .dark-expand {
     color: var(--darkModeExpand);
@@ -60,20 +130,19 @@
 .dark-mode .about-page .dark-collapse {
     color: var(--darkModeCollapse);
   }
+
   
 /* PROJECT PAGE */
 .dark-mode .projects-page { 
     color: var(--darkModeText);
-    background: var(--darkModeBackground);
+    background: var(--darkModeBGfade);
+    margin: 1rem;
 }
 
-.dark-mode .projects-page .dark-border {
-    background: rgb(31 41 55);
-}
 
-.dark-mode .projects-page h1 {
-    color: var(--darkModeText);
-}
+/* .dark-mode .projects-page-title {
+    
+} */
 
 .dark-mode .projects-page h2 {
     color: var(--darkModeHeading);
@@ -141,7 +210,7 @@
 }
 
 .dark-mode .workexperience-page .dark-border {
-    background: rgb(31 41 55);
+    margin: 1rem;
 }
 
 .dark-mode .workexperience-page h1 { 
@@ -173,17 +242,15 @@
 
 /* SKILLS PAGE */
 .dark-mode .skills-page { 
-    color: var(--darkModeText);
-    background: var(--darkModeBackground);
+    color: var(--darkModeHeading);
+    background: var(--darkModeBGfade);
+    margin: 1rem;
+    border-radius: 10%;
 }
 
-.dark-mode .skills-page .dark-border {
-    background: rgb(31 41 55);
-}
 
 .dark-mode .skills-page .dark-border h2 {
     color: var(--darkModeHeading);
-
 }
 
 .dark-mode .skills-page .skills-icons {
@@ -343,11 +410,41 @@
     color: rgb(119, 123, 179);
 }
 
+/* QUALIFICATIONS PAGE */
+.qualification-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10rem; /* Adjust as needed */
+    overflow: hidden; /* Ensure images don't overflow the container */
+  }
+  
+  .qualification-image {
+    width: 100%;
+    max-width: 150px; /* Adjust as needed */
+    min-width: 100px; /* Adjust as needed */
+    max-height: 10rem; /* Ensure the image fits within the container */
+    object-fit: cover;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+.dark-mode .qualification-page { 
+    color: var(--darkModeHeading);
+}
+
+.dark-mode .zoom-instruction {
+  color: var(--darkModeHeading)
+}
+
+  
+  
+
 /* CONTACT PAGE */
 
 .dark-mode .contact-page { 
     color: var(--darkModeText);
-    background: var(--darkModeBackground);
+    background: var(--darkModeBGfade);
 }
 
 .dark-mode .contact-page h2 { 
@@ -359,18 +456,26 @@
 }
 
 .dark-mode .contact-page button {
-    background:#6EE7B7;
-    color: var(--darkModeBackground);
+    background: #047857;
+    color: var(--darkModeText);
+  
 }
 
 .dark-mode .contact-page button:hover { 
-    background-color: #047857;
-    color: var(--darkModeText);
+      background-color:#57e65b;
+      color: var(--darkModeBackground);
 }
 
 
 
 /* FOOTER */
+
+.dark-mode .dark-footer {
+    background: var(--darkModeBackground);
+    color: var(--darkModeText);
+    margin: 0;
+}
+
 .dark-mode .dark-footer-name {
     color: yellow;
 }
