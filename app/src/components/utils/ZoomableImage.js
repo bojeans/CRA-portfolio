@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const ZoomableImage = ({ src, alt, rotation = 0, style }) => {
+const ZoomableImage = ({ src, alt, rotation = 0, className, style }) => {
   const [isZoomed, setIsZoomed] = useState(false);
 
   const toggleZoom = () => setIsZoomed(!isZoomed);
@@ -54,7 +54,13 @@ const ZoomableImage = ({ src, alt, rotation = 0, style }) => {
         </div>
       )}
       {!isZoomed && (
-        <img src={src} alt={alt} style={imageStyle} onClick={toggleZoom} />
+        <img
+          src={src}
+          alt={alt}
+          className={className}
+          style={imageStyle}
+          onClick={toggleZoom}
+        />
       )}
     </>
   );

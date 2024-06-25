@@ -17,8 +17,10 @@ const Qualifications = () => {
       <h1 className="text-3xl font-bold projects-page text-center mt-6 mb-4 md:text-6xl">
         Qualifications
       </h1>
-
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+      <p className="text-center zoom-instruction">
+        Click the images to zoom in
+      </p>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
         <QualificationsCard
           title="People Potential"
           year="2022"
