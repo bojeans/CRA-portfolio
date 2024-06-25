@@ -10,7 +10,7 @@ const Projects = () => {
         Projects
       </h1>
       <div className="container mx-auto projects-page">
-        <div className="flex flex-wrap justify-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
           <ProjectsNew />
         </div>
         <Footer />
