@@ -6,7 +6,7 @@ const Projects = () => {
   return (
     <>
       <NavBar />
-      <h1 className="text-3xl font-bold projects-page text-center mt-6 mb-4 md:text-6xl">
+      <h1 className="text-3xl font-bold projects-page-title text-center mt-6 mb-4 md:text-6xl">
         Projects
       </h1>
       <div className="container mx-auto px-4 max-w">

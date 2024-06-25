@@ -17,7 +17,7 @@ const ProjectsCard = ({
 }) => {
   return (
     <ContainerBackground>
-      <div className="h-full px-6 py-4 dark-border">
+      <div className="h-full px-6 py-4 dark-border projects-page">
         <h2 className="text-lg text-center font-sans mb-2 md:text-3xl lg:text-4xl">
           {title}
         </h2>

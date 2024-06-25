@@ -135,16 +135,14 @@
 /* PROJECT PAGE */
 .dark-mode .projects-page { 
     color: var(--darkModeText);
-    background: var(--darkModeBackground);
+    background: var(--darkModeBGfade);
+    margin: 1rem;
 }
 
-.dark-mode .projects-page .dark-border {
-    background: rgb(31 41 55);
-}
 
-.dark-mode .projects-page h1 {
-    color: var(--darkModeText);
-}
+/* .dark-mode .projects-page-title {
+    
+} */
 
 .dark-mode .projects-page h2 {
     color: var(--darkModeHeading);
