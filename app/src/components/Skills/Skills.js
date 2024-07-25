@@ -143,14 +143,8 @@ const Skills = () => {
                   <li className="mx-2 dark-ethereum">
                     <FaEthereum />
                   </li>
-                  <li className="mx-2 dark-web3js">
-                    <SiWeb3Dotjs />
-                  </li>
                   <li className="mx-2 dark-figma">
                     <FaFigma />
-                  </li>
-                  <li className="mx-2 dark-webflow">
-                    <SiWebflow />
                   </li>
                   <li className="mx-2 dark-sass">
                     <IoLogoSass />
@@ -170,12 +164,6 @@ const Skills = () => {
                   <li className="mx-2">
                     <FaHardHat />
                   </li>
-                  <li className="mx-2 dark-dotnet">
-                    <SiDotnet />
-                  </li>
-                  <li className="mx-2 dark-csharp">
-                    <TbBrandCSharp />
-                  </li>
                   <li className="mx-2 dark-sqlite">
                     <SiSqlite />
                   </li>
@@ -187,9 +175,6 @@ const Skills = () => {
                   </li>
                   <li className="mx-2 dark-redux">
                     <SiRedux />
-                  </li>
-                  <li className="mx-2 dark-php">
-                    <FaPhp />
                   </li>
                 </>
               }
