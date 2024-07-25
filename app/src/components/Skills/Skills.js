@@ -8,7 +8,6 @@ import SkillsCard from "./SkillsCard";
 // BLOCKCHAIN
 import { SiSolidity } from "react-icons/si";
 import { FaEthereum } from "react-icons/fa";
-import { SiWeb3Dotjs } from "react-icons/si";
 import { FaHardHat } from "react-icons/fa";
 // DESIGN
 import { IoLogoCss3 } from "react-icons/io5";
@@ -16,7 +15,6 @@ import { BiLogoTailwindCss } from "react-icons/bi";
 import { IoLogoSass } from "react-icons/io";
 import { SiSemanticuireact } from "react-icons/si";
 import { FaFigma } from "react-icons/fa";
-import { SiWebflow } from "react-icons/si";
 // DEVELOPMENT
 import { SiJavascript } from "react-icons/si";
 import { SiReact } from "react-icons/si";
@@ -33,10 +31,7 @@ import { FaDocker } from "react-icons/fa";
 import { SiJest } from "react-icons/si";
 import { BsFiletypeJson } from "react-icons/bs";
 import { SiSwagger } from "react-icons/si";
-import { SiDotnet } from "react-icons/si";
-import { TbBrandCSharp } from "react-icons/tb";
 import { SiRedux } from "react-icons/si";
-import { FaPhp } from "react-icons/fa6";
 // CLOUD & Database
 import { FaAws } from "react-icons/fa";
 import { SiTerraform } from "react-icons/si";
@@ -143,14 +138,8 @@ const Skills = () => {
                   <li className="mx-2 dark-ethereum">
                     <FaEthereum />
                   </li>
-                  <li className="mx-2 dark-web3js">
-                    <SiWeb3Dotjs />
-                  </li>
                   <li className="mx-2 dark-figma">
                     <FaFigma />
-                  </li>
-                  <li className="mx-2 dark-webflow">
-                    <SiWebflow />
                   </li>
                   <li className="mx-2 dark-sass">
                     <IoLogoSass />
@@ -170,12 +159,6 @@ const Skills = () => {
                   <li className="mx-2">
                     <FaHardHat />
                   </li>
-                  <li className="mx-2 dark-dotnet">
-                    <SiDotnet />
-                  </li>
-                  <li className="mx-2 dark-csharp">
-                    <TbBrandCSharp />
-                  </li>
                   <li className="mx-2 dark-sqlite">
                     <SiSqlite />
                   </li>
@@ -187,9 +170,6 @@ const Skills = () => {
                   </li>
                   <li className="mx-2 dark-redux">
                     <SiRedux />
-                  </li>
-                  <li className="mx-2 dark-php">
-                    <FaPhp />
                   </li>
                 </>
               }

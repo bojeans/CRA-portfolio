@@ -7,6 +7,7 @@ import PortfolioProjects from "../ScreenshotRelated/PortfolioProjects";
 import EcommercePagination from "../ScreenshotRelated/EcommercePagination";
 import EcommerceSearch from "../ScreenshotRelated/EcommerceSearch";
 import EcommerceHome from "../ScreenshotRelated/EcommerceHome";
+import FinanceAppDiagram from "../ScreenshotRelated/FinanceAppDiagram";
 import { IoIosGlobe } from "react-icons/io";
 import { FaRegFileCode } from "react-icons/fa";
 
@@ -81,42 +82,43 @@ const ecommerceCode = (
 // In Progress - Fitness App
 
 // ADD or EDIT
-// const inProgressWebsite = () => {
-//   alert("Coming Soon");
-// };
-// const fitnessAppWebsite = (
-//   <button
-//     onClick={inProgressWebsite}
-//     className="underline italic"
-//     aria-label="link to fitness app website"
-//   >
-//     {" "}
-//     <IoIosGlobe />{" "}
-//   </button>
-// );
+const inProgressWebsite = () => {
+  alert("Coming Soon");
+};
+const financeAppWebsite = (
+  <button
+    onClick={inProgressWebsite}
+    className="underline italic"
+    aria-label="link to finance app website"
+  >
+    {" "}
+    <IoIosGlobe />{" "}
+  </button>
+);
 
-// const fitnessAppCode = (
-//   <a
-//     href="https://github.com/bojeans/fitness-app"
-//     target="_blank"
-//     rel="noopener noreferrer"
-//     className="underline italic"
-//     aria-label="link to fitness app code"
-//   >
-//     <FaRegFileCode />
-//   </a>
-// );
+const financeAppCode = (
+  <a
+    href="https://github.com/bojeans/Finance-App"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="underline italic"
+    aria-label="link to fitness app code"
+  >
+    <FaRegFileCode />
+  </a>
+);
 
 const ProjectsNew = () => {
   return (
     <>
-      {/* <ProjectsCard
-        title="In Progress - Fitness App"
-        skills="Next.js, Typescript, PostgreSQL, Docker, TailwindCSS, Jest, React Testing Library, Figma, Auth"
-        website={fitnessAppWebsite}
+      <ProjectsCard
+        image={<FinanceAppDiagram />}
+        title="In Progress - Finance App"
+        skills="Coming soon - along with a travel blog separate App"
+        website={financeAppWebsite}
         website2={inProgressWebsite}
-        code={fitnessAppCode}
-      /> */}
+        code={financeAppCode}
+      />
       <ProjectsCard
         image={<CryptoProjLight />}
         image2={<CryptoProjDark />}

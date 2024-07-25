@@ -1,6 +1,6 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
 /* CSS Variables */
 
@@ -347,18 +347,11 @@
     color: #7a6bff
 }
 
-.dark-mode .skills-page .dark-web3js {
-    color: #f1682f;
-}
-
 .dark-mode .skills-page .dark-figma {
     background: linear-gradient(to right, #f24e1e, #ff7262, #a259ff, #1abcfe, #0acf83);
     color: var(--darkModeBackground)
 }
 
-.dark-mode .skills-page .dark-webflow {
-    color: rgb(61, 71, 255);
-}
 
 .dark-mode .skills-page .dark-sass {
     color: rgb(204, 102, 153);
@@ -381,14 +374,6 @@
     color: rgb(84, 92, 247);
 } 
 
-.dark-mode .skills-page .dark-dotnet {
-    color: rgb(141, 139, 139);
-}
-
-.dark-mode .skills-page .dark-csharp {
-    color: rgb(52, 154, 0);
-}
-
 .dark-mode .skills-page .dark-sqlite {
     background: linear-gradient(to right, #5BBBFB, #007ACC, #004573 );
     color: darkblue;
@@ -406,9 +391,6 @@
     color: rgb(118, 74, 188);
 }
 
-.dark-mode .skills-page .dark-php {
-    color: rgb(119, 123, 179);
-}
 
 /* QUALIFICATIONS PAGE */
 .qualification-image-container {
