@@ -8,7 +8,6 @@ import SkillsCard from "./SkillsCard";
 // BLOCKCHAIN
 import { SiSolidity } from "react-icons/si";
 import { FaEthereum } from "react-icons/fa";
-import { SiWeb3Dotjs } from "react-icons/si";
 import { FaHardHat } from "react-icons/fa";
 // DESIGN
 import { IoLogoCss3 } from "react-icons/io5";
@@ -16,7 +15,6 @@ import { BiLogoTailwindCss } from "react-icons/bi";
 import { IoLogoSass } from "react-icons/io";
 import { SiSemanticuireact } from "react-icons/si";
 import { FaFigma } from "react-icons/fa";
-import { SiWebflow } from "react-icons/si";
 // DEVELOPMENT
 import { SiJavascript } from "react-icons/si";
 import { SiReact } from "react-icons/si";
@@ -33,10 +31,7 @@ import { FaDocker } from "react-icons/fa";
 import { SiJest } from "react-icons/si";
 import { BsFiletypeJson } from "react-icons/bs";
 import { SiSwagger } from "react-icons/si";
-import { SiDotnet } from "react-icons/si";
-import { TbBrandCSharp } from "react-icons/tb";
 import { SiRedux } from "react-icons/si";
-import { FaPhp } from "react-icons/fa6";
 // CLOUD & Database
 import { FaAws } from "react-icons/fa";
 import { SiTerraform } from "react-icons/si";
