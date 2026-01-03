@@ -8,7 +8,7 @@ const SkillsCard = ({ icon, experience, description }) => {
         <h2 className="text-lg text-center font-sans mb-4 md:mb-8 md:text-2xl work_experience_details">
           {experience}
         </h2>
-        <ul className="grid grid-cols-3 gap-6 justify-items-center text-gray-400 text-3xl mt-2 mb-5 skills-icons md:text-4xl lg:text-5xl">
+        <ul className="grid grid-cols-3 gap-6 pb-16 justify-items-center text-gray-400 text-3xl mt-2 mb-5 skills-icons md:text-4xl lg:text-5xl">
           {icon}
         </ul>
         {/* Uncomment the following block if you want to include the description */}
