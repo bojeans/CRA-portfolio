@@ -23,10 +23,10 @@ const WorkExperienceCard = ({
           {date}
         </p>
         <p className="text-gray-600 text-lg mb-2 hyperlinks">{fblink}</p>
+        <p className="text-gray-600 text-lg mb-2 hyperlinks">{link}</p>
         <p className="text-gray-700 font-sans text-base work_experience_details">
           {description && <CollapsibleText text={description} />}
         </p>
-        <p className="text-gray-600 text-lg mb-2 hyperlinks">{link}</p>
       </div>
     </ContainerBackground>
   );

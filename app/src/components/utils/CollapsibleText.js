@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { GoTriangleUp } from "react-icons/go";
+import { GoTriangleUp, GoTriangleDown } from "react-icons/go";
 
 const CollapsibleText = ({ text }) => {
   const [showAllText, setShowAllText] = useState(false);
@@ -55,7 +55,7 @@ const CollapsibleText = ({ text }) => {
           onClick={toggleShowAllText}
           className={showAllText ? "dark-collapse" : "dark-expand"}
         >
-          {showAllText ? <GoTriangleUp /> : "..."}
+          {showAllText ? <GoTriangleUp /> : <GoTriangleDown />}
         </button>
       )}
     </>
