@@ -7,7 +7,8 @@ import PortfolioProjects from "../ScreenshotRelated/PortfolioProjects";
 import EcommercePagination from "../ScreenshotRelated/EcommercePagination";
 import EcommerceSearch from "../ScreenshotRelated/EcommerceSearch";
 import EcommerceHome from "../ScreenshotRelated/EcommerceHome";
-import FinanceAppDiagram from "../ScreenshotRelated/FinanceAppDiagram";
+import LifeTrackerHome from "../ScreenshotRelated/LifeTrackerHome";
+import LifeTrackerShared from "../ScreenshotRelated/LifeTrackerShared";
 import { IoIosGlobe } from "react-icons/io";
 import { FaRegFileCode } from "react-icons/fa";
 
@@ -79,30 +80,27 @@ const ecommerceCode = (
   </a>
 );
 
-// In Progress - Fitness App
+// In Progress - Life Tracker App
 
-// ADD or EDIT
-const inProgressWebsite = () => {
-  alert("Coming Soon");
-};
-const financeAppWebsite = (
-  <button
-    onClick={inProgressWebsite}
-    className="underline italic"
-    aria-label="link to finance app website"
-  >
-    {" "}
-    <IoIosGlobe />{" "}
-  </button>
-);
-
-const financeAppCode = (
+const lifeTrackerWebsite = (
   <a
-    href="https://github.com/bojeans/Finance-App"
+    href="https://life-tracker-gamma-nine.vercel.app/shared/example-user"
     target="_blank"
     rel="noopener noreferrer"
     className="underline italic"
-    aria-label="link to fitness app code"
+    aria-label="link to life tracker app website"
+  >
+    <IoIosGlobe />
+  </a>
+);
+
+const lifeTrackerCode = (
+  <a
+    href="https://github.com/bojeans/life-tracker"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="underline italic"
+    aria-label="link to life tracker app code"
   >
     <FaRegFileCode />
   </a>
@@ -112,12 +110,12 @@ const ProjectsNew = () => {
   return (
     <>
       <ProjectsCard
-        image={<FinanceAppDiagram />}
-        title="In Progress - Finance App"
-        skills="Coming soon - along with a travel blog separate App"
-        website={financeAppWebsite}
-        website2={inProgressWebsite}
-        code={financeAppCode}
+        image={<LifeTrackerHome />}
+        image2={<LifeTrackerShared />}
+        title="In Progress - Life Tracker App"
+        skills="Coming soon"
+        website={lifeTrackerWebsite}
+        code={lifeTrackerCode}
       />
       <ProjectsCard
         image={<CryptoProjLight />}
