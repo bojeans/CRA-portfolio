@@ -1,11 +1,8 @@
-import NavBar from "../NavBar";
-import Footer from "../Footer";
 import ProjectsNew from "./ProjectsNew";
 
 const Projects = () => {
   return (
-    <>
-      <NavBar />
+    <section id="projects" className="scroll-mt-20">
       <h1 className="text-3xl font-bold projects-page-title text-center mt-6 mb-4 md:text-6xl">
         Projects
       </h1>
@@ -13,9 +10,8 @@ const Projects = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
           <ProjectsNew />
         </div>
-        <Footer />
       </div>
-    </>
+    </section>
   );
 };
 

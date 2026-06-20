@@ -12,13 +12,13 @@
 --lightModeBGfade: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
 
 /* DARK MODE */
---darkModeBackground: #000;
---darkModeText: #fff;
---darkModeHyperlink: #7df2fd;
---darkModeHeading: yellow;
---darkModeExpand: rgb(0, 255, 0);
---darkModeCollapse: red;
---darkModeBGfade: linear-gradient(135deg, #2c2c2c 0%, #3a3a3a 100%);
+--darkModeBackground: #0f172a;          /* slate-900 */
+--darkModeText: #e2e8f0;                /* slate-200 */
+--darkModeHyperlink: #5eead4;           /* teal-300 */
+--darkModeHeading: #5eead4;             /* teal-300 accent */
+--darkModeExpand: #4ade80;              /* green-400 */
+--darkModeCollapse: #f87171;            /* red-400 */
+--darkModeBGfade: linear-gradient(135deg, #1e293b 0%, #334155 100%);
 }
 
 .container {
@@ -459,7 +459,7 @@
 }
 
 .dark-mode .dark-footer-name {
-    color: yellow;
+    color: var(--darkModeHeading);
 }
 
 .dark-mode .dark-footer-text {

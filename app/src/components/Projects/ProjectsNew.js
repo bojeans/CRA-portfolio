@@ -18,17 +18,27 @@ const cryptoWebsite = (
     href="https://unodex.fi/"
     target="_blank"
     rel="noopener noreferrer"
-    className="underline italic"
+    className="dark-button light-button"
     aria-label="link to Crypto Project"
   >
     <IoIosGlobe />
   </a>
 );
 
-const cryptoCode = () => {
-  alert("Unfortately, the code is not publically available.");
+const showCryptoCodeUnavailable = () => {
+  alert("Unfortunately, the code is not publicly available.");
 };
-const cryptoBlank = <FaRegFileCode />;
+
+const cryptoCode = (
+  <button
+    type="button"
+    onClick={showCryptoCodeUnavailable}
+    className="dark-button light-button"
+    aria-label="crypto project code is not publicly available"
+  >
+    <FaRegFileCode />
+  </button>
+);
 
 // PORTFOLIO PROJECT
 const portfolioWebsite = (
@@ -36,7 +46,7 @@ const portfolioWebsite = (
     href="https://chrisanderson-portfolio.netlify.app/"
     target="_blank"
     rel="noopener noreferrer"
-    className="underline italic"
+    className="dark-button light-button"
     aria-label="link to my portfolio project website"
   >
     <IoIosGlobe />
@@ -48,7 +58,7 @@ const portfolioCode = (
     href="https://github.com/bojeans/CRA-portfolio"
     target="_blank"
     rel="noopener noreferrer"
-    className="underline italic"
+    className="dark-button light-button"
     aria-label="link to my portfolio project code"
   >
     <FaRegFileCode />
@@ -61,7 +71,7 @@ const ecommerceWebsite = (
     href="https://relaxed-choux-9389d7.netlify.app/"
     target="_blank"
     rel="noopener noreferrer"
-    className="underline italic "
+    className="dark-button light-button"
     aria-label="link to ecommerce project website"
   >
     <IoIosGlobe />
@@ -73,7 +83,7 @@ const ecommerceCode = (
     href="https://github.com/bojeans/mock-product-site"
     target="_blank"
     rel="noopener noreferrer"
-    className="underline italic"
+    className="dark-button light-button"
     aria-label="link to ecommerce project code"
   >
     <FaRegFileCode />
@@ -87,7 +97,7 @@ const lifeTrackerWebsite = (
     href="https://life-tracker-gamma-nine.vercel.app/shared/example-user"
     target="_blank"
     rel="noopener noreferrer"
-    className="underline italic"
+    className="dark-button light-button"
     aria-label="link to life tracker app website"
   >
     <IoIosGlobe />
@@ -99,7 +109,7 @@ const lifeTrackerCode = (
     href="https://github.com/bojeans/life-tracker"
     target="_blank"
     rel="noopener noreferrer"
-    className="underline italic"
+    className="dark-button light-button"
     aria-label="link to life tracker app code"
   >
     <FaRegFileCode />
@@ -131,8 +141,7 @@ const ProjectsNew = () => {
         top traded tokens, buy/sell widget were some of the features I
         worked on."
         website={cryptoWebsite}
-        code={cryptoBlank}
-        code2={cryptoCode}
+        code={cryptoCode}
       />
       <ProjectsCard
         title="Personal Projects - My Portfolio"

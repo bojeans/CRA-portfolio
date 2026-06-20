@@ -11,9 +11,7 @@ const ProjectsCard = ({
   skills,
   description,
   website,
-  website2,
   code,
-  code2,
 }) => {
   return (
     <ContainerBackground>
@@ -35,21 +33,9 @@ const ProjectsCard = ({
         <p className="font-serif text-base mt-5">
           {description && <CollapsibleText text={description} />}
         </p>
-        <div className="flex flex-row mt-5">
-          <button
-            onclick={website2}
-            className="dark-button light-button"
-            aria-label="link to external website"
-          >
-            {website}
-          </button>
-          <button
-            onClick={code2}
-            className="dark-button light-button ml-auto"
-            aria-label="link to external github code"
-          >
-            {code}
-          </button>
+        <div className="flex flex-row justify-between mt-5">
+          {website}
+          {code}
         </div>
       </div>
     </ContainerBackground>

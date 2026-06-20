@@ -1,6 +1,4 @@
 import React from "react";
-import NavBar from "../NavBar";
-import Footer from "../Footer";
 import SkillsCard from "./SkillsCard";
 import IconWithTooltip from "../utils/IconWithTooltip";
 
@@ -30,7 +28,6 @@ import { TbBrandNextjs, TbBrandVscode } from "react-icons/tb";
 import {
   FaPython,
   FaGitAlt,
-  FaGit,
   FaAws,
   FaGithub,
   FaHtml5,
@@ -103,9 +100,7 @@ const renderIcons = (icons) =>
 
 const Skills = () => {
   return (
-    <>
-      <NavBar />
-
+    <section id="skills" className="scroll-mt-20">
       <h1 className="font-sans text-4xl font-bold text-center mt-6 mb-4 md:text-6xl">
         Skills
       </h1>
@@ -131,9 +126,7 @@ const Skills = () => {
           />
         </div>
       </div>
-
-      <Footer />
-    </>
+    </section>
   );
 };
 

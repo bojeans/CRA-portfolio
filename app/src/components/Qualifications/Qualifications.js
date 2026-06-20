@@ -1,5 +1,3 @@
-import NavBar from "../NavBar";
-import Footer from "../Footer";
 import QualificationsCard from "./QualificationsCard";
 import DI from "../../assets/developersinstitute.jpg";
 import Uni from "../../assets/waikatouni.jpg";
@@ -11,9 +9,7 @@ import "../../index.css";
 
 const Qualifications = () => {
   return (
-    <>
-      <NavBar />
-
+    <section id="qualifications" className="qualification-page scroll-mt-20">
       <h1 className="text-3xl font-bold text-center mt-6 mb-4 md:text-6xl">
         Qualifications
       </h1>
@@ -75,8 +71,7 @@ const Qualifications = () => {
           />
         </div>
       </div>
-      <Footer />
-    </>
+    </section>
   );
 };
 
